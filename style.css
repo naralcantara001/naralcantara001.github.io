@@ -466,7 +466,7 @@ footer{
         right: 0px;
         height: 100vh;
         top: 6vh;
-        width: 50%;
+        width: 100%;
         background-image: linear-gradient(135deg, #fff, #7f1cdf);
         display: flex;
         flex-direction: column;
