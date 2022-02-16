@@ -475,7 +475,7 @@ footer{
         text-align: center;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        font-size: 2em;
+        font-size: 1.5em;
     }
     nav{
         display: flex;
