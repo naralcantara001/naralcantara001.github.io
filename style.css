@@ -365,7 +365,7 @@ footer{
     img{
         padding: .1em;
         background-color: #111;
-        border-radius: 50px 0 50px 0;
+        border-radius: 10px;
         margin: 30% 0;
         border: 3px solid #fff;
         cursor: pointer;
