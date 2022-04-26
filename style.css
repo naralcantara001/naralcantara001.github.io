@@ -351,10 +351,10 @@ footer{
         height: auto;
     }
     .name h1{
-        font-size: 1.3em;
+        font-size: 1em;
     }
     .profession{
-        font-size: 1em;
+        font-size: .7em;
     }
     #fabs{
         font-size: .4em;
