@@ -11,7 +11,7 @@ function activeMenu(){
 activeMenu();
 window.addEventListener("scroll", activeMenu);
 
-
+// Typewriter
 
 const textAnim = document.querySelector(".profession");
 const typewriter = new Typewriter(textAnim, {
@@ -28,6 +28,8 @@ typewriter
 .typeString("Front-end developer.")
 .pauseFor(500)
 
+
+// nav slider 
 const navSlide =() => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.nav-links');
@@ -36,3 +38,21 @@ const navSlide =() => {
     });
 }
 navSlide();
+
+
+// Arrow Up
+
+let arrowUp = document.querySelector('#arrowUp');
+window.onscroll = function(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        arrowUp.style.display = 'block';
+    }else{
+        arrowUp.style.display = 'none';
+    }
+}
+
+arrowUp.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
+    
