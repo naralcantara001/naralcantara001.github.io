@@ -9,6 +9,25 @@ html {
     box-sizing: border-box;
     font-family: 'Quicksand', sans-serif;
 }
+#arrowUp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: .8em;
+    border-radius: 5px;
+    border: #333 1px solid;
+    outline: none;
+    z-index: 99;
+    cursor: pointer;
+}
+#arrowUp:hover{
+    transition: 0.3s;
+    background-color: #fff;
+    border: #333 1px solid;
+    color: #333;
+}
 .logo{
     font-size: 2em;
     cursor: pointer;
@@ -116,22 +135,22 @@ section{
 }
 
 img{
-    padding: .8em;
+    padding: .5em;
     background-color: #111;
-    border-radius: 50px 0 50px 0;
+    border-radius: 10px;
     margin: 2%;
     border: 3px solid #fff;
     cursor: pointer;
     transition: all ease-in-out .5s;
-    height: 12em;
+    height: 10em;
     box-shadow: 3px 5px 10px rgb(143, 86, 197);
 }
 img:hover{
-    padding: .8m;
+    padding: .5em;
     background-color: #111;
     border-radius: 0 50px 0 50px;
     transition: all ease-in-out .5s;
-    height: 12em;
+    height: 10em;
     box-shadow: 3px 5px 10px rgb(102, 31, 168);
 }
 .btn{
@@ -319,7 +338,7 @@ footer{
     header{
         width: 100%;
         background-image: linear-gradient(135deg, #fff, #7f1cdf);
-        position: sticky;
+        position: fixed;
         top: 0;
         box-shadow: 0 5px 10px rgba(0,0,0, .1);
     }
@@ -460,22 +479,22 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
+        height: 100%;
     }
     .nav-links{
         position: absolute;
         right: 0px;
         height: 100vh;
-        top: 6vh;
-        width: 100%;
+        top: 40px;
+        padding: 0;
+        margin: 0;
+        width: 45%;
         background-image: linear-gradient(135deg, #fff, #7f1cdf);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        text-align: center;
+        display: grid;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
-        font-size: 1.5em;
+        font-size: 1.3em;
+        justify-content: center;
     }
     nav{
         display: flex;
