@@ -616,6 +616,10 @@ footer {
   footer {
     font-size: .5em;
   }
+  .active {
+    color: #ffa500;
+    background-color: #360167;
+  }
   nav {
     padding: .5em 0;
   }
@@ -651,13 +655,13 @@ footer {
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
   }
   .nav-links li {
-    border-bottom: 3px solid #360167;
+    border-bottom: 1px solid #360167;
     width: 100%;
     margin: 0;
     padding: 1em;
   }
   .nav-links li .links {
-    color: #ffe5b4;
+    color: #f2f2f2;
   }
 }
 
