@@ -509,6 +509,10 @@ footer{
     font-size: .5em;
 }
 // mobile nav
+.active{
+    color: $orange;
+    background-color: $darkviolet;
+}
     nav{
         padding: .5em 0;
     }
@@ -530,7 +534,7 @@ footer{
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
         & li{
-            border-bottom: 3px solid $darkviolet;
+            border-bottom: 1px solid $darkviolet;
             width: 100%;
             margin: 0;
             padding: 1em;
