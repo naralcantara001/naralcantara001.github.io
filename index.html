@@ -7,17 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Typewriter animation -->
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="glider.min.css">
     <script src="script.js" defer></script>
     <title>Narcy Alcantara</title>
 </head>
 
 <body>
+    <!-- arrow up -->
     <div id="arrowUp">&#8593</div>
+    <!-- modal -->
+    <div class="overlay">
+        <div class="modal">
+            <button class="close-modal">close modal</button>
+            <div class="container"></div>
+        </div>
+    </div>
+
     <!-- header nav -->
     <header>
         <div class="main-nav">
@@ -25,6 +34,7 @@
             <nav>
                 <ul class="nav-links">
                     <li><a class="links" href="#home">Home</a></li>
+                    <li><a class="links" href="#about">About</a></li>
                     <li><a class="links" href="#skills">Skills</a></li>
                     <li><a class="links" href="#projects">Project</a></li>
                     <li><a class="links" href="#contact">Contact</a></li>
@@ -54,91 +64,380 @@
             </div>
             <a href="#projects">
                 <button class="see-project-btn">
-                </i>see projects<i class="fas fa-chevron-down arrow-down"></i>
-            </button>
+                    </i>see projects<i class="fas fa-chevron-down arrow-down"></i>
+                </button>
             </a>
         </div>
         <div>
             <img class="myPhoto" src="gradphoto.jpg" alt="icon">
         </div>
     </section>
-    <!-- skills -->
-    <section id="skills">
-        <h3 class="title">SKILLS</h3>
-        <div class="skills-container">
-            <div class="box">
-                <i id="skills-icon" class="fab fa-html5"></i>
-                <p class="sub">HTML</p>
-                <p class="subs">determines the structure of web pages.</p>
+    <!-- about -->
+    <section id="about">
+        <h3 class="title">ABOUT</h3>
+        <div class="about-container">
+
+            <div class="grid1">
+                <h5>personal info:</h5>
+                <div class="info">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Narcy A. Alcantara</span>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Toclong 2A Imus, Cavite</span>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-heart"></i>
+                    <span>In a relationship</span>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-cake-candles"></i>
+                    <span>January 31, 1994</span>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-star-of-david"></i>
+                    <span>Aquarius</span>
+                </div>
+                <div class="info">
+                    <i class="fa-solid fa-person"></i>
+                    <span> INFJ-A</span>
+                </div>
             </div>
-            <div class="box">
-                <i id="skills-icon" class="fab fa-css3-alt"></i>
-                <p class="sub">CSS</p>
-                <p class="subs">design language intended to simplify the process of making web pages presentable.</p>
+            
+            <div class="grid2">
+                <h5>education:</h5>
+                <div class="info"  style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-school" ></i>
+                    <span>
+                        Bachelor of Science in Information Technology
+                        <br>
+                         Cavite state university - Imus, Cavite
+                        <br>
+                        2017 - April 2, 2022
+                    </span>
+                </div>
+
+                <div class="info" style="display: flex; align-items: flex-start;">
+                    <i class="fa-solid fa-school"></i>
+                    <span>
+                        Computer Programming
+                        <br>
+                         Datacom Institute of Computer Technology - Imus, Cavite
+                        <br>
+                        2010 - 2012
+                    </span>
+                </div>
+
+            <div class="info" style="display: flex; align-items: flex-start;">
+                <i class="fa-solid fa-school"></i>
+                <span>
+                    Emiliano Tria Tirona Memorial National High School - Gahak, Kawit, Cavite
+                    <br>
+                    2006 - 2010    
+                </span>
             </div>
-            <div class="box">
-                <i id="skills-icon" class="fab fa-js-square"></i>
-                <p class="sub">Javascript</p>
-                <p class="subs"> to add dynamic and interactive elements to websites.</p>
+            <div class="info" style="display: flex; align-items: flex-start;">
+                <i class="fa-solid fa-school"></i>
+                <span>
+                    Gov D. M. Camerino Elementary School - Imus, Cavite
+                    <br>
+                    2001 - 2006                    
+                </span>
             </div>
         </div>
+
+        <div class="grid3">
+            <h5>work experiences:</h5>
+            <div class="info" style="display: flex; align-items: flex-start;">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>
+                    Office of The Municipal Treasurer - Imus Cavite
+                    <br>
+                    On The Job Training
+                    <br>
+                    July 5, 2012 - October 28, 2012
+                    <br>
+                    Categorizing the tax payers data.                
+                </span>
+            </div>
+            <div class="info" style="display: flex; align-items: flex-start;">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>
+                    House. Research. Development. Singapore PTE., LTD - Rosario Cavite
+                    <br>
+                    Office Staff
+                    <br>
+                    February 21, 2013 - August 5, 2013
+                    <br>
+                    Encoder: adding ventilation measurement on floorplan, inputting the client control number.           
+                </span>
+            </div>
+            <div class="info" style="display: flex; align-items: flex-start;">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>
+                    Barangay Toclong 1B Imus, Cavite 
+                    <br>
+                    On The Job Training
+                    <br>
+                    July 16 2021 - August 19 2021
+                    <br>
+                    Programmer; develop a website for Barangay Toclong 1B, using HTML, CSS, JavaScript.
+                </span>
+            </div>
+        </div>
+        
+        </div>
     </section>
+<!-- skill ver 2 -->
+<section id="skills">
+    <h3 class="title">SKILLS</h3>
+    <div class="skill-container">
+
+
+        <div class="skill-status">
+            <span><i class="fa-brands fa-html5"></i></span>
+            <span class="skill-name">HTML5</span>
+            <div class="skill-set">
+                <span class="bar" style="width:90%">90%</span>
+            </div>
+        </div>
+
+        <div class="skill-status">
+            <span><i class="fa-brands fa-html5"></i></span>
+            <span class="skill-name">CSS3</span>
+            <div class="skill-set">
+                <span class="bar" style="width:70%">70%</span>
+            </div>
+        </div>
+
+        <div class="skill-status">
+            <span><i class="fa-brands fa-js-square"></i></span>
+            <span class="skill-name">Javascript</span>
+            <div class="skill-set">
+                <span class="bar" style="width:50%">50%</span>
+            </div>
+        </div>
+
+        <div class="skill-status">
+            <span><i class="fa-brands fa-github"></i></span>
+            <span class="skill-name">Github</span>
+            <div class="skill-set">
+                <span class="bar" style="width:50%">50%</span>
+            </div>
+        </div>
+
+        <div class="skill-status">
+            <span><i class="fa-brands fa-sass"></i></span>
+            <span class="skill-name">SASS</span>
+            <div class="skill-set">
+                <span class="bar" style="width:40%">40%</span>
+            </div>
+        </div>
+
+       
+    </div>
+</section>
+<!-- skill end -->
+
+    </section> -->
     <!-- projects -->
     <section id="projects">
         <h3 class="title">PROJECTS</h3>
         <br>
-        <div class="project-container">
-            <div class="project">
-                <p class="project-title">Barangay Toclong 1B Web Page</p>
-                <p class="project-title">(Internship)</p>
-                <video width="320" height="240" muted autoplay loop>
-                    <source src="ojt.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="btn-project-container">
-                    <a href="https://github.com/naralcantara001/barangaytoclong1b-web.github.io" target="_blank">
-                        <button class="project-btn"><i id="project-icon" class="fab fa-github"></i>view code</button>
-                    </a>
-                    <a href="https://barangaytoclong1b-web.github.io/" target="_blank">
-                        <button class="project-btn"><i id="project-icon" class="fas fa-eye"></i>live preview</button>
-                    </a>
-                </div>
-            </div>
-            <div class="project">
-                <p class="project-title">MOVIE WEB API</p>
-                <p class="project-title">(Personal Project)</p>
-                <video  muted autoplay loop>
-                    <source src="movietime-web..mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="btn-project-container">
-                    <a href="https://github.com/naralcantara001/movietime-web" target="_blank">
-                        <button class="project-btn"><i id="project-icon" class="fab fa-github"></i>view code</button>
-                    </a>
-                    <a href="https://movietime-web.github.io/" target="_blank">
-                        <button class="project-btn"><i id="project-icon" class="fas fa-eye"></i>live preview</button>
-                    </a>
+        <!--  -->
+        <div>
+            <div class="project-container">
+
+                 <!-- 1 -->
+                <div class="project">
+                    <div class="vid-container">
+                        <video width="320" height="240" muted autoplay loop>
+                            <source src="ojt.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                            <!-- <div class="overlay-on-vid">
+                                <a href="https://barangaytoclong1b-web.github.io/" target="_blank">
+                                    <button class="project-btn-preview">
+                                        <i id="project-icon" class="fas fa-eye"></i>
+                                        live preview
+                                    </button>
+                                </a>
+                            </div> -->
+                    </div>
+                    <div class="btn-and-description">
+                        <p class="project-title">
+                            Barangay Toclong 1B Web Page
+                            <br>
+                            (Internship)
+                        </p>
+                        <p class="using">HTML • CSS • JavaScript</p>
+                        <div class="project-btn-container">
+                            <a href="https://github.com/naralcantara001/barangaytoclong1b-web.github.io" target="_blank">
+                                <button class="project-btn-git">
+                                    <i id="project-icon" class="fab fa-github"></i>
+                                    view code
+                                </button>
+                            </a>
+                            
+                            <a href="https://barangaytoclong1b-web.github.io/" target="_blank">
+                                <button class="project-btn-preview">
+                                    <i id="project-icon" class="fas fa-eye"></i>
+                                    live preview
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
 
-            </div>
-            <div class="project">
-                <p class="project-title">Leno Furniture Landing Page</p>
-                <p class="project-title">(Personal Project)</p>
-                <video width="320" height="240" muted autoplay loop>
-                    <source src="lenofurniture-web.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="btn-project-container">
-                    <a href="https://github.com/naralcantara001/lenofurniture-web.github.io" target="_blank">
-                        <button class="project-btn"><i id="project-icon" class="fab fa-github"></i>view code</button>
-                    </a>
-                    <a href="https://lenofurniture-web.github.io/" target="_blank">
-                        <button class="project-btn"><i id="project-icon" class="fas fa-eye"></i>live preview</button>
-                    </a>
+                 <!-- 2 -->
+                 <div class="project">
+                    <div class="vid-container">
+                        <video width="320" height="240" muted autoplay loop>
+                            <source src="movietime-web..mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="btn-and-description">
+                        <p class="project-title">
+                            MOVIE TIME API
+                            <br>
+                            (Personal project)
+                        </p>
+                        <p class="using">HTML • CSS • JavaScript • API</p>
+                        <div class="project-btn-container">
+                            <a href="https://github.com/naralcantara001/movietime-web.github.io" target="_blank">
+                                <button class="project-btn-git">
+                                    <i id="project-icon" class="fab fa-github"></i>
+                                    view code
+                                </button>
+                            </a>
+                            
+                            <a href="https://movietime-web.github.io/" target="_blank">
+                                <button class="project-btn-preview">
+                                    <i id="project-icon" class="fas fa-eye"></i>
+                                    live preview
+                                </button>
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 3 -->
+                <div class="project">
+                    <div class=vid-container>
+                        <video width="320" height="240" muted autoplay loop>
+                            <source src="lenofurniture-web.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="btn-and-description">
+                        <p class="project-title">
+                            Leno Furniture
+                            <br>
+                            (Personal project)
+                        </p>
+                        <p class="using">HTML • CSS • JavaScript</p>
+                        <div class="project-btn-container">
+                            <a href="https://github.com/naralcantara001/lenofurniture-web.github.io" target="_blank">
+                                <button class="project-btn-git">
+                                    <i id="project-icon" class="fab fa-github"></i>
+                                    view code
+                                </button>
+                            </a>
+                            
+                            <a href="https://lenofurniture-web.github.io/" target="_blank">
+                                <button class="project-btn-preview">
+                                    <i id="project-icon" class="fas fa-eye"></i>
+                                    live preview
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+               
             </div>
         </div>
+
+        </div>
+        <!--  -->
+        
+        <br>
+        <br>
+        <!--  project js -->
+        <h3 class="title js">Javascript Project</h3>
+        <!-- product box -->
+        <div class="scroll-box">
+            <!-- bg color -->
+            <div class="backgroundColorChanger">
+                <h1 class="project-js-title">change the background</h1>
+                <div class="colors">
+                    <span class="orange">orange</span>
+                    <span class="black">black</span>
+                    <span class="pink">pink</span>
+                </div>
+                <button class="clearBtn">clear</button>
+            </div>
+            <!-- random quotes -->
+            <div class="randomQuotesGenerator">
+                <h1 class="project-js-title">random quotes generator</h1>
+                <div class="quotes">
+                    <p class="w">click the button below</p>
+                    <br>
+                    <p class="a">to generate a quote</p>
+                </div>
+                <button class="generateQuoteBtn">generate</button>
+            </div>
+            <!-- counter -->
+            <div class="counter">
+                <h1 class="project-js-title">counter</h1>
+                <div class="count">
+                    <button class="decrement">-</button>
+                    <p class="countStart">0</p>
+                    <button class="increment">+</button>
+                </div>
+                <button class="reset">reset</button>
+            </div>
+            <!-- modal -->
+            <div class="modal-wrapper">
+                <h1 class="project-js-title">modal</h1>
+                <button class="open-modal">open modal</button>
+            </div>
+            <!-- calculator -->
+            <!-- <div class="calculator"> -->
+            <div class="calculator">
+                <h1 class="project-js-title">calculator</h1>
+                <div class="calInputContainer">
+                    <input class="calInput" type="text" placeholder="0">
+                </div>
+                <div class="calBtnContainer">
+                    <button onclick="digits('7')" class="calBtn digits">7</button>
+                    <button onclick="digits('8')" class="calBtn digits">8</button>
+                    <button onclick="digits('9')" class="calBtn digits">9</button>
+                    <button onclick="digits('+')" class="calBtn operator">+</button>
+                    <button onclick="digits('4')" class="calBtn digits">4</button>
+                    <button onclick="digits('5')" class="calBtn digits">5</button>
+                    <button onclick="digits('6')" class="calBtn digits">6</button>
+                    <button onclick="digits('-')" class="calBtn operator">-</button>
+                    <button onclick="digits('1')" class="calBtn digits">1</button>
+                    <button onclick="digits('2')" class="calBtn digits">2</button>
+                    <button onclick="digits('3')" class="calBtn digits">3</button>
+                    <button onclick="digits('*')" class="calBtn operator">*</button>
+                    <button onclick="digits('0')" class="calBtn digits">0</button>
+                    <button onclick="Clear()" class="calBtn clear">C</button>
+                    <button onclick="equals()" class="calBtn equals">=</button>
+                    <button onclick="digits('/')" class="calBtn operator">/</button>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+        <!-- don't touch -->
     </section>
+
     <!-- contact -->
     <section id="contact">
         <div class="business">
