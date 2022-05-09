@@ -65,10 +65,20 @@ $white: #f2f2f2;
     transition: .8s ease;
 }
 
-// javascript active nav hover 
-.active {
-    border-bottom: 5px solid $dark;
+@mixin allBtnProject-mobile {
+    font-family: monospace;
+    padding: .3em 2.8em;
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: $orange;
+    color: $white;
+    border: 1px solid $lightOrange;
+    transition: .8s ease;
+    font-size: .4em;
 }
+
+
+
 
 // arrow up button
 #arrowUp {
@@ -92,12 +102,57 @@ $white: #f2f2f2;
     }
 }
 
+body {
+    scroll-snap-align: start;
+}
+
 // all section
 section {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 2em;
+    height: auto;
+}
+
+// javascript active nav hover 
+.active {
+    border-bottom: 5px solid $dark;
+}
+
+.active-sec {
+    // animation: fadeInTop .3s  ;
+    animation: fadeInTop 1s none;
+}
+
+// section{
+//     animation: fadeInTop 1.2s both;
+// }
+@keyframes fadeInTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    25% {
+        opacity: .3;
+        transform: translateY(75px);
+    }
+
+    50% {
+        opacity: .6;
+        transform: translateY(50px);
+    }
+
+    75% {
+        opacity: .7;
+        transform: translateY(750px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 // header nav
@@ -139,11 +194,12 @@ nav {
         border: none;
         display: inline-block;
         margin: 2em 0 2em 2em;
+        padding: 0;
 
         & a {
             text-decoration: none;
             color: $dark;
-            padding: 1em;
+            padding: .8em 1em;
             cursor: pointer;
 
             &:hover {
@@ -178,7 +234,7 @@ nav {
 #home {
     display: flex;
     justify-content: space-between;
-    padding: 15%;
+    padding: 3em 15%;
     letter-spacing: 2px;
     height: auto;
     box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
@@ -890,12 +946,95 @@ footer {
 }
 
 // media
+@media only screen and (max-width: 1000px) {
+    header {
+        position: fixed;
+    }
 
+    #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2em 0;
+    }
+
+    .name {
+        display: grid;
+        place-items: center;
+        margin: 2em 0;
+    }
+
+    #about,
+    #skills,
+    #projects {
+        padding: 5%;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav {
+        padding: .3em 0;
+    }
+
+    .links {
+        padding: .3em 0;
+    }
+
+    .main-nav {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding: 0 10%;
+    }
+
+    .burger {
+        font-size: .7em;
+    }
+
+    .nav-links {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        right: 0px;
+        height: auto;
+        top: 45px;
+        width: 100%;
+        background-image: linear-gradient(135deg, $transparentWhite, $pink);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        & li {
+            border-bottom: 1px solid $darkviolet;
+            width: 100%;
+            margin: 0;
+            padding: 1em;
+
+            & .links {
+                color: $white;
+            }
+        }
+    }
+    .info > span{
+        font-size: .8em
+    }
+
+
+}
 
 
 
 // mobile view
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 500px) {
     .product-box {
         max-width: 80%;
     }
@@ -923,10 +1062,10 @@ footer {
         padding: 1%;
     }
 
-    .logo {
-        background-color: #f2f2f2;
-    }
 
+.name{
+    margin: 1em 0;
+}
     nav {
         padding: 0;
         margin: 0;
@@ -1222,11 +1361,12 @@ footer {
     // project js
     .project-js-title {
         color: $white;
-        font-size: .6em;
+        font-size: .5em;
         font-family: monospace;
         text-align: center;
     }
-    .js{
+
+    .js {
         font-size: .5em;
     }
 
@@ -1272,7 +1412,7 @@ footer {
         }
 
         & .clearBtn {
-            @include allBtnProject;
+            @include allBtnProject-mobile;
             padding: .5em 3em;
         }
     }
@@ -1290,9 +1430,9 @@ footer {
             color: $white;
             border: 1px solid $lightOrange;
             width: 100%;
-            height: 15em;
+            height: 16em;
             margin: 1em 0;
-            padding: 1em;
+            padding: .3em;
             word-wrap: break-word;
 
             & .w,
@@ -1303,7 +1443,7 @@ footer {
         }
 
         & .generateQuoteBtn {
-            @include allBtnProject;
+            @include allBtnProject-mobile;
             padding: .5em 2em;
         }
     }
@@ -1352,7 +1492,7 @@ footer {
         }
 
         & .reset {
-            @include allBtnProject;
+            @include allBtnProject-mobile;
 
             &:hover {
                 background-color: $dark;
@@ -1473,7 +1613,7 @@ footer {
         font-weight: 700;
         cursor: pointer;
         border: 1px solid $lightOrange;
-        font-size: .4em;
+        font-size: .3em;
         background-color: $dark;
         color: aliceblue;
         transition: .3s ease;
@@ -1497,8 +1637,6 @@ footer {
         color: blueviolet;
     }
 
-
-    // footer
     // contact
     #contact {
         display: flex;
@@ -1512,22 +1650,16 @@ footer {
         font-size: .7em;
         letter-spacing: 2px;
         padding: 10%;
-
     }
-
 
     // footer
     footer {
         font-size: .4em;
     }
 
-
-
     nav {
         padding: .3em 0;
     }
-
-
 }
 
 .nav-active {
