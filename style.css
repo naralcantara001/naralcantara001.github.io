@@ -471,6 +471,13 @@ nav li a:hover {
   color: #e65c9c;
 }
 
+#skills .skill-container .skill-status .description {
+  font-family: monospace;
+  font-size: .5em;
+  color: #777;
+  letter-spacing: 1px;
+}
+
 #skills .skill-container .skill-set {
   width: 100%;
   display: -webkit-box;
@@ -546,7 +553,6 @@ nav li a:hover {
   display: grid;
   place-items: center;
   background-color: rgba(255, 255, 255, 0.2);
-  border-radius: 10px 0px 10px 0;
   width: 70%;
   position: relative;
 }
@@ -555,7 +561,6 @@ nav li a:hover {
   cursor: pointer;
   width: 100%;
   height: auto;
-  border-radius: 5px;
   padding: .5em;
   display: block;
 }
@@ -1411,6 +1416,7 @@ footer {
     color: #e65c9c;
   }
   #about .about-container .info span {
+    font-size: 1em;
     padding-left: .5em;
   }
   #skills {
@@ -1436,7 +1442,11 @@ footer {
     font-size: large;
   }
   #skills .skill-container .skill-status .skill-name {
-    font-size: .4em;
+    font-size: 10px;
+  }
+  #skills .skill-container .skill-status .description {
+    font-size: 4px;
+    color: #222;
   }
   #skills .skill-container .skill-set {
     font-size: .4em;

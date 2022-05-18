@@ -459,6 +459,12 @@ nav {
                 padding-left: .1em;
                 color: $pink;
             }
+            & .description{
+                font-family: monospace;
+                font-size: .5em;
+                color: #777;
+                letter-spacing: 1px;
+            }
         }
 
         & .skill-set {
@@ -520,7 +526,6 @@ nav {
         display: grid;
         place-items: center;
         background-color: $transparentWhite;
-        border-radius: 10px 0px 10px 0;
         width: 70%;
         position: relative;
 
@@ -528,7 +533,6 @@ nav {
             cursor: pointer;
             width: 100%;
             height: auto;
-            border-radius: 5px;
             padding: .5em;
             display: block;
         }
@@ -1186,6 +1190,7 @@ footer {
                 }
 
                 & span {
+                    font-size: 1em;
                     padding-left: .5em;
                 }
             }
@@ -1204,11 +1209,9 @@ footer {
         & .skill-container {
             width: 100%;
             height: auto;
-
             & .skill-status {
                 padding: 0 .3em .3em .3em;
                 margin: 1em .5em;
-
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -1219,7 +1222,11 @@ footer {
                 }
 
                 & .skill-name {
-                    font-size: .4em;
+                    font-size: 10px;
+                }
+                & .description{
+                    font-size: 4px;
+                    color: #222;
                 }
             }
 
@@ -1234,6 +1241,7 @@ footer {
                     padding: .2em 0;
                 }
             }
+
         }
     }
 
