@@ -113,6 +113,7 @@ section {
     align-items: center;
     font-size: 2em;
     height: auto;
+    background-color: #111;
 }
 
 // javascript active nav hover 
@@ -213,9 +214,6 @@ nav {
 }
 
 // mobile view nav
-.name {
-    line-height: 1.8em;
-}
 
 .burger {
     display: none;
@@ -232,35 +230,46 @@ nav {
 
 // home
 #home {
+    background: url(/gif2.gif);
+    background-size: cover;
     display: flex;
-    justify-content: space-between;
-    padding: 3em 15%;
+    flex-direction: column;
+    padding: 1em 0 3em 0;
     letter-spacing: 2px;
     height: auto;
     box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
 }
 
 .name {
+    line-height: 1.5em;
+    display: grid;
+    place-items: center;
+    & .myName{
+        font-size: 1.3em;
+        color: $white;
+    }
     & .greetings {
         font-size: .5em;
         font-weight: 600;
-        color: #777;
+        color: $white;
     }
 
     & .profession {
         color: $pink;
         font-weight: 800;
+        font-size: .6em
     }
 }
+
 
 #fabs {
     // github, linkedin, gmail - icon
     color: $white;
     border-radius: 50px;
     background-color: $dark;
-    padding: .8em;
+    padding: .5em;
     font-size: .5em;
-    margin: 1.5em 1em .3em .3em;
+   margin: 0 .5em;
     cursor: pointer;
     border: 2px solid $darkviolet;
 
@@ -272,13 +281,26 @@ nav {
     }
 }
 
+.myPhoto {
+    padding: .4em;
+    background-color: #111;
+    border-radius: 10px;
+    margin: 0;
+    border: 3px solid $white;
+    cursor: pointer;
+    transition: all ease-in-out .5s;
+    height: 7em;
+    box-shadow: 3px 5px 10px $darkviolet;
+    border-radius: 50%;
+}
+
 .see-project-btn {
     background-color: $orange;
     color: $white;
     padding: .5em 1em;
     font-size: .5em;
     letter-spacing: 1px;
-    margin-top: 7%;
+    margin-top: 2em;
     border: 1px solid $lightOrange;
     border-radius: 5px;
     cursor: pointer;
@@ -296,17 +318,7 @@ nav {
     }
 }
 
-.myPhoto {
-    padding: .4em;
-    background-color: #111;
-    border-radius: 10px;
-    margin: 2%;
-    border: 3px solid $white;
-    cursor: pointer;
-    transition: all ease-in-out .5s;
-    height: 10em;
-    box-shadow: 3px 5px 10px $darkviolet;
-}
+
 
 // about
 #about {
@@ -320,13 +332,13 @@ nav {
     letter-spacing: 2px;
     height: auto;
     text-align: left;
-    box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
+    
 
     & .title {
         text-align: left;
         justify-self: left;
         box-shadow: 15px 15px $lightOrange;
-        color: $dark;
+        color: $white;
         margin-bottom: 1em;
         padding: .1em;
     }
@@ -347,8 +359,8 @@ nav {
             cursor: pointer;
             padding: .5em;
             transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $darkviolet, $pink);
-            box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
+            background-image: linear-gradient(to bottom, $darkviolet, $dark);
+            box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
             color: $white;
 
             &:hover {
@@ -361,9 +373,9 @@ nav {
             cursor: pointer;
             padding: .5em;
             transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $darkviolet, $pink);
+            background-image: linear-gradient(to bottom, $dark, $darkviolet);
             color: $white;
-            box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
+            box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
 
             &:hover {
                 transform: scale(1.1);
@@ -376,10 +388,9 @@ nav {
             grid-area: work;
             padding: .5em;
             transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $darkviolet, $pink);
+            background-image: linear-gradient(to bottom, $dark, #111);
             color: $white;
-            box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
-
+            box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
             &:hover {
                 transform: scale(1.1);
             }
@@ -427,7 +438,7 @@ nav {
         text-align: left;
         justify-self: left;
         box-shadow: 15px 15px $lightOrange;
-        color: $dark;
+        color: $white;
         margin-bottom: 1em;
         padding: .1em;
     }
@@ -443,8 +454,8 @@ nav {
             border: 1px solid $lightOrange;
             cursor: pointer;
             transition: all ease .3s;
-            box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
-            background-image: linear-gradient(to right, $darkviolet, $pink);
+            box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
+            background-image: linear-gradient(to right, $darkviolet, $dark);
 
             &:hover {
                 transform: scale(1.1);
@@ -509,7 +520,7 @@ nav {
 
     & .title {
         box-shadow: 15px 15px $lightOrange;
-        color: $dark;
+        color: #fff;
         justify-self: left;
         margin-bottom: 1em;
         padding: .2em;
@@ -523,15 +534,15 @@ nav {
         justify-content: center;
         border-radius: 10px;
         width: 100%;
-        background-color: #111;
-        box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
+        background-color: $darkviolet;
+        box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
     }
 
     & .screenshot-container {
         width: fit-content;
         display: grid;
         place-items: center;
-        background-color: $transparentWhite;
+        background-color: $dark;
         width: 70%;
         position: relative;
 
@@ -559,7 +570,7 @@ nav {
     & .btn-and-description {
         width: 50%;
         padding: .7em;
-        background-image: linear-gradient(to bottom, $darkviolet, $pink);
+        background-image: linear-gradient(to bottom, $dark, $darkviolet);
 
         & .project-title {
             font-size: .6em;
@@ -626,14 +637,14 @@ nav {
 }
 
 .scroll-box {
-    background-image: linear-gradient(to right, $darkviolet, $pink);
+    background-image: linear-gradient(to right, $dark, #111);
     display: flex;
     flex-direction: row;
     justify-content: baseline;
     align-items: center;
     justify-items: center;
     padding: 1em;
-    border: 1px solid $pink;
+    border: 1px solid $darkviolet;
     border-radius: 10px;
     margin: 1em 0;
     // min-width: 100%;
@@ -965,13 +976,13 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2em 1em;
+        padding: 3em;
     }
 
     .name {
         display: grid;
         place-items: center;
-        margin: 2em 0;
+        margin: 0;
     }
 
     #about,
@@ -1019,7 +1030,7 @@ footer {
         height: auto;
         top: 45px;
         width: 100%;
-        background-image: linear-gradient(135deg, $transparentWhite, $pink);
+        background-image: linear-gradient(135deg, $transparentWhite, #111);
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
 
@@ -1038,10 +1049,6 @@ footer {
         font-size: .8em
     }
 
-
-}
-@media only screen and (max-width: 1000px){
-
     #projects {
         height: auto;
         display: grid;
@@ -1049,8 +1056,6 @@ footer {
         padding: 11%;
 
         & .title {
-            box-shadow: 15px 15px $lightOrange;
-            color: $dark;
             justify-self: left;
             margin-bottom: 1em;
             padding: 0 .2em .2em 0;
@@ -1077,7 +1082,10 @@ footer {
         }
     }
 
+
+
 }
+
 
 
 // mobile view
@@ -1105,14 +1113,9 @@ footer {
         width: 100%;
         position: fixed;
         top: 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
         padding: 1%;
     }
-
-
-.name{
-    margin: 1em 0;
-}
+    
     nav {
         padding: 0;
         margin: 0;
@@ -1140,7 +1143,7 @@ footer {
         height: auto;
         top: 45px;
         width: 100%;
-        background-image: linear-gradient(135deg, $transparentWhite, $pink);
+        background-image: linear-gradient(135deg, $transparentWhite, #111);
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
 
@@ -1162,28 +1165,52 @@ footer {
         align-items: center;
         text-align: center;
         flex-direction: column;
-        height: auto;
+        height: 100vh;
+        padding: 2em 0;
     }
 
-    .name h1 {
-        font-size: 1em;
+    .name {
+        line-height: 1.1em;
     }
+    
 
     .profession {
         font-size: .7em;
     }
 
     #fabs {
-        font-size: .3em;
-    }
-
-    .social {
-        margin: 5%;
+        font-size: .4em;
     }
 
     .myPhoto {
-        margin: 2em 0;
-        height: 7em;
+        margin-top: 1.5em;
+        height: 5em;
+    }
+
+    .name {
+        display: grid;
+        place-items: center;
+        & .myName{
+            font-size: .7em;
+            color: $white;
+        }
+        & .greetings {
+            font-size: .4em;
+            font-weight: 600;
+            color: #999;
+        }
+    
+        & .profession {
+            color: $pink;
+            font-weight: 800;
+            font-size: .6em
+        }
+    }
+
+    .see-project-btn {
+        margin-top: 2.5em;
+        padding: .5em 1em;
+        font-size: .5em;
     }
 
     // about
@@ -1199,7 +1226,6 @@ footer {
             text-align: left;
             justify-self: left;
             box-shadow: 15px 15px $lightOrange;
-            color: $dark;
             margin-bottom: 2em;
             padding: .1em;
             margin-left: .5em;
@@ -1290,8 +1316,6 @@ footer {
         padding: 11%;
 
         & .title {
-            box-shadow: 15px 15px $lightOrange;
-            color: $dark;
             justify-self: left;
             margin-bottom: 1em;
             padding: 0 .2em .2em 0;
@@ -1305,12 +1329,9 @@ footer {
             align-items: center;
             margin-bottom: 2em;
             padding: .2em;
-            color: $white;
             justify-content: center;
             border-radius: 10px;
             width: 100%;
-            background-color: #111;
-            box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
         }
 
         & .screenshot-container{
@@ -1346,14 +1367,11 @@ footer {
                 font-size: .5em;
                 cursor: pointer;
                 padding: .8em 1em;
-                background-color: $transparentWhite;
-                color: $white;
                 margin-bottom: .7em;
                 border-radius: 10px;
                 border: none;
                 transition: ease .3s;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-
                 &:hover {
                     transform: scale(1.2);
                 }
@@ -1364,8 +1382,6 @@ footer {
                 font-size: .5em;
                 cursor: pointer;
                 padding: 1.1em 1.5em;
-                background-color: $orange;
-                color: $white;
                 border-radius: 10px;
                 border: none;
                 transition: ease .3s;
@@ -1391,14 +1407,12 @@ footer {
     }
 
     .scroll-box {
-        background-image: linear-gradient(to right, $darkviolet, $pink);
         display: flex;
         flex-direction: row;
         justify-content: baseline;
         align-items: center;
         justify-items: center;
         padding: 1em;
-        border: 1px solid $pink;
         border-radius: 10px;
         margin: 1em 0;
         // min-width: 100%;
