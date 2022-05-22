@@ -51,6 +51,7 @@ section {
           align-items: center;
   font-size: 2em;
   height: auto;
+  background-color: #111;
 }
 
 .active {
@@ -183,10 +184,6 @@ nav li a:hover {
   border-radius: 3px;
 }
 
-.name {
-  line-height: 1.8em;
-}
-
 .burger {
   display: none;
   padding: 0;
@@ -201,37 +198,53 @@ nav li a:hover {
 }
 
 #home {
+  background: url(/gif2.gif);
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 3em 15%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1em 0 3em 0;
   letter-spacing: 2px;
   height: auto;
   -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
+.name {
+  line-height: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.name .myName {
+  font-size: 1.3em;
+  color: #f2f2f2;
+}
+
 .name .greetings {
   font-size: .5em;
   font-weight: 600;
-  color: #777;
+  color: #f2f2f2;
 }
 
 .name .profession {
   color: #e65c9c;
   font-weight: 800;
+  font-size: .6em;
 }
 
 #fabs {
   color: #f2f2f2;
   border-radius: 50px;
   background-color: #333;
-  padding: .8em;
+  padding: .5em;
   font-size: .5em;
-  margin: 1.5em 1em .3em .3em;
+  margin: 0 .5em;
   cursor: pointer;
   border: 2px solid #360167;
 }
@@ -244,13 +257,28 @@ nav li a:hover {
   border: 2px solid #360167;
 }
 
+.myPhoto {
+  padding: .4em;
+  background-color: #111;
+  border-radius: 10px;
+  margin: 0;
+  border: 3px solid #f2f2f2;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out .5s;
+  transition: all ease-in-out .5s;
+  height: 7em;
+  -webkit-box-shadow: 3px 5px 10px #360167;
+          box-shadow: 3px 5px 10px #360167;
+  border-radius: 50%;
+}
+
 .see-project-btn {
   background-color: #ffa500;
   color: #f2f2f2;
   padding: .5em 1em;
   font-size: .5em;
   letter-spacing: 1px;
-  margin-top: 7%;
+  margin-top: 2em;
   border: 1px solid #ffe5b4;
   border-radius: 5px;
   cursor: pointer;
@@ -268,20 +296,6 @@ nav li a:hover {
 
 .see-project-btn .arrow-down {
   margin-left: .8em;
-}
-
-.myPhoto {
-  padding: .4em;
-  background-color: #111;
-  border-radius: 10px;
-  margin: 2%;
-  border: 3px solid #f2f2f2;
-  cursor: pointer;
-  -webkit-transition: all ease-in-out .5s;
-  transition: all ease-in-out .5s;
-  height: 10em;
-  -webkit-box-shadow: 3px 5px 10px #360167;
-          box-shadow: 3px 5px 10px #360167;
 }
 
 #about {
@@ -302,8 +316,6 @@ nav li a:hover {
   letter-spacing: 2px;
   height: auto;
   text-align: left;
-  -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 #about .title {
@@ -312,7 +324,7 @@ nav li a:hover {
       justify-self: left;
   -webkit-box-shadow: 15px 15px #ffe5b4;
           box-shadow: 15px 15px #ffe5b4;
-  color: #333;
+  color: #f2f2f2;
   margin-bottom: 1em;
   padding: .1em;
 }
@@ -334,10 +346,10 @@ nav li a:hover {
   padding: .5em;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#e65c9c));
-  background-image: linear-gradient(to bottom, #360167, #e65c9c);
-  -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#333));
+  background-image: linear-gradient(to bottom, #360167, #333);
+  -webkit-box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.3);
   color: #f2f2f2;
 }
 
@@ -352,11 +364,11 @@ nav li a:hover {
   padding: .5em;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#e65c9c));
-  background-image: linear-gradient(to bottom, #360167, #e65c9c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#360167));
+  background-image: linear-gradient(to bottom, #333, #360167);
   color: #f2f2f2;
-  -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.3);
 }
 
 #about .about-container .grid2:hover {
@@ -374,11 +386,11 @@ nav li a:hover {
   padding: .5em;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#e65c9c));
-  background-image: linear-gradient(to bottom, #360167, #e65c9c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#111));
+  background-image: linear-gradient(to bottom, #333, #111);
   color: #f2f2f2;
-  -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.3);
 }
 
 #about .about-container .grid3:hover {
@@ -432,7 +444,7 @@ nav li a:hover {
       justify-self: left;
   -webkit-box-shadow: 15px 15px #ffe5b4;
           box-shadow: 15px 15px #ffe5b4;
-  color: #333;
+  color: #f2f2f2;
   margin-bottom: 1em;
   padding: .1em;
 }
@@ -450,10 +462,10 @@ nav li a:hover {
   cursor: pointer;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
-  -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-  background-image: -webkit-gradient(linear, left top, right top, from(#360167), to(#e65c9c));
-  background-image: linear-gradient(to right, #360167, #e65c9c);
+  -webkit-box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.5);
+          box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.5);
+  background-image: -webkit-gradient(linear, left top, right top, from(#360167), to(#333));
+  background-image: linear-gradient(to right, #360167, #333);
 }
 
 #skills .skill-container .skill-status:hover {
@@ -530,7 +542,7 @@ nav li a:hover {
 #projects .title {
   -webkit-box-shadow: 15px 15px #ffe5b4;
           box-shadow: 15px 15px #ffe5b4;
-  color: #333;
+  color: #fff;
   -ms-grid-column-align: left;
       justify-self: left;
   margin-bottom: 1em;
@@ -549,9 +561,9 @@ nav li a:hover {
           justify-content: center;
   border-radius: 10px;
   width: 100%;
-  background-color: #111;
-  -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-          box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: #360167;
+  -webkit-box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.3);
+          box-shadow: 1px 5px 20px rgba(255, 255, 255, 0.3);
 }
 
 #projects .screenshot-container {
@@ -561,7 +573,7 @@ nav li a:hover {
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #333;
   width: 70%;
   position: relative;
 }
@@ -576,8 +588,8 @@ nav li a:hover {
 #projects .btn-and-description {
   width: 50%;
   padding: .7em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#e65c9c));
-  background-image: linear-gradient(to bottom, #360167, #e65c9c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#360167));
+  background-image: linear-gradient(to bottom, #333, #360167);
 }
 
 #projects .btn-and-description .project-title {
@@ -648,8 +660,8 @@ nav li a:hover {
 }
 
 .scroll-box {
-  background-image: -webkit-gradient(linear, left top, right top, from(#360167), to(#e65c9c));
-  background-image: linear-gradient(to right, #360167, #e65c9c);
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#111));
+  background-image: linear-gradient(to right, #333, #111);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -665,7 +677,7 @@ nav li a:hover {
           align-items: center;
   justify-items: center;
   padding: 1em;
-  border: 1px solid #e65c9c;
+  border: 1px solid #360167;
   border-radius: 10px;
   margin: 1em 0;
   max-height: 20em;
@@ -1175,13 +1187,13 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2em 1em;
+    padding: 3em;
   }
   .name {
     display: -ms-grid;
     display: grid;
     place-items: center;
-    margin: 2em 0;
+    margin: 0;
   }
   #about,
   #skills,
@@ -1234,7 +1246,7 @@ footer {
     height: auto;
     top: 45px;
     width: 100%;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), #e65c9c);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), #111);
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5s ease-in;
@@ -1254,9 +1266,6 @@ footer {
   .info > span {
     font-size: .8em;
   }
-}
-
-@media only screen and (max-width: 1000px) {
   #projects {
     height: auto;
     display: -ms-grid;
@@ -1265,9 +1274,6 @@ footer {
     padding: 11%;
   }
   #projects .title {
-    -webkit-box-shadow: 15px 15px #ffe5b4;
-            box-shadow: 15px 15px #ffe5b4;
-    color: #333;
     -ms-grid-column-align: left;
         justify-self: left;
     margin-bottom: 1em;
@@ -1319,12 +1325,7 @@ footer {
     width: 100%;
     position: fixed;
     top: 0;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     padding: 1%;
-  }
-  .name {
-    margin: 1em 0;
   }
   nav {
     padding: 0;
@@ -1363,7 +1364,7 @@ footer {
     height: auto;
     top: 45px;
     width: 100%;
-    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), #e65c9c);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.2), #111);
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5s ease-in;
@@ -1396,9 +1397,10 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    padding: 1em;
   }
-  .name h1 {
-    font-size: 1em;
+  .name {
+    line-height: 1.1em;
   }
   .profession {
     font-size: .7em;
@@ -1406,12 +1408,32 @@ footer {
   #fabs {
     font-size: .3em;
   }
-  .social {
-    margin: 5%;
-  }
   .myPhoto {
-    margin: 2em 0;
-    height: 7em;
+    margin-top: 1.5em;
+    height: 5em;
+  }
+  .name {
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .name .myName {
+    font-size: .7em;
+    color: #f2f2f2;
+  }
+  .name .greetings {
+    font-size: .4em;
+    font-weight: 600;
+    color: #999;
+  }
+  .name .profession {
+    color: #e65c9c;
+    font-weight: 800;
+    font-size: .6em;
+  }
+  .see-project-btn {
+    padding: .4em 1em;
+    font-size: .4em;
   }
   #about {
     display: -webkit-box;
@@ -1436,7 +1458,6 @@ footer {
         justify-self: left;
     -webkit-box-shadow: 15px 15px #ffe5b4;
             box-shadow: 15px 15px #ffe5b4;
-    color: #333;
     margin-bottom: 2em;
     padding: .1em;
     margin-left: .5em;
@@ -1514,9 +1535,6 @@ footer {
     padding: 11%;
   }
   #projects .title {
-    -webkit-box-shadow: 15px 15px #ffe5b4;
-            box-shadow: 15px 15px #ffe5b4;
-    color: #333;
     -ms-grid-column-align: left;
         justify-self: left;
     margin-bottom: 1em;
@@ -1539,13 +1557,9 @@ footer {
             align-items: center;
     margin-bottom: 2em;
     padding: .2em;
-    color: #f2f2f2;
     justify-content: center;
     border-radius: 10px;
     width: 100%;
-    background-color: #111;
-    -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-            box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
   }
   #projects .screenshot-container {
     width: -webkit-fit-content;
@@ -1577,8 +1591,6 @@ footer {
     font-size: .5em;
     cursor: pointer;
     padding: .8em 1em;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #f2f2f2;
     margin-bottom: .7em;
     border-radius: 10px;
     border: none;
@@ -1596,8 +1608,6 @@ footer {
     font-size: .5em;
     cursor: pointer;
     padding: 1.1em 1.5em;
-    background-color: #ffa500;
-    color: #f2f2f2;
     border-radius: 10px;
     border: none;
     -webkit-transition: ease .3s;
@@ -1619,8 +1629,6 @@ footer {
     font-size: .5em;
   }
   .scroll-box {
-    background-image: -webkit-gradient(linear, left top, right top, from(#360167), to(#e65c9c));
-    background-image: linear-gradient(to right, #360167, #e65c9c);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1636,7 +1644,6 @@ footer {
             align-items: center;
     justify-items: center;
     padding: 1em;
-    border: 1px solid #e65c9c;
     border-radius: 10px;
     margin: 1em 0;
     max-height: 20em;
