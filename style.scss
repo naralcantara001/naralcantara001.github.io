@@ -305,7 +305,7 @@ nav {
     cursor: pointer;
     transition: all ease-in-out .5s;
     height: 10em;
-    box-shadow: 3px 5px 10px $pink;
+    box-shadow: 3px 5px 10px $darkviolet;
 }
 
 // about
@@ -347,9 +347,9 @@ nav {
             cursor: pointer;
             padding: .5em;
             transition: all ease .4s;
-            background-image: linear-gradient(to right, $white, $pink);
+            background-image: linear-gradient(to bottom, $darkviolet, $pink);
             box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
-            color: $dark;
+            color: $white;
 
             &:hover {
                 transform: scale(1.1);
@@ -361,8 +361,8 @@ nav {
             cursor: pointer;
             padding: .5em;
             transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $lightOrange, $white);
-            color: $dark;
+            background-image: linear-gradient(to bottom, $darkviolet, $pink);
+            color: $white;
             box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
 
             &:hover {
@@ -376,8 +376,8 @@ nav {
             grid-area: work;
             padding: .5em;
             transition: all ease .4s;
-            background-image: linear-gradient(to left, $pink, $lightOrange);
-            color: $dark;
+            background-image: linear-gradient(to bottom, $darkviolet, $pink);
+            color: $white;
             box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
 
             &:hover {
@@ -399,7 +399,7 @@ nav {
             padding: .3em;
 
             & i {
-                color: $pink;
+                color: $orange;
             }
 
             & span {
@@ -437,21 +437,21 @@ nav {
         height: auto;
 
         & .skill-status {
-            padding: .3em;
+            padding: .8em;
             margin: 1em .5em;
             border-radius: 10px;
             border: 1px solid $lightOrange;
             cursor: pointer;
             transition: all ease .3s;
             box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
-            background-image: linear-gradient(to right, $transparentWhite, $pink);
+            background-image: linear-gradient(to right, $darkviolet, $pink);
 
             &:hover {
                 transform: scale(1.1);
             }
 
             & span i {
-                color: $pink;
+                color: $orange;
             }
 
             & .skill-name {
@@ -462,8 +462,12 @@ nav {
             & .description{
                 font-family: monospace;
                 font-size: .5em;
-                color: #777;
+                color: $white;
                 letter-spacing: 1px;
+            }
+            & .bar{
+                border-radius: 10px;
+                padding: .1em;
             }
         }
 
@@ -475,6 +479,7 @@ nav {
             color: $dark;
             border-radius: 10px;
             border: 1px solid $lightOrange;
+            margin-top: 1em;
 
             & i {
                 color: $pink;
@@ -522,19 +527,20 @@ nav {
         box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
     }
 
-    & .vid-container {
+    & .screenshot-container {
+        width: fit-content;
         display: grid;
         place-items: center;
         background-color: $transparentWhite;
         width: 70%;
         position: relative;
 
-        & video {
+        & .screenshot {
             cursor: pointer;
             width: 100%;
             height: auto;
             padding: .5em;
-            display: block;
+            // display: block;
         }
 
         // & .overlay-on-vid{
@@ -553,7 +559,7 @@ nav {
     & .btn-and-description {
         width: 50%;
         padding: .7em;
-        background-image: linear-gradient(to bottom, $darkviolet, $orange);
+        background-image: linear-gradient(to bottom, $darkviolet, $pink);
 
         & .project-title {
             font-size: .6em;
@@ -959,7 +965,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 2em 0;
+        padding: 2em 1em;
     }
 
     .name {
@@ -1034,7 +1040,44 @@ footer {
 
 
 }
+@media only screen and (max-width: 1000px){
 
+    #projects {
+        height: auto;
+        display: grid;
+        place-items: left;
+        padding: 11%;
+
+        & .title {
+            box-shadow: 15px 15px $lightOrange;
+            color: $dark;
+            justify-self: left;
+            margin-bottom: 1em;
+            padding: 0 .2em .2em 0;
+            margin-left: 0;
+        }
+
+        & .project {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2em;            
+        }
+
+        & .screenshot-container{
+            width: fit-content;
+        }
+
+        & .btn-and-description {
+            width: 100%;
+            padding: 1em;
+    
+
+        }
+    }
+
+}
 
 
 // mobile view
@@ -1217,7 +1260,6 @@ footer {
                 }
 
                 & span i {
-                    color: $pink;
                     font-size: large;
                 }
 
@@ -1225,17 +1267,13 @@ footer {
                     font-size: 10px;
                 }
                 & .description{
-                    font-size: 6px;
-                    color: #222;
+                    font-size: 5px;
                 }
             }
 
             & .skill-set {
                 font-size: .4em;
-
-                & i {
-                    color: $pink;
-                }
+                margin-top: .2em;
 
                 & .bar {
                     padding: .2em 0;
@@ -1275,46 +1313,20 @@ footer {
             box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
         }
 
-        & .vid-container {
-            display: grid;
-            place-items: center;
-            background-color: $transparentWhite;
-            border-radius: 10px 0px 10px 0;
-            width: 100%;
-            position: relative;
-
-            & video {
-                cursor: pointer;
-                width: 100%;
-                height: auto;
-                border-radius: 5px;
-                padding: .3em;
-                display: block;
-            }
-
-            // & .overlay-on-vid{
-            //     cursor: pointer;
-            //     position: absolute;
-            //     top: 0;
-            //     left: 0;
-            //     right: 0;
-            //     bottom: 0;
-            //     width: 100%;
-            //     border-radius: 10px;
-            //     background-color: rgba(0, 0, 0, .7);
-            // }
+        & .screenshot-container{
+            width: fit-content;
         }
+
 
         & .btn-and-description {
             width: 100%;
             padding: .3em;
-            background-image: linear-gradient(to bottom, $darkviolet, $orange);
+    
 
             & .project-title {
                 font-size: .4em;
                 padding-bottom: 1em;
                 margin-bottom: 1em;
-                border-bottom: 3px solid $orange;
             }
 
             & .using {

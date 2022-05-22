@@ -280,8 +280,8 @@ nav li a:hover {
   -webkit-transition: all ease-in-out .5s;
   transition: all ease-in-out .5s;
   height: 10em;
-  -webkit-box-shadow: 3px 5px 10px #e65c9c;
-          box-shadow: 3px 5px 10px #e65c9c;
+  -webkit-box-shadow: 3px 5px 10px #360167;
+          box-shadow: 3px 5px 10px #360167;
 }
 
 #about {
@@ -324,8 +324,7 @@ nav li a:hover {
       grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-gap: .5em;
-      grid-template-areas: "personal education"
- "work work";
+      grid-template-areas: "personal education" "work work";
   padding: .5em;
 }
 
@@ -335,11 +334,11 @@ nav li a:hover {
   padding: .5em;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f2f2f2), to(#e65c9c));
-  background-image: linear-gradient(to right, #f2f2f2, #e65c9c);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#e65c9c));
+  background-image: linear-gradient(to bottom, #360167, #e65c9c);
   -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-  color: #333;
+  color: #f2f2f2;
 }
 
 #about .about-container .grid1:hover {
@@ -353,9 +352,9 @@ nav li a:hover {
   padding: .5em;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffe5b4), to(#f2f2f2));
-  background-image: linear-gradient(to bottom, #ffe5b4, #f2f2f2);
-  color: #333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#e65c9c));
+  background-image: linear-gradient(to bottom, #360167, #e65c9c);
+  color: #f2f2f2;
   -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
 }
@@ -375,9 +374,9 @@ nav li a:hover {
   padding: .5em;
   -webkit-transition: all ease .4s;
   transition: all ease .4s;
-  background-image: -webkit-gradient(linear, right top, left top, from(#e65c9c), to(#ffe5b4));
-  background-image: linear-gradient(to left, #e65c9c, #ffe5b4);
-  color: #333;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#e65c9c));
+  background-image: linear-gradient(to bottom, #360167, #e65c9c);
+  color: #f2f2f2;
   -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
 }
@@ -400,7 +399,7 @@ nav li a:hover {
 }
 
 #about .about-container .info i {
-  color: #e65c9c;
+  color: #ffa500;
 }
 
 #about .about-container .info span {
@@ -444,7 +443,7 @@ nav li a:hover {
 }
 
 #skills .skill-container .skill-status {
-  padding: .3em;
+  padding: .8em;
   margin: 1em .5em;
   border-radius: 10px;
   border: 1px solid #ffe5b4;
@@ -453,8 +452,8 @@ nav li a:hover {
   transition: all ease .3s;
   -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
           box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), to(#e65c9c));
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), #e65c9c);
+  background-image: -webkit-gradient(linear, left top, right top, from(#360167), to(#e65c9c));
+  background-image: linear-gradient(to right, #360167, #e65c9c);
 }
 
 #skills .skill-container .skill-status:hover {
@@ -463,7 +462,7 @@ nav li a:hover {
 }
 
 #skills .skill-container .skill-status span i {
-  color: #e65c9c;
+  color: #ffa500;
 }
 
 #skills .skill-container .skill-status .skill-name {
@@ -475,8 +474,13 @@ nav li a:hover {
 #skills .skill-container .skill-status .description {
   font-family: monospace;
   font-size: .5em;
-  color: #777;
+  color: #f2f2f2;
   letter-spacing: 1px;
+}
+
+#skills .skill-container .skill-status .bar {
+  border-radius: 10px;
+  padding: .1em;
 }
 
 #skills .skill-container .skill-set {
@@ -491,6 +495,7 @@ nav li a:hover {
   color: #333;
   border-radius: 10px;
   border: 1px solid #ffe5b4;
+  margin-top: 1em;
 }
 
 #skills .skill-container .skill-set i {
@@ -549,7 +554,10 @@ nav li a:hover {
           box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
 }
 
-#projects .vid-container {
+#projects .screenshot-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   display: -ms-grid;
   display: grid;
   place-items: center;
@@ -558,19 +566,18 @@ nav li a:hover {
   position: relative;
 }
 
-#projects .vid-container video {
+#projects .screenshot-container .screenshot {
   cursor: pointer;
   width: 100%;
   height: auto;
   padding: .5em;
-  display: block;
 }
 
 #projects .btn-and-description {
   width: 50%;
   padding: .7em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#ffa500));
-  background-image: linear-gradient(to bottom, #360167, #ffa500);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#e65c9c));
+  background-image: linear-gradient(to bottom, #360167, #e65c9c);
 }
 
 #projects .btn-and-description .project-title {
@@ -1168,7 +1175,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 2em 0;
+    padding: 2em 1em;
   }
   .name {
     display: -ms-grid;
@@ -1246,6 +1253,51 @@ footer {
   }
   .info > span {
     font-size: .8em;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #projects {
+    height: auto;
+    display: -ms-grid;
+    display: grid;
+    place-items: left;
+    padding: 11%;
+  }
+  #projects .title {
+    -webkit-box-shadow: 15px 15px #ffe5b4;
+            box-shadow: 15px 15px #ffe5b4;
+    color: #333;
+    -ms-grid-column-align: left;
+        justify-self: left;
+    margin-bottom: 1em;
+    padding: 0 .2em .2em 0;
+    margin-left: 0;
+  }
+  #projects .project {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 2em;
+  }
+  #projects .screenshot-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #projects .btn-and-description {
+    width: 100%;
+    padding: 1em;
   }
 }
 
@@ -1439,21 +1491,17 @@ footer {
             transform: scale(1.1);
   }
   #skills .skill-container .skill-status span i {
-    color: #e65c9c;
     font-size: large;
   }
   #skills .skill-container .skill-status .skill-name {
     font-size: 10px;
   }
   #skills .skill-container .skill-status .description {
-    font-size: 6px;
-    color: #222;
+    font-size: 5px;
   }
   #skills .skill-container .skill-set {
     font-size: .4em;
-  }
-  #skills .skill-container .skill-set i {
-    color: #e65c9c;
+    margin-top: .2em;
   }
   #skills .skill-container .skill-set .bar {
     padding: .2em 0;
@@ -1499,34 +1547,19 @@ footer {
     -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
             box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.1);
   }
-  #projects .vid-container {
-    display: -ms-grid;
-    display: grid;
-    place-items: center;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 10px 0px 10px 0;
-    width: 100%;
-    position: relative;
-  }
-  #projects .vid-container video {
-    cursor: pointer;
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    padding: .3em;
-    display: block;
+  #projects .screenshot-container {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   #projects .btn-and-description {
     width: 100%;
     padding: .3em;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#360167), to(#ffa500));
-    background-image: linear-gradient(to bottom, #360167, #ffa500);
   }
   #projects .btn-and-description .project-title {
     font-size: .4em;
     padding-bottom: 1em;
     margin-bottom: 1em;
-    border-bottom: 3px solid #ffa500;
   }
   #projects .btn-and-description .using {
     font-size: .3em;
