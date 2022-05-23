@@ -121,8 +121,8 @@ section {
 
 header {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f2f2f2), to(rgba(255, 255, 255, 0.2)));
-  background-image: linear-gradient(to right, #f2f2f2, rgba(255, 255, 255, 0.2));
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0.2)), to(#333));
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), #333);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -145,10 +145,9 @@ header {
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 1.8em;
   cursor: pointer;
-  color: #ffa500;
-  text-shadow: 1px 1px 15px #f2f2f2;
+  color: #f2f2f2;
 }
 
 a {
@@ -165,14 +164,14 @@ nav ul {
 nav li {
   border: none;
   display: inline-block;
-  margin: 2em 0 2em 2em;
+  margin: 1em 0 1em 1em;
   padding: 0;
 }
 
 nav li a {
   text-decoration: none;
-  color: #333;
-  padding: .8em 1em;
+  color: #f2f2f2;
+  padding: .3em .8em;
   cursor: pointer;
 }
 
@@ -193,7 +192,7 @@ nav li a:hover {
 .burger div {
   width: 3em;
   height: .2em;
-  background-color: #333;
+  background-color: #f2f2f2;
   margin: .5em 0;
 }
 
@@ -241,12 +240,12 @@ nav li a:hover {
 #fabs {
   color: #f2f2f2;
   border-radius: 50px;
-  background-color: #333;
+  background-color: #360167;
   padding: .5em;
   font-size: .5em;
   margin: 0 .5em;
   cursor: pointer;
-  border: 2px solid #360167;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #fabs:hover {
@@ -254,7 +253,7 @@ nav li a:hover {
   background-color: #f2f2f2;
   -webkit-transition: all ease-out .5s;
   transition: all ease-out .5s;
-  border: 2px solid #360167;
+  border: 1px solid #360167;
 }
 
 .myPhoto {
@@ -312,18 +311,16 @@ nav li a:hover {
   color: #333;
   letter-spacing: 2px;
   height: auto;
-  padding: 3em 15%;
+  padding: 5em 15%;
   letter-spacing: 2px;
   height: auto;
   text-align: left;
 }
 
 #about .title {
-  text-align: left;
-  -ms-grid-column-align: left;
-      justify-self: left;
-  -webkit-box-shadow: 15px 15px #ffe5b4;
-          box-shadow: 15px 15px #ffe5b4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #f2f2f2;
   margin-bottom: 1em;
   padding: .1em;
@@ -335,13 +332,12 @@ nav li a:hover {
   -ms-grid-columns: 1fr 2fr;
       grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
-  grid-gap: .5em;
+  grid-gap: 0;
       grid-template-areas: "personal education" "work work";
   padding: .5em;
 }
 
 #about .about-container .grid1 {
-  border-radius: 10px;
   cursor: pointer;
   padding: .5em;
   -webkit-transition: all ease .4s;
@@ -359,7 +355,6 @@ nav li a:hover {
 }
 
 #about .about-container .grid2 {
-  border-radius: 10px;
   cursor: pointer;
   padding: .5em;
   -webkit-transition: all ease .4s;
@@ -377,7 +372,6 @@ nav li a:hover {
 }
 
 #about .about-container .grid3 {
-  border-radius: 10px;
   cursor: pointer;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -406,8 +400,8 @@ nav li a:hover {
 }
 
 #about .about-container .info {
-  font-size: .5em;
-  padding: .3em;
+  font-size: .4em;
+  padding: .5em;
 }
 
 #about .about-container .info i {
@@ -439,11 +433,9 @@ nav li a:hover {
 }
 
 #skills .title {
-  text-align: left;
-  -ms-grid-column-align: left;
-      justify-self: left;
-  -webkit-box-shadow: 15px 15px #ffe5b4;
-          box-shadow: 15px 15px #ffe5b4;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   color: #f2f2f2;
   margin-bottom: 1em;
   padding: .1em;
@@ -464,8 +456,8 @@ nav li a:hover {
   transition: all ease .3s;
   -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
-  background-image: -webkit-gradient(linear, left top, right top, from(#360167), to(#333));
-  background-image: linear-gradient(to right, #360167, #333);
+  background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#111));
+  background-image: linear-gradient(to right, #333, #111);
 }
 
 #skills .skill-container .skill-status:hover {
@@ -519,6 +511,7 @@ nav li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #f2f2f2;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -527,7 +520,7 @@ nav li a:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #ffe5b4;
+  background-color: #360167;
   font-size: .8em;
 }
 
@@ -540,13 +533,10 @@ nav li a:hover {
 }
 
 #projects .title {
-  -webkit-box-shadow: 15px 15px #ffe5b4;
-          box-shadow: 15px 15px #ffe5b4;
-  color: #fff;
-  -ms-grid-column-align: left;
-      justify-self: left;
+  text-align: center;
+  color: #f2f2f2;
   margin-bottom: 1em;
-  padding: .2em;
+  padding: .1em;
 }
 
 #projects .project {
@@ -561,7 +551,7 @@ nav li a:hover {
           justify-content: center;
   border-radius: 10px;
   width: 100%;
-  background-color: #360167;
+  background-color: rgba(255, 255, 255, 0.2);
   -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
           box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
 }
@@ -1135,7 +1125,7 @@ nav li a:hover {
 #contact .business a #faabs {
   color: #f2f2f2;
   border-radius: 50px;
-  background-color: #ffa500;
+  background-color: #111;
   padding: .8em;
   font-size: 1em;
   margin: 1.5em 1em .3em .3em;
@@ -1187,6 +1177,7 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    text-align: center;
     padding: 3em;
   }
   .name {
@@ -1274,8 +1265,6 @@ footer {
     padding: 11%;
   }
   #projects .title {
-    -ms-grid-column-align: left;
-        justify-self: left;
     margin-bottom: 1em;
     padding: 0 .2em .2em 0;
     margin-left: 0;
@@ -1454,11 +1443,6 @@ footer {
     padding: 2em 5%;
   }
   #about .title {
-    text-align: left;
-    -ms-grid-column-align: left;
-        justify-self: left;
-    -webkit-box-shadow: 15px 15px #ffe5b4;
-            box-shadow: 15px 15px #ffe5b4;
     margin-bottom: 2em;
     padding: .1em;
     margin-left: .5em;
@@ -1536,8 +1520,6 @@ footer {
     padding: 11%;
   }
   #projects .title {
-    -ms-grid-column-align: left;
-        justify-self: left;
     margin-bottom: 1em;
     padding: 0 .2em .2em 0;
     margin-left: 0;
