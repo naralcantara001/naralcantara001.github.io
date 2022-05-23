@@ -356,7 +356,7 @@ nav {
             cursor: pointer;
             padding: .5em;
             transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $darkviolet, $dark);
+            background-image: linear-gradient(to bottom, $dark, #111);
             box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
             color: $white;
 
@@ -369,7 +369,7 @@ nav {
             cursor: pointer;
             padding: .5em;
             transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $dark, $darkviolet);
+            background-image: linear-gradient(to bottom, $dark, #111);
             color: $white;
             box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
 
@@ -392,9 +392,9 @@ nav {
         }
 
         & h5 {
-            font-size: .8em;
-            padding: 1em 0;
-            margin-bottom: .3em;
+            font-size: .7em;
+            padding: .7em 0 ;
+            margin-bottom: .5em;
             border-bottom: 3px solid $orange;
         }
 
@@ -459,8 +459,7 @@ nav {
             }
 
             & .skill-name {
-                font-size: .7em;
-                padding-left: .1em;
+                font-size: .6em;
                 color: $pink;
             }
             & .description{
@@ -525,7 +524,6 @@ nav {
         padding: .5em;
         color: $white;
         justify-content: center;
-        border-radius: 10px;
         width: 100%;
         background-color: $transparentWhite;
         box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
@@ -1030,14 +1028,9 @@ footer {
         transition: transform 0.5s ease-in;
 
         & li {
-            border-bottom: 1px solid $darkviolet;
             width: 100%;
             margin: 0;
             padding: 1em;
-
-            & .links {
-                color: $white;
-            }
         }
     }
     .info > span{
@@ -1071,8 +1064,6 @@ footer {
         & .btn-and-description {
             width: 100%;
             padding: 1em;
-    
-
         }
     }
 
@@ -1137,18 +1128,19 @@ footer {
         height: auto;
         top: 45px;
         width: 100%;
-        background-image: linear-gradient(135deg, $transparentWhite, #111);
+        background-image: linear-gradient(to right, $dark, #111 );
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
 
         & li {
-            border-bottom: 1px solid $darkviolet;
+            border-bottom: 1px solid $transparentWhite;
             width: 100%;
             margin: 0;
             padding: 1em;
 
             & .links {
                 color: $white;
+                padding: .3em;
             }
         }
     }
@@ -1186,7 +1178,6 @@ footer {
         place-items: center;
         & .myName{
             font-size: .7em;
-            color: $white;
         }
         & .greetings {
             font-size: .4em;
@@ -1195,7 +1186,6 @@ footer {
         }
     
         & .profession {
-            color: $pink;
             font-weight: 800;
             font-size: .6em
         }
@@ -1216,12 +1206,6 @@ footer {
         width: 100%;
         padding: 2em 5%;
 
-        & .title {
-            margin-bottom: 2em;
-            padding: .1em;
-            margin-left: .5em;
-        }
-
         & .about-container {
             display: flex;
             flex-direction: column;
@@ -1238,17 +1222,10 @@ footer {
             }
 
             & .info {
-                // display: flex;
-                // align-items: center;
                 letter-spacing: 1px;
                 font-size: 9px;
                 padding: .3em;
                 line-height: 1.5em;
-
-                & i {
-                    color: $pink;
-                }
-
                 & span {
                     font-size: 1em;
                     padding-left: .5em;
@@ -1261,10 +1238,6 @@ footer {
 
     #skills {
         padding: 2em 5%;
-
-        & .title {
-            margin-left: .5em;
-        }
 
         & .skill-container {
             width: 100%;
@@ -1284,7 +1257,7 @@ footer {
                     font-size: 10px;
                 }
                 & .description{
-                    font-size: 5px;
+                    font-size: 7px;
                 }
             }
 
@@ -1304,13 +1277,7 @@ footer {
         height: auto;
         display: grid;
         place-items: left;
-        padding: 11%;
-
-        & .title {
-            margin-bottom: 1em;
-            padding: 0 .2em .2em 0;
-            margin-left: 0;
-        }
+        padding: 2em 11%;
 
         & .project {
             display: flex;
@@ -1320,7 +1287,6 @@ footer {
             margin-bottom: 2em;
             padding: .2em;
             justify-content: center;
-            border-radius: 10px;
             width: 100%;
         }
 
@@ -1358,7 +1324,6 @@ footer {
                 cursor: pointer;
                 padding: .8em 1em;
                 margin-bottom: .7em;
-                border-radius: 10px;
                 border: none;
                 transition: ease .3s;
                 box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
@@ -1386,7 +1351,6 @@ footer {
 
     // project js
     .project-js-title {
-        color: $white;
         font-size: .5em;
         font-family: monospace;
         text-align: center;
