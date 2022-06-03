@@ -541,6 +541,9 @@ nav li a:hover {
 #skills .list {
   display: -ms-grid;
   display: grid;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 #skills .list b {
@@ -548,6 +551,7 @@ nav li a:hover {
 }
 
 #skills .list span {
+  height: auto;
   text-align: left;
   color: #f2f2f2;
   font-size: 15px;

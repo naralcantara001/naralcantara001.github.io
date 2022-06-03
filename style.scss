@@ -516,10 +516,13 @@ nav {
     }
     & .list{
         display: grid;
+        width: fit-content;
+
         & b{
             color: $orange;
         }
         & span{
+            height: auto;
             text-align: left;
             color: $white;
             font-size: 15px;
