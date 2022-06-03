@@ -502,6 +502,40 @@ nav {
             }
         }
     }
+    & .other-skills{
+        padding: .8em;
+        margin: 1em .5em;
+        border-radius: 10px;
+        border: 1px solid $lightOrange;
+        background-image: linear-gradient(to right, $dark, #111);
+        & .skill-name {
+            font-size: .6em;
+            color: $pink;
+            padding-left: 10px;
+        }
+    }
+    & .list{
+        display: grid;
+        & b{
+            color: $orange;
+        }
+        & span{
+            text-align: left;
+            color: $white;
+            font-size: 15px;
+            padding: 15px 20px;
+            margin: 10px;
+            border: 1px solid $lightOrange;
+            background-color: $darkviolet;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all ease .3s;
+            box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
 }
 
 // projects
