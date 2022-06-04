@@ -334,8 +334,7 @@ nav li a:hover {
       grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-gap: 0;
-      grid-template-areas: "personal education"
- "work work";
+      grid-template-areas: "personal education" "work work";
   padding: .5em;
 }
 
@@ -379,6 +378,8 @@ nav li a:hover {
 
 #about .about-container .grid3 {
   cursor: pointer;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: work;
   padding: .5em;
