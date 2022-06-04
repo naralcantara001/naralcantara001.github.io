@@ -32,7 +32,7 @@ html {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   background-color: #f2f2f2;
-  color: #360167;
+  color: #3F0071;
 }
 
 body {
@@ -240,7 +240,7 @@ nav li a:hover {
 #fabs {
   color: #f2f2f2;
   border-radius: 50px;
-  background-color: #360167;
+  background-color: #3F0071;
   padding: .5em;
   font-size: .5em;
   margin: 0 .5em;
@@ -253,7 +253,7 @@ nav li a:hover {
   background-color: #f2f2f2;
   -webkit-transition: all ease-out .5s;
   transition: all ease-out .5s;
-  border: 1px solid #360167;
+  border: 1px solid #3F0071;
 }
 
 .myPhoto {
@@ -266,8 +266,8 @@ nav li a:hover {
   -webkit-transition: all ease-in-out .5s;
   transition: all ease-in-out .5s;
   height: 7em;
-  -webkit-box-shadow: 3px 5px 10px #360167;
-          box-shadow: 3px 5px 10px #360167;
+  -webkit-box-shadow: 3px 5px 10px #3F0071;
+          box-shadow: 3px 5px 10px #3F0071;
   border-radius: 50%;
 }
 
@@ -286,7 +286,7 @@ nav li a:hover {
 }
 
 .see-project-btn:hover {
-  background-color: #360167;
+  background-color: #3F0071;
   color: #f2f2f2;
   border: 1px solid #111;
   -webkit-transition: all ease-out .5s;
@@ -327,6 +327,7 @@ nav li a:hover {
 }
 
 #about .about-container {
+  width: 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 2fr;
@@ -352,6 +353,10 @@ nav li a:hover {
 #about .about-container .grid1:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#about .about-container .grid1 span {
+  font-style: oblique;
 }
 
 #about .about-container .grid2 {
@@ -410,6 +415,20 @@ nav li a:hover {
 
 #about .about-container .info span {
   padding-left: .5em;
+}
+
+#about .about-container .info span .address, #about .about-container .info span .company {
+  color: #e65c9c;
+  font-style: oblique;
+}
+
+#about .about-container .info span .date {
+  color: #ffe5b4;
+}
+
+#about .about-container .info span .task {
+  color: #884abb;
+  font-style: oblique;
 }
 
 #skills {
@@ -519,12 +538,14 @@ nav li a:hover {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  background-color: #360167;
+  background-color: #3F0071;
   font-size: .8em;
 }
 
 #skills .other-skills {
-  padding: .8em;
+  height: auto;
+  padding: .5em;
+  padding-right: 1em;
   margin: 1em .5em;
   border-radius: 10px;
   border: 1px solid #ffe5b4;
@@ -541,9 +562,6 @@ nav li a:hover {
 #skills .list {
   display: -ms-grid;
   display: grid;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
 }
 
 #skills .list b {
@@ -551,6 +569,8 @@ nav li a:hover {
 }
 
 #skills .list span {
+  word-break: break-all;
+  width: 100%;
   height: auto;
   text-align: left;
   color: #f2f2f2;
@@ -558,7 +578,7 @@ nav li a:hover {
   padding: 15px 20px;
   margin: 10px;
   border: 1px solid #ffe5b4;
-  background-color: #360167;
+  background-color: #3F0071;
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all ease .3s;
@@ -625,8 +645,8 @@ nav li a:hover {
 #projects .btn-and-description {
   width: 50%;
   padding: .7em;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#360167));
-  background-image: linear-gradient(to bottom, #333, #360167);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#333), to(#3F0071));
+  background-image: linear-gradient(to bottom, #333, #3F0071);
 }
 
 #projects .btn-and-description .project-title {
@@ -714,7 +734,7 @@ nav li a:hover {
           align-items: center;
   justify-items: center;
   padding: 1em;
-  border: 1px solid #360167;
+  border: 1px solid #3F0071;
   border-radius: 10px;
   margin: 1em 0;
   max-height: 20em;
@@ -1543,6 +1563,10 @@ footer {
   }
   #skills .skill-container .skill-set .bar {
     padding: .2em 0;
+  }
+  #skills .list span {
+    font-size: 11px;
+    padding: 18px;
   }
   #projects {
     height: auto;

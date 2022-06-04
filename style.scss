@@ -13,7 +13,7 @@ html {
 }
 
 // sassy
-$darkviolet: #360167;
+$darkviolet: #3F0071;
 $pink: #e65c9c;
 $transparentWhite: rgba(255, 255, 255, 0.2);
 $orange: #ffa500;
@@ -342,6 +342,7 @@ nav {
     }
 
     & .about-container {
+        width: 100%;
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-auto-rows: auto;
@@ -362,6 +363,9 @@ nav {
 
             &:hover {
                 transform: scale(1.1);
+            }
+            & span{
+                font-style: oblique;
             }
         }
 
@@ -410,9 +414,21 @@ nav {
 
             & span {
                 padding-left: .5em;
+                & .address, & .company{
+                    color: $pink;
+                    font-style: oblique;
+                }
+                & .date{
+                    color: $lightOrange;
+                }
+                & .task{
+                    color: #884abb;
+                    font-style: oblique;
+                }
             }
         }
     }
+    
 }
 
 // Skill ver 2
@@ -503,7 +519,10 @@ nav {
         }
     }
     & .other-skills{
-        padding: .8em;
+        // display: grid;
+        height: auto;
+        padding: .5em;
+        padding-right: 1em;
         margin: 1em .5em;
         border-radius: 10px;
         border: 1px solid $lightOrange;
@@ -516,12 +535,14 @@ nav {
     }
     & .list{
         display: grid;
-        width: fit-content;
+        // width: fit-content;
 
         & b{
             color: $orange;
         }
         & span{
+            word-break: break-all;
+            width: 100%;
             height: auto;
             text-align: left;
             color: $white;
@@ -1307,6 +1328,12 @@ footer {
                 }
             }
 
+        }
+        & .list{
+            & span{
+                font-size: 11px;
+                padding: 18px;
+            }
         }
     }
 
