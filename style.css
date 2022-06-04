@@ -334,7 +334,8 @@ nav li a:hover {
       grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-gap: 0;
-      grid-template-areas: "personal education" "work work";
+      grid-template-areas: "personal education"
+ "work work";
   padding: .5em;
 }
 
