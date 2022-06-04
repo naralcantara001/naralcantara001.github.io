@@ -379,8 +379,6 @@ nav li a:hover {
 
 #about .about-container .grid3 {
   cursor: pointer;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: work;
   padding: .5em;
