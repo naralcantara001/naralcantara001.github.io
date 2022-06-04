@@ -7,7 +7,12 @@ function activeMenu(){
     while(--len && window.scrollY + 97 < sec[len].offsetTop){}
     li.forEach(ltx => ltx.classList.remove("active"));
     li[len].classList.add("active");
+
+    // sec.forEach(ltx => ltx.classList.remove(".section"));
+    // sec[len].classList.add("active-sec");
 }
+
+// 
 
 activeMenu();
 window.addEventListener("scroll", activeMenu);
@@ -21,11 +26,11 @@ loop: true
 typewriter
 .start()
 .pauseFor(200)
-.typeString("a Web Developer")
+.typeString("a Front-end Developer")
 .pauseFor(700)
-.deleteChars(14)
+.deleteChars(19)
 .changeDeleteSpeed(40)
-.typeString(" Web Developer.")
+.typeString(" Front-end Developer.")
 .pauseFor(500)
 
 
@@ -53,37 +58,37 @@ arrowUp.addEventListener('click', () => {
     document.documentElement.scrollTop = 0;
 })
 // carousel
-const sliders = document.querySelector('.carousel-box');
-var scrollPerClick;
-var ImagePadding = 10;
+// const sliders = document.querySelector('.carousel-box');
+// var scrollPerClick;
+// var ImagePadding = 10;
 
-jsProject();
+// jsProject();
 
-var scrollAmount = 0;
+// var scrollAmount = 0;
 
-function sliderScrollLeft(){
-    sliders.scrollTo({
-        top:0,
-        left:(scrollAmount),
-        behavior: "smooth"
-    });
-    if(scrollAmount < 0 ){
-        scrollAmount = 0;
-    }
-}
+// function sliderScrollLeft(){
+//     sliders.scrollTo({
+//         top:0,
+//         left:(scrollAmount),
+//         behavior: "smooth"
+//     });
+//     if(scrollAmount < 0 ){
+//         scrollAmount = 0;
+//     }
+// }
 
-function sliderScrollRight(){
-    if(scrollAmount <= sliders.scrollWidth - sliders.clientWidth ){
-        sliders.scrollTo({
-            top: 0,
-            left: (scrollAmount += scrollPerClick),
-            behavior: "smooth"
-        })
-    }
-}
-function jsProject(){
-    scrollPerClick = 800;
-}
+// function sliderScrollRight(){
+//     if(scrollAmount <= sliders.scrollWidth - sliders.clientWidth ){
+//         sliders.scrollTo({
+//             top: 0,
+//             left: (scrollAmount += scrollPerClick),
+//             behavior: "smooth"
+//         })
+//     }
+// }
+// function jsProject(){
+//     scrollPerClick = 800;
+// }
 
 // PROJECT JS
 // change the background
@@ -202,5 +207,4 @@ function equals(){
 function Clear(){
     calInput.value = "";
 }
-
 
