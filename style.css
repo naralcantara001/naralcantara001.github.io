@@ -408,15 +408,20 @@ nav li a:hover {
 }
 
 #about .about-container .info {
-  font-size: .4em;
-  padding: .5em;
+  padding: .2em;
+}
+
+#about .about-container .info .personal-info {
+  padding: 0;
 }
 
 #about .about-container .info i {
+  font-size: .4em;
   color: #ffa500;
 }
 
 #about .about-container .info span {
+  font-size: .4em;
   padding-left: .5em;
 }
 

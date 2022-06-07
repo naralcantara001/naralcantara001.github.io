@@ -403,16 +403,17 @@ nav {
         }
 
         & .info {
-            // display: flex;
-            // align-items: center;
-            font-size: .4em;
-            padding: .5em;
-
+            padding: .2em;
+            & .personal-info{
+                padding: 0;
+            }
             & i {
+                font-size: .4em;
                 color: $orange;
             }
 
             & span {
+                font-size: .4em;
                 padding-left: .5em;
                 & .address, & .company{
                     color: $pink;
