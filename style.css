@@ -56,7 +56,7 @@ section {
 }
 
 .active {
-  border-bottom: 5px solid #333;
+  border-bottom: 4px solid #ddd;
 }
 
 .active-sec {
