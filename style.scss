@@ -13,7 +13,6 @@ html {
     font-family: 'Poppins', sans-serif;
     
 }
-
 // sassy
 $darkviolet: #3F0071;
 $pink: #e65c9c;
@@ -323,7 +322,43 @@ nav {
     }
 }
 
-
+// about me
+// .timeline-area{
+//     border-left: 2px solid $dark;
+//     color: #fff;
+//     padding: 0 .5em;
+//     margin: 2em;
+// }
+// .circle{
+//     padding: 1em;
+//     font-size: 20px;
+//     // border: 1px solid $pink;
+//     line-height: 1.5;
+//     position: relative;
+// }
+// .circle:before{
+//     content: '';
+//     display: block;
+//     width: 10px;
+//     height: 10px;
+//     border-radius: 50%;
+//     background-color: $dark;
+//     border: 3px solid $white;
+//     position: absolute;
+//     top: 0;
+//     left: -26px;
+// }
+// .circle:after{
+//     content: '';
+//     width: 0;
+//     height: 0;
+//     border-style: solid;
+//     border-color: transparent #ddd transparent transparent;
+//     border-width: 8px;
+//     position: absolute;
+//     top: 0;
+//     left: -17px;
+// }
 
 // about
 #about {
@@ -357,7 +392,6 @@ nav {
             "work work"
         ;
         padding: .5em;
-
         & .grid1 {
             cursor: pointer;
             padding: .5em;
@@ -411,7 +445,7 @@ nav {
                 padding: 0;
             }
             & i {
-                font-size: .4em;
+                font-size: .5em;
                 color: $orange;
             }
 
@@ -457,6 +491,8 @@ nav {
     }
 
     & .skill-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         width: 100%;
         height: auto;
 
@@ -485,8 +521,15 @@ nav {
             & .description{
                 font-family: monospace;
                 font-size: .5em;
-                color: $white;
+                color: $lightOrange;
                 letter-spacing: 1px;
+                word-wrap: break-word;
+                padding-top: 3px;
+                border: 1px ;
+                font-style: oblique;
+                padding-left: 10px;
+                margin: 0 10px;
+                border-left: 10px dotted $orange;
             }
             & .bar{
                 border-radius: 10px;
@@ -544,7 +587,7 @@ nav {
             color: $orange;
         }
         & span{
-            word-break: break-all;
+            word-wrap: break-word;
             width: 100%;
             height: auto;
             text-align: left;
@@ -1291,7 +1334,7 @@ footer {
                 font-size: 9px;
                 padding: .3em;
                 line-height: 1.5em;
-                & span {
+                & span, i{
                     font-size: 1em;
                     padding-left: .5em;
                 }
@@ -1302,9 +1345,11 @@ footer {
     // Skill ver 2
 
     #skills {
-        padding: 2em 5%;
+        padding: 0 5%;
 
         & .skill-container {
+            display: flex;
+            flex-direction: column;
             width: 100%;
             height: auto;
             & .skill-status {
@@ -1323,6 +1368,7 @@ footer {
                 }
                 & .description{
                     font-size: 7px;
+                    padding-bottom: 5px;
                 }
             }
 

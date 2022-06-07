@@ -421,7 +421,7 @@ nav li a:hover {
 }
 
 #about .about-container .info i {
-  font-size: .4em;
+  font-size: .5em;
   color: #ffa500;
 }
 
@@ -474,6 +474,10 @@ nav li a:hover {
 }
 
 #skills .skill-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   width: 100%;
   height: auto;
 }
@@ -509,8 +513,15 @@ nav li a:hover {
 #skills .skill-container .skill-status .description {
   font-family: monospace;
   font-size: .5em;
-  color: #f2f2f2;
+  color: #ffe5b4;
   letter-spacing: 1px;
+  word-wrap: break-word;
+  padding-top: 3px;
+  border: 1px;
+  font-style: oblique;
+  padding-left: 10px;
+  margin: 0 10px;
+  border-left: 10px dotted #ffa500;
 }
 
 #skills .skill-container .skill-status .bar {
@@ -581,7 +592,7 @@ nav li a:hover {
 }
 
 #skills .list span {
-  word-break: break-all;
+  word-wrap: break-word;
   width: 100%;
   height: auto;
   text-align: left;
@@ -1541,14 +1552,21 @@ footer {
     padding: .3em;
     line-height: 1.5em;
   }
-  #about .about-container .info span {
+  #about .about-container .info span, #about .about-container .info i {
     font-size: 1em;
     padding-left: .5em;
   }
   #skills {
-    padding: 2em 5%;
+    padding: 0 5%;
   }
   #skills .skill-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     height: auto;
   }
@@ -1568,6 +1586,7 @@ footer {
   }
   #skills .skill-container .skill-status .description {
     font-size: 7px;
+    padding-bottom: 5px;
   }
   #skills .skill-container .skill-set {
     font-size: .4em;
