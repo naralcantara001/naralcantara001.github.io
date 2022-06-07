@@ -521,15 +521,13 @@ nav {
             & .description{
                 font-family: monospace;
                 font-size: .5em;
-                color: $lightOrange;
+                color: #a69caf;
                 letter-spacing: 1px;
                 word-wrap: break-word;
                 padding-top: 3px;
                 border: 1px ;
-                font-style: oblique;
                 padding-left: 10px;
-                margin: 0 10px;
-                border-left: 10px dotted $orange;
+                margin: 0 5px;
             }
             & .bar{
                 border-radius: 10px;
