@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins:wght@200&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -9,7 +9,9 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    
 }
 
 // sassy
@@ -174,9 +176,9 @@ header {
 }
 
 .logo {
-    font-size: 1.8em;
+    width: 30px;
     cursor: pointer;
-    color: $white;
+    margin: 15px;
 }
 
 //  header nav links
@@ -254,7 +256,7 @@ nav {
     & .greetings {
         font-size: .5em;
         font-weight: 600;
-        color: $white;
+        color: gray;
     }
 
     & .profession {
@@ -523,9 +525,7 @@ nav {
     & .other-skills{
         // display: grid;
         height: auto;
-        padding: .5em;
-        padding-right: 1em;
-        margin: 1em .5em;
+        padding: 30px;
         border-radius: 10px;
         border: 1px solid $lightOrange;
         background-image: linear-gradient(to right, $dark, #111);
@@ -549,8 +549,8 @@ nav {
             text-align: left;
             color: $white;
             font-size: 15px;
-            padding: 15px 20px;
-            margin: 10px;
+            padding: 20px;
+            margin: 15px 0;
             border: 1px solid $lightOrange;
             background-color: $darkviolet;
             border-radius: 50px;
