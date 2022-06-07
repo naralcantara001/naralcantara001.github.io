@@ -215,9 +215,16 @@ nav li a:hover {
 
 .name {
   line-height: 1.5em;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
 .name .myName {
@@ -353,10 +360,6 @@ nav li a:hover {
 #about .about-container .grid1:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-}
-
-#about .about-container .grid1 span {
-  font-style: oblique;
 }
 
 #about .about-container .grid2 {
