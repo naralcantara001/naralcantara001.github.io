@@ -556,8 +556,9 @@ nav li a:hover {
 }
 
 #skills .other-skills {
+  margin: 20px;
   height: auto;
-  padding: 30px;
+  padding: 20px;
   border-radius: 10px;
   border: 1px solid #ffe5b4;
   background-image: -webkit-gradient(linear, left top, right top, from(#333), to(#111));

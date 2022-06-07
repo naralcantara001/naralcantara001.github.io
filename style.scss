@@ -524,8 +524,9 @@ nav {
     }
     & .other-skills{
         // display: grid;
+        margin: 20px;
         height: auto;
-        padding: 30px;
+        padding: 20px;
         border-radius: 10px;
         border: 1px solid $lightOrange;
         background-image: linear-gradient(to right, $dark, #111);
