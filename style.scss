@@ -30,64 +30,6 @@ $white: #fffffe;
 // $dark: #333;
 // $white: #fffffe;
 
-// 
-@mixin flexWidthHeight-mobile {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid $lightOrange;
-    background-color: $transparentWhite;
-    max-width: 8em;
-    min-width: 8em;
-    max-height: 11em;
-    min-height: 11em;
-    padding: .5em;
-    margin: 0 .6em;
-    font-family: monospace;
-}
-
-@mixin flexWidthHeight {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid $lightOrange;
-    background-color: $transparentWhite;
-    max-width: 10em;
-    min-width: 10em;
-    max-height: 13em;
-    min-height: 13em;
-    padding: 1em;
-    margin: 0 .7em;
-    font-family: monospace;
-}
-
-@mixin allBtnProject {
-    font-family: monospace;
-    padding: .3em 4em;
-    cursor: pointer;
-    border-radius: 3px;
-    background-color: $orange;
-    color: $white;
-    border: 1px solid $lightOrange;
-    transition: .8s ease;
-}
-
-@mixin allBtnProject-mobile {
-    font-family: monospace;
-    padding: .3em 2.8em;
-    cursor: pointer;
-    border-radius: 3px;
-    background-color: $orange;
-    color: $white;
-    border: 1px solid $lightOrange;
-    transition: .8s ease;
-    font-size: .4em;
-}
-
-
-
 
 // arrow up button
 #arrowUp {
@@ -213,7 +155,7 @@ nav {
             padding: .3em .8em;
             cursor: pointer;
             &:hover {
-                background-color: $orange;
+                background-color: $pink;
                 color: $white;
                 transition: all ease .6s;
                 border-radius: 3px;
@@ -322,23 +264,16 @@ nav {
 }
 
 .see-project-btn {
-    background-color: $orange;
+    background: linear-gradient(105.95deg, #C961DE 24.79%, #2954A3 71.87%);
+    box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
     color: $white;
     padding: .5em 1em;
     font-size: .5em;
     letter-spacing: 1px;
     margin-top: 2em;
-    border: 1px solid $lightOrange;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);
-
-    &:hover {
-        background-color: $darkviolet;
-        color: $white;
-        border: 1px solid #111;
-        transition: all ease-out .5s;
-    }
 
     & .arrow-down {
         margin-left: .8em;
@@ -540,7 +475,7 @@ nav {
                 text-align: center;
                 align-items: center;
                 width: 100%;
-                background-color: $darkviolet;
+                background-color: $dark;
                 font-size: .8em;
 
             }
@@ -664,7 +599,7 @@ nav {
             font-size: .6em;
             padding-bottom: 1em;
             margin-bottom: 1.5em;
-            border-bottom: 3px solid $orange;
+            border-bottom: 3px solid $pink;
         }
 
         & .using {
@@ -701,12 +636,12 @@ nav {
             font-size: .7em;
             cursor: pointer;
             padding: .8em 1em;
-            background-color: $orange;
+            background: linear-gradient(105.95deg, #C961DE 24.79%, #2954A3 71.87%);
+            box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
             color: $white;
             border-radius: 10px;
             border: none;
             transition: ease .3s;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
 
             &:hover {
                 transform: scale(1.2);
