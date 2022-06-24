@@ -13,14 +13,22 @@ html {
     font-family: 'Poppins', sans-serif;
     
 }
-// sassy
-$darkviolet: #3F0071;
-$pink: #e65c9c;
+// sass
+$darkviolet: #1C1C65;
+$pink: #eebbc3;
 $transparentWhite: rgba(255, 255, 255, 0.2);
 $orange: #ffa500;
 $lightOrange: #ffe5b4;
-$dark: #333;
+$dark: #0F103F;
 $white: #fffffe;
+
+// $darkiolet: #3F0071;
+// $pink: #e65c9c;
+// $transparentWhite: rgba(255, 255, 255, 0.2);
+// $orange: #ffa500;
+// $lightOrange: #ffe5b4;
+// $dark: #333;
+// $white: #fffffe;
 
 // 
 @mixin flexWidthHeight-mobile {
@@ -114,7 +122,7 @@ section {
     align-items: center;
     font-size: 2em;
     height: auto;
-    background-color: #111;
+    background-color: $dark;
 }
 
 // javascript active nav hover 
@@ -231,7 +239,8 @@ nav {
 
 // home
 #home {
-    background: url(/gif2.gif);
+    position: relative;
+    background-color: $dark;
     object-fit: cover;
     object-position: center;
     background-repeat: no-repeat;
@@ -241,10 +250,21 @@ nav {
     padding: 1em 0 3em 0;
     letter-spacing: 2px;
     height: auto;
-    box-shadow: 1px 5px 20px rgba(0, 0, 0, .1);
+}
+.planet1, .planet2{
+    position: absolute;
+}
+.planet1{
+    top: 0;
+    left: 0;
+}
+.planet2{
+    right: 0;
+    top: 0;
 }
 
 .name {
+    z-index: 1;
     line-height: 1.5em;
     display: flex;
     flex-direction: column;
@@ -252,6 +272,7 @@ nav {
     align-items: center;
     text-align: center;
     & .myName{
+        z-index: 1;
         font-size: 1.3em;
         color: $white;
     }
@@ -289,11 +310,10 @@ nav {
 }
 
 .myPhoto {
+    z-index: 1;
     padding: .4em;
-    background-color: #111;
     border-radius: 10px;
     margin: 0;
-    border: 3px solid $white;
     cursor: pointer;
     transition: all ease-in-out .5s;
     height: 7em;
@@ -334,7 +354,7 @@ nav {
     height: auto;
     padding: 3em 15%;
     & h5{
-        color: $white;
+        color: $pink;
         margin: 1em 0;
     }
     & .wrapper {
@@ -423,6 +443,7 @@ nav {
 // Skill ver 2
 
 #skills {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -433,15 +454,26 @@ nav {
     letter-spacing: 2px;
     height: auto;
     text-align: left;
-
+    & .diamond{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    & .planet3{
+        width: fit-content;
+        position: absolute;
+    }
     & .title {
+        z-index: 1;
         align-self: left;
-        color: $white;
+        color: $pink;
         margin-bottom: 1em;
         padding: .1em;
     }
 
     & .skill-container {
+        z-index: 1;
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100%;
@@ -516,6 +548,7 @@ nav {
     }
     & .other-skills{
         // display: grid;
+        z-index: 1;
         margin: 20px;
         height: auto;
         padding: 20px;
@@ -559,19 +592,30 @@ nav {
 
 // projects
 #projects {
+    position: relative;
     height: auto;
     display: grid;
     place-items: left;
     padding: 1em 15%;
-
+    & .diamond{
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     & .title {
+        z-index: 1;
         text-align: left;
-        color: $white;
+        color: $pink;
         margin-bottom: 1em;
         padding: .1em;
     }
+    & .pro{
+        z-index: 1;
+    }
 
     & .project {
+        z-index: 1;
         display: flex;
         margin-bottom: 4em;
         padding: .5em;
@@ -672,297 +716,28 @@ nav {
 }
 
 
-// project js
-.project-js-title {
-    color: $white;
-    font-size: .6em;
-    font-family: monospace;
-    text-align: center;
-}
-
-.scroll-box {
-    background-image: linear-gradient(to right, $dark, #111);
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    align-items: center;
-    justify-items: center;
-    padding: 1em;
-    border: 1px solid $darkviolet;
-    border-radius: 10px;
-    margin: 1em 0;
-    // min-width: 100%;
-    // max-width: 100%; 
-    max-height: 20em;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-    cursor: pointer;
-}
-
-.backgroundColorChanger {
-    @include flexWidthHeight;
-
-    & .colors {
-        cursor: pointer;
-        display: grid;
-        place-items: center;
-        font-size: .5em;
-        text-align: center;
-        width: 100%;
-
-        & .orange,
-        .black,
-        .pink {
-            font-family: monospace;
-            color: $white;
-            border: 1px solid $lightOrange;
-            width: 100%;
-            padding: 1.5em;
-        }
-    }
-
-    & .clearBtn {
-        @include allBtnProject;
-        padding: .5em 3em;
-    }
-}
-
-.randomQuotesGenerator {
-    @include flexWidthHeight;
-
-    & .quotes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        font-family: monospace;
-        color: $white;
-        border: 1px solid $lightOrange;
-        width: 100%;
-        height: 15em;
-        margin: 1em 0;
-        padding: 1em;
-        word-wrap: break-word;
-
-        & .w,
-        .a {
-            font-family: monospace;
-            font-size: .5em
-        }
-    }
-
-    & .generateQuoteBtn {
-        @include allBtnProject;
-        padding: .5em 2em;
-    }
-}
-
-/* counter */
-.counter {
-    @include flexWidthHeight;
-
-    & .count {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: 1px solid $lightOrange;
-        width: 100%;
-        height: 12rem;
-        margin: 1em 0;
-        padding: .3em;
-        font-family: monospace;
-        font-size: .1em;
-
-        & .countStart {
-            font-family: monospace;
-            color: $lightOrange;
-            font-size: 10em;
-            padding: 0;
-        }
-
-        & .increment,
-        .decrement {
-            cursor: pointer;
-            background-color: $orange;
-            color: $dark;
-            padding: .8em 1em;
-            border-radius: 50%;
-            font-size: 5em;
-            font-weight: 800;
-            margin: .5em;
-
-            &.increment:hover,
-            &.decrement:hover {
-                transition: .8s ease;
-                background-color: $dark;
-                color: $orange;
-            }
-        }
-    }
-
-    & .reset {
-        @include allBtnProject;
-
-        &:hover {
-            background-color: $dark;
-            color: $orange;
-        }
-    }
-}
-
-// modal
-
-/* modal */
-.modal-wrapper {
-    position: relative;
-    border: 1px solid $lightOrange;
-    @include flexWidthHeight;
-
-    & .open-modal {
-        font-family: monospace;
-        position: absolute;
-        top: 40%;
-        cursor: pointer;
-        padding: .8em 2em;
-        font-size: 1.5em;
-        border-radius: 5px;
-        background-color: $orange;
-        color: $white;
-        border: solid $white;
-        transition: 1s ease;
-        box-shadow: 2px 2px 10px $lightOrange;
-        font-size: .6em;
-
-        &:hover {
-            background-color: black;
-            color: $orange;
-        }
-    }
-}
-
-.overlay {
-    display: none;
-    z-index: 99;
-    background-color: rgba(255, 255, 255, 0.5);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    position: fixed;
-    place-items: center;
-    font-family: monospace;
-}
-
-.modal {
-    background-color: $orange;
-    position: absolute;
-    display: grid;
-    place-items: center;
-    margin: auto;
-    width: 50%;
-    height: 60%;
-    border: 10px solid $lightOrange;
-    border-radius: 10px;
-    box-shadow: 5px 10px rgba(255, 255, 255, 1);
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
-}
-
-.close-modal {
-    font-family: monospace;
-    cursor: pointer;
-    padding: 1em 3em;
-    font-size: 1.5em;
-    border-radius: 5px;
-    background-color: blanchedalmond;
-    color: black;
-    border: solid black;
-    box-shadow: 5px 10px rgba(255, 255, 255, 1);
-    transition: 1s ease;
-
-    &:hover {
-        background-color: $orange;
-        color: $white;
-        box-shadow: 5px 10px blanchedalmond;
-        border: solid blanchedalmond;
-    }
-}
-
-
-/* calculator */
-.calculator {
-    @include flexWidthHeight;
-
-    & .calInput {
-        text-align: right;
-        width: 100%;
-        padding: 1em;
-        font-size: .4em;
-        background-color: $white;
-    }
-
-    & .calInputContainer {
-        width: 100%;
-    }
-
-    & .calBtnContainer {
-        width: 100%;
-        height: 6em;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-
-
-}
-
-
-.calBtn {
-    font-family: monospace;
-    font-weight: 700;
-    cursor: pointer;
-    border: 1px solid $lightOrange;
-    font-size: .4em;
-    background-color: $dark;
-    color: aliceblue;
-    transition: .3s ease;
-}
-
-.calBtn:hover {
-    background-color: $white;
-    color: $dark;
-}
-
-.operator {
-    background-color: $orange;
-    color: $dark;
-}
-
-.clear {
-    color: red;
-}
-
-.equals {
-    color: blueviolet;
-}
 
 // contact
 #contact {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    // background-image: linear-gradient(135deg, $white, $pink);
-    background-color: $dark;
+    background-color: rgba($dark, .9);
     height: auto;
     color: $white;
     font-size: 1em;
     letter-spacing: 2px;
-    padding: 10%;
+    padding: 2em 10%;
+    & .planet4{
+        top: -10em;
+        left: 40px;
+        position: absolute;
+    }
 
     & .business {
+        z-index: 1;
         display: flex;
         align-items: left;
         justify-content: left;
@@ -970,7 +745,7 @@ nav {
         letter-spacing: 2px;
 
         & a {
-            color: $white;
+            color: $pink;
             letter-spacing: 1px;
             font-size: .8em;
 
@@ -998,26 +773,21 @@ nav {
 
 // footer
 footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #111;
-    height: auto;
-    color: #fff;
-    font-size: .7em;
+    color: $lightOrange;
+    font-size: 1em;
     letter-spacing: 2px;
-    padding: 2em;
+    margin-top: 4em;
+    font-family: monospace;
 }
 
-@media only screen and (max-width: 1200px) {
-
-}
 
 // media
 @media only screen and (max-width: 800px) {
     header {
         position: fixed;
+    }
+    .diamond{
+        width: 200px;
     }
 
     #home {
@@ -1124,7 +894,13 @@ footer {
         }
     }
 
-
+    .planet1{
+        width: 200px;
+    }
+    .planet2{
+        width: 500px;
+        top: 300px;
+    }
 
 }
 
@@ -1132,6 +908,7 @@ footer {
 
 // mobile view
 @media only screen and (max-width: 500px) {
+
     .product-box {
         max-width: 80%;
     }
@@ -1183,7 +960,7 @@ footer {
         text-align: center;
         right: 0px;
         height: auto;
-        top: 45px;
+        top: 65px;
         width: 100%;
         background-image: linear-gradient(to right, $dark, #111 );
         transform: translateX(100%);
@@ -1202,6 +979,7 @@ footer {
         }
     }
 
+    // home
     #home {
         display: flex;
         justify-content: center;
@@ -1210,6 +988,14 @@ footer {
         flex-direction: column;
         height: 100vh;
         padding: 2em 0;
+        & .planet1{
+            width: 150px;
+        }
+        & .planet2{
+            width: 300px;
+            right: 0;
+            top: 300px;
+        }
     }
 
     .name {
@@ -1253,49 +1039,113 @@ footer {
         padding: .5em 1em;
         font-size: .5em;
     }
-
-    // about
-    #about {
-        display: flex;
+  
+    // time line
+    .timeline{
+        display: grid;
         flex-direction: column;
-        justify-content: center;
-        align-items: left;
-        width: 100%;
-        padding: 2em 5%;
-
-        & .about-container {
+        justify-content: left;
+        height: auto;
+        padding: 3em 15%;
+        & h5{
+            color: $pink;
+            margin: 1em;
+            font-size: 16px;
+        }
+        & .wrapper {
             display: flex;
             flex-direction: column;
-            place-items: center;
-
-            & .grid1,
-            .grid2,
-            .grid3 {
-                width: 100%;
-            }
-
-            & h5 {
-                font-size: .5em;
-            }
-
-            & .info {
-                letter-spacing: 1px;
-                font-size: 9px;
-                padding: .3em;
-                line-height: 1.5em;
-                & span, i{
-                    font-size: 1em;
-                    padding-left: .5em;
-                }
-            }
-        }
+            justify-content: left;
+            height: auto;
+            width: 600px;
+            & .steps {
+                display: flex;
+                flex-direction: column;
+                justify-content: left;
+                width: 300px;
+                & .step {
+                    display: flex;
+                    position: relative;
+                    margin:  0 .5em;
+                  
+                    &:after {
+                      content: "";
+                      position: absolute;
+                      left: 7px;
+                      top: 23px;
+                      width: 3px;
+                      background-color: gray;
+                    }
+                    // dot
+                    & .dot {
+                        width: 15px;
+                        height: 15px;
+                        background-color: $white;
+                        border-radius: 50%;
+                        border: 2px solid $white;
+                        flex-shrink: 0;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: white;
+                        font-size: 15px;
+                        font-weight: 600;
+                        margin-right: 14px;
+                      }
+                    // info
+                    .info {
+                      margin: 0 .5em 1em 0;
+                    }
+                  
+                    .date {
+                      font-size: 12px;
+                      margin: 0 0 8px;
+                      color: white;
+                    }
+                  
+                    .school, .position{
+                      font-size: 13px;
+                      font-weight: 400;
+                      color: $white;
+                      margin-bottom: 1em;
+                    }
+                  
+                    .level , .company, .task{
+                      font-size: 12px;
+                      color: rgba(white, 0.7);
+                      padding-bottom: .3em;
+                    }
+                  
+                    &:not(:last-child) {
+                      &:after {
+                        height: 75%;
+                      }
+                     
+                    }
+                  }
+              }
+          }
+    
     }
+    
 
     // Skill ver 2
 
     #skills {
-        padding: 0 5%;
-
+        display: grid;
+        place-items: center;
+        padding: 3em 5% 2em 5%;
+        & .planet3{
+            width: 500px;
+        }
+        .title{
+            text-align: left;
+            justify-self: left;
+        }
+        & .diamond{
+            width: 150px;
+            top: -18px;
+        }
         & .skill-container {
             display: flex;
             flex-direction: column;
@@ -1303,7 +1153,7 @@ footer {
             height: auto;
             & .skill-status {
                 padding: 0 .3em .3em .3em;
-                margin: 1em .5em;
+                margin: .7em 0;
                 &:hover {
                     transform: scale(1.1);
                 }
@@ -1333,17 +1183,38 @@ footer {
         }
         & .list{
             & span{
-                font-size: 11px;
-                padding: 18px;
+                font-size: 8px;
+                padding: 20px;
+            }
+        }
+        & .other-skills{
+            // display: grid;
+            z-index: 1;
+            width: 250px;
+            margin: 10px;
+            height: auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid $lightOrange;
+            background-image: linear-gradient(to right, $dark, #111);
+            & .skill-name {
+                font-size: .6em;
+                color: $pink;
+                padding-left: 10px;
             }
         }
     }
 
+    // project
     #projects {
         height: auto;
         display: grid;
         place-items: left;
         padding: 2em 11%;
+        & .diamond{
+            width: 150px;
+            top: -40px;
+        }
 
         & .project {
             display: flex;
@@ -1415,282 +1286,6 @@ footer {
         }
     }
 
-    // project js
-    .project-js-title {
-        font-size: .5em;
-        font-family: monospace;
-        text-align: center;
-    }
-
-    .js {
-        font-size: .5em;
-    }
-
-    .scroll-box {
-        display: flex;
-        flex-direction: row;
-        justify-content: baseline;
-        align-items: center;
-        justify-items: center;
-        padding: 1em;
-        border-radius: 10px;
-        margin: 1em 0;
-        // min-width: 100%;
-        // max-width: 100%; 
-        max-height: 20em;
-        flex-wrap: nowrap;
-        overflow-x: scroll;
-        cursor: pointer;
-    }
-
-    .backgroundColorChanger {
-        @include flexWidthHeight-mobile;
-
-        & .colors {
-            cursor: pointer;
-            display: grid;
-            place-items: center;
-            font-size: .5em;
-            text-align: center;
-            width: 100%;
-
-            & .orange,
-            .black,
-            .pink {
-                font-family: monospace;
-                color: $white;
-                border: 1px solid $lightOrange;
-                width: 100%;
-                padding: 1.5em;
-            }
-        }
-
-        & .clearBtn {
-            @include allBtnProject-mobile;
-            padding: .5em 3em;
-        }
-    }
-
-    .randomQuotesGenerator {
-        @include flexWidthHeight-mobile;
-
-        & .quotes {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            align-items: center;
-            font-family: monospace;
-            color: $white;
-            border: 1px solid $lightOrange;
-            width: 100%;
-            height: 16em;
-            margin: 1em 0;
-            padding: .3em;
-            word-wrap: break-word;
-
-            & .w,
-            .a {
-                font-family: monospace;
-                font-size: .4em
-            }
-        }
-
-        & .generateQuoteBtn {
-            @include allBtnProject-mobile;
-            padding: .5em 2em;
-        }
-    }
-
-    /* counter */
-    .counter {
-        @include flexWidthHeight-mobile;
-
-        & .count {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            border: 1px solid $lightOrange;
-            width: 100%;
-            height: 10rem;
-            margin: 1em 0;
-            padding: .3em;
-            font-family: monospace;
-            font-size: .1em;
-
-            & .countStart {
-                font-family: monospace;
-                color: $lightOrange;
-                font-size: 10em;
-                padding: 0;
-            }
-
-            & .increment,
-            .decrement {
-                cursor: pointer;
-                background-color: $orange;
-                color: $dark;
-                padding: .6em .8em;
-                border-radius: 50%;
-                font-size: 5em;
-                font-weight: 800;
-                margin: .5em;
-
-                &.increment:hover,
-                &.decrement:hover {
-                    transition: .8s ease;
-                    background-color: $dark;
-                    color: $orange;
-                }
-            }
-        }
-
-        & .reset {
-            @include allBtnProject-mobile;
-
-            &:hover {
-                background-color: $dark;
-                color: $orange;
-            }
-        }
-    }
-
-    // modal
-
-    /* modal */
-    .modal-wrapper {
-        position: relative;
-        border: 1px solid $lightOrange;
-        @include flexWidthHeight-mobile;
-
-        & .open-modal {
-            font-family: monospace;
-            position: absolute;
-            top: 40%;
-            cursor: pointer;
-            padding: .8em 2em;
-            font-size: 1.5em;
-            border-radius: 5px;
-            background-color: $orange;
-            color: $white;
-            border: solid $white;
-            transition: 1s ease;
-            box-shadow: 2px 2px 10px $lightOrange;
-            font-size: .6em;
-
-            &:hover {
-                background-color: black;
-                color: $orange;
-            }
-        }
-    }
-
-    .overlay {
-        display: none;
-        z-index: 99;
-        background-color: rgba(255, 255, 255, 0.7);
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        position: fixed;
-        place-items: center;
-        font-family: monospace;
-    }
-
-    .modal {
-        background-color: $orange;
-        position: absolute;
-        display: grid;
-        place-items: center;
-        justify-content: center;
-        margin: auto;
-        width: 80%;
-        height: 60%;
-        border: 10px solid $lightOrange;
-        border-radius: 10px;
-        box-shadow: 5px 10px rgba(255, 255, 255, 1);
-        top: 0;
-        bottom: 0;
-        right: 0;
-        left: 0;
-    }
-
-    .close-modal {
-        font-family: monospace;
-        cursor: pointer;
-        padding: 1em;
-        font-size: 1.5em;
-        border-radius: 5px;
-        background-color: blanchedalmond;
-        color: black;
-        border: solid black;
-        box-shadow: 5px 10px rgba(255, 255, 255, 1);
-        transition: 1s ease;
-
-        &:hover {
-            background-color: $orange;
-            color: $white;
-            box-shadow: 5px 10px blanchedalmond;
-            border: solid blanchedalmond;
-        }
-    }
-
-
-    /* calculator */
-    .calculator {
-        @include flexWidthHeight-mobile;
-
-        & .calInput {
-            text-align: right;
-            width: 100%;
-            padding: 1em;
-            font-size: .4em;
-            background-color: $white;
-        }
-
-        & .calInputContainer {
-            width: 100%;
-        }
-
-        & .calBtnContainer {
-            width: 100%;
-            height: 6em;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
-        }
-
-    }
-
-    .calBtn {
-        font-family: monospace;
-        font-weight: 700;
-        cursor: pointer;
-        border: 1px solid $lightOrange;
-        font-size: .3em;
-        background-color: $dark;
-        color: aliceblue;
-        transition: .3s ease;
-    }
-
-    .calBtn:hover {
-        background-color: $white;
-        color: $dark;
-    }
-
-    .operator {
-        background-color: $orange;
-        color: $dark;
-    }
-
-    .clear {
-        color: red;
-    }
-
-    .equals {
-        color: blueviolet;
-    }
-
     // contact
     #contact {
         display: flex;
@@ -1704,11 +1299,16 @@ footer {
         font-size: .7em;
         letter-spacing: 2px;
         padding: 10%;
+        & .planet4{
+            width: 300px;
+            left: 0;
+        }
     }
 
     // footer
     footer {
-        font-size: .4em;
+        margin-top: 5em;
+        font-size: 1em;
     }
 
     nav {

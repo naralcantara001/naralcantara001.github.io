@@ -19,13 +19,6 @@
 <body>
     <!-- arrow up -->
     <div id="arrowUp">&#8593</div>
-    <!-- modal -->
-    <div class="overlay">
-        <div class="modal">
-            <button class="close-modal">close modal</button>
-            <div class="container"></div>
-        </div>
-    </div>
 
     <!-- header nav -->
     <header>
@@ -50,12 +43,14 @@
     </header>
     <!-- home -->
     <section id="home">
-        <div>
+        <img class="planet1" src="planet1.png" alt="images">
+        <img class="planet2" src="planet2.png" alt="images">
+        
             <img class="myPhoto" src="dp11.png" alt="icon">
-        </div>
+        
         <div class="name">
             <p class="greetings">Hello there!</p>
-            <h1 class="myName">I'm Nar Alcantara</h1>
+            <h1 class="myName"><p style="font-size: 20px; color: #ddd; display: inline;">I'm</p> Nar Alcantara</h1>
             <p class="profession">a Front-End Developer</p>
             <div class="social">
                 <a href="https://github.com/naralcantara001" target="_blank"> <i id="fabs"
@@ -74,7 +69,7 @@
     </section>
 
     <!-- time line -->
-    <section class="timeline">
+    <section id="about" class="timeline">
         <!-- container of time -->
         <div class='wrapper'>
 
@@ -162,6 +157,8 @@
 
     <!-- skill ver 2 -->
     <section id="skills">
+        <img class="diamond" src="diamond.png" alt="images">
+        <img class="planet3" src="planet3.png" alt="images">
         <h3 class="title">Skills</h3>
         <div class="skill-container">
 
@@ -232,13 +229,11 @@
         <div class="other-skills">
             <span class="skill-name">OTHER SKILLS</span>
             <div class="list">
-                <span><b>*</b> Can build web from scratch using HTML, CSS, JavaScript, ReactJS</span>
+                <span><b>*</b> Can build a static web from scratch using HTML, CSS, JavaScript, ReactJS</span>
                 <span><b>*</b> Can use figma as a template/design.</span>
-                <span><b>*</b> Familiar with AJAX, JSON, XML, API, C++, PHP, MySQL, Python, JQuery, Command Line,
-                    Git/Github.</span>
+                <span><b>*</b> Familiar C++, PHP, MySQL, Python, JQuery.</span>
                 <span><b>*</b> Familiar with Wordpress (I created an e-commerce website on my college days)</span>
-                <span><b>*</b> Know UI/UX design: Typography/web structure/layout/hierarchy. fonts, color, size,
-                    spacing.</span>
+                <span><b>*</b> Familiar with UI/UX</span>
             </div>
         </div>
     </section>
@@ -247,10 +242,11 @@
     </section>
     <!-- projects -->
     <section id="projects">
+        <img class="diamond" src="diamond.png" alt="images">
         <h3 class="title">Projects</h3>
         <br>
         <!--  -->
-        <div>
+        <div class="pro">
             <div class="project-container">
 
                 <!-- 1 -->
@@ -382,80 +378,11 @@
 
 
 
-        <!-- <br>
-        <br>
-        
-        <h3 class="title js">Javascript Project</h3>
-     
-        <div class="scroll-box">
-           
-            <div class="backgroundColorChanger">
-                <h1 class="project-js-title">change the background</h1>
-                <div class="colors">
-                    <span class="orange">orange</span>
-                    <span class="black">black</span>
-                    <span class="pink">pink</span>
-                </div>
-                <button class="clearBtn">clear</button>
-            </div>
-           
-            <div class="randomQuotesGenerator">
-                <h1 class="project-js-title">random quotes generator</h1>
-                <div class="quotes">
-                    <p class="w">click the button below</p>
-                    <br>
-                    <p class="a">to generate a quote</p>
-                </div>
-                <button class="generateQuoteBtn">generate</button>
-            </div>
-            
-            <div class="counter">
-                <h1 class="project-js-title">counter</h1>
-                <div class="count">
-                    <button class="decrement">-</button>
-                    <p class="countStart">0</p>
-                    <button class="increment">+</button>
-                </div>
-                <button class="reset">reset</button>
-            </div>
-            
-            <div class="modal-wrapper">
-                <h1 class="project-js-title">modal</h1>
-                <button class="open-modal">open modal</button>
-            </div>
-           
-            <div class="calculator">
-                <h1 class="project-js-title">calculator</h1>
-                <div class="calInputContainer">
-                    <input class="calInput" type="text" placeholder="0">
-                </div>
-                <div class="calBtnContainer">
-                    <button onclick="digits('7')" class="calBtn digits">7</button>
-                    <button onclick="digits('8')" class="calBtn digits">8</button>
-                    <button onclick="digits('9')" class="calBtn digits">9</button>
-                    <button onclick="digits('+')" class="calBtn operator">+</button>
-                    <button onclick="digits('4')" class="calBtn digits">4</button>
-                    <button onclick="digits('5')" class="calBtn digits">5</button>
-                    <button onclick="digits('6')" class="calBtn digits">6</button>
-                    <button onclick="digits('-')" class="calBtn operator">-</button>
-                    <button onclick="digits('1')" class="calBtn digits">1</button>
-                    <button onclick="digits('2')" class="calBtn digits">2</button>
-                    <button onclick="digits('3')" class="calBtn digits">3</button>
-                    <button onclick="digits('*')" class="calBtn operator">*</button>
-                    <button onclick="digits('0')" class="calBtn digits">0</button>
-                    <button onclick="Clear()" class="calBtn clear">C</button>
-                    <button onclick="equals()" class="calBtn equals">=</button>
-                    <button onclick="digits('/')" class="calBtn operator">/</button>
-                </div>
-            </div>
-        </div>  -->
-
-
-        <!-- don't touch -->
-    </section>
+        <!-- don't touch -->  </section>
 
     <!-- contact -->
     <section id="contact">
+        <img class="planet4" src="planet4.png" alt="images">
         <div class="business">
             <h4>Business:</h4>
             <a href="https://github.com/naralcantara001" target="_blank"> <i id="faabs"
@@ -473,11 +400,12 @@
             <a href="http://facebook.com/naralcantara01" target="_blank" rel="noopener noreferrer"><i id="faabs"
                     class="fa-brands fa-facebook"></i>facebook.com/naralcantara01</a>
         </div>
+        <footer>
+            <p font-family="monospace">by Narcy Alcantara © 2021 - 2022</p>
+        </footer>
     </section>
 
-    <footer>
-        <p font-family="monospace">by Narcy Alcantara © 2021 - 2022</p>
-    </footer>
+
 </body>
 
 </html>
