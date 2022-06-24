@@ -444,9 +444,8 @@ nav {
 
 #skills {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: grid;
+    place-items: center;
     color: $dark;
     letter-spacing: 2px;
     height: auto;
@@ -467,6 +466,7 @@ nav {
     & .title {
         z-index: 1;
         align-self: left;
+        justify-self: left;
         color: $pink;
         margin-bottom: 1em;
         padding: .1em;
@@ -549,8 +549,8 @@ nav {
     & .other-skills{
         // display: grid;
         z-index: 1;
-        margin: 20px;
         height: auto;
+        width: 97%;
         padding: 20px;
         border-radius: 10px;
         border: 1px solid $lightOrange;
@@ -731,8 +731,8 @@ nav {
     letter-spacing: 2px;
     padding: 2em 10%;
     & .planet4{
-        top: -10em;
-        left: 40px;
+        top: -12em;
+        left:   15em;
         position: absolute;
     }
 
@@ -787,7 +787,10 @@ footer {
         position: fixed;
     }
     .diamond{
-        width: 200px;
+        width: 250px;
+    }
+    .planet4{
+        width: 300px;
     }
 
     #home {
@@ -848,7 +851,7 @@ footer {
         text-align: center;
         right: 0px;
         height: auto;
-        top: 45px;
+        top: 61px;
         width: 100%;
         background-image: linear-gradient(135deg, $transparentWhite, #111);
         transform: translateX(100%);
@@ -1134,7 +1137,7 @@ footer {
     #skills {
         display: grid;
         place-items: center;
-        padding: 3em 5% 2em 5%;
+        padding: 2em 10%;
         & .planet3{
             width: 500px;
         }
@@ -1143,8 +1146,7 @@ footer {
             justify-self: left;
         }
         & .diamond{
-            width: 150px;
-            top: -18px;
+            width: 100px;
         }
         & .skill-container {
             display: flex;
@@ -1190,10 +1192,9 @@ footer {
         & .other-skills{
             // display: grid;
             z-index: 1;
-            width: 250px;
-            margin: 10px;
             height: auto;
             padding: 20px;
+            margin-top: 0 .5em;
             border-radius: 10px;
             border: 1px solid $lightOrange;
             background-image: linear-gradient(to right, $dark, #111);
@@ -1212,8 +1213,7 @@ footer {
         place-items: left;
         padding: 2em 11%;
         & .diamond{
-            width: 150px;
-            top: -40px;
+            width: 100px;
         }
 
         & .project {
@@ -1300,7 +1300,7 @@ footer {
         letter-spacing: 2px;
         padding: 10%;
         & .planet4{
-            width: 300px;
+            width: 200px;
             left: 0;
         }
     }
