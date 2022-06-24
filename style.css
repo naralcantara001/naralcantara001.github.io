@@ -1073,12 +1073,12 @@ footer {
     padding: 2em 0;
   }
   #home .planet1 {
-    width: 150px;
+    width: 120px;
   }
   #home .planet2 {
     width: 300px;
     right: 0;
-    top: 300px;
+    top: 350px;
   }
   .name {
     line-height: 1.1em;
