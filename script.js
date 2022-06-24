@@ -1,3 +1,5 @@
+
+
 const li = document.querySelectorAll('.links');
 const sec = document.querySelectorAll('section');
 const body = document.querySelector('body');

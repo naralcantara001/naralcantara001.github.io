@@ -981,8 +981,9 @@ footer {
             }
         }
     }
+// fade animation
 
-    // home
+// home
     #home {
         display: flex;
         justify-content: center;
@@ -992,7 +993,7 @@ footer {
         height: 100vh;
         padding: 2em 0;
         & .planet1{
-            width: 100px;
+            width: 120px;
         }
         & .planet2{
             width: 300px;
