@@ -20,7 +20,7 @@ $transparentWhite: rgba(255, 255, 255, 0.2);
 $orange: #ffa500;
 $lightOrange: #ffe5b4;
 $dark: #333;
-$white: #ddd;
+$white: #fffffe;
 
 // 
 @mixin flexWidthHeight-mobile {
@@ -232,6 +232,9 @@ nav {
 // home
 #home {
     background: url(/gif2.gif);
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -322,152 +325,100 @@ nav {
     }
 }
 
-// about me
-// .timeline-area{
-//     border-left: 2px solid $dark;
-//     color: #fff;
-//     padding: 0 .5em;
-//     margin: 2em;
-// }
-// .circle{
-//     padding: 1em;
-//     font-size: 20px;
-//     // border: 1px solid $pink;
-//     line-height: 1.5;
-//     position: relative;
-// }
-// .circle:before{
-//     content: '';
-//     display: block;
-//     width: 10px;
-//     height: 10px;
-//     border-radius: 50%;
-//     background-color: $dark;
-//     border: 3px solid $white;
-//     position: absolute;
-//     top: 0;
-//     left: -26px;
-// }
-// .circle:after{
-//     content: '';
-//     width: 0;
-//     height: 0;
-//     border-style: solid;
-//     border-color: transparent #ddd transparent transparent;
-//     border-width: 8px;
-//     position: absolute;
-//     top: 0;
-//     left: -17px;
-// }
 
-// about
-#about {
-    display: flex;
+// Time line
+.timeline{
+    display: grid;
     flex-direction: column;
-    align-items: flex-start;
-    color: $dark;
-    letter-spacing: 2px;
+    justify-content: left;
     height: auto;
-    padding: 5em 15%;
-    letter-spacing: 2px;
-    height: auto;
-    text-align: left;
-    
-
-    & .title {
-        align-self: center;
+    padding: 3em 15%;
+    & h5{
         color: $white;
-        margin-bottom: 1em;
-        padding: .1em;
+        margin: 1em 0;
     }
-
-    & .about-container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-auto-rows: auto;
-        grid-gap: 0;
-        grid-template-areas:
-            "personal education"
-            "work work"
-        ;
-        padding: .5em;
-        & .grid1 {
-            cursor: pointer;
-            padding: .5em;
-            transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $dark, #111);
-            box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
-            color: $white;
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        
-        }
-
-        & .grid2 {
-            cursor: pointer;
-            padding: .5em;
-            transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $dark, #111);
-            color: $white;
-            box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
-
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        & .grid3 {
-            cursor: pointer;
-            grid-area: work;
-            padding: .5em;
-            transition: all ease .4s;
-            background-image: linear-gradient(to bottom, $dark, #111);
-            color: $white;
-            box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
-            &:hover {
-                transform: scale(1.1);
-            }
-        }
-
-        & h5 {
-            font-size: .7em;
-            padding: .7em 0 ;
-            margin-bottom: .5em;
-            border-bottom: 3px solid $orange;
-        }
-
-        & .info {
-            padding: .2em;
-            & .personal-info{
-                padding: 0;
-            }
-            & i {
-                font-size: .5em;
-                color: $orange;
-            }
-
-            & span {
-                font-size: .4em;
-                padding-left: .5em;
-                & .address, & .company{
-                    color: $pink;
-                    font-style: oblique;
+    & .wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        height: auto;
+        width: 600px;
+        & .steps {
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            width: auto;
+            & .step {
+                display: flex;
+                position: relative;
+                margin:  0 .5em;
+              
+                &:after {
+                  content: "";
+                  position: absolute;
+                  left: 9px;
+                  top: 23px;
+                  width: 2px;
+                  background-color: gray;
                 }
-                & .date{
-                    color: $lightOrange;
+                // dot
+                & .dot {
+                    width: 19px;
+                    height: 19px;
+                    background-color: $white;
+                    border-radius: 50%;
+                    border: 2px solid $white;
+                    flex-shrink: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin-right: 14px;
+                  }
+                // info
+                .info {
+                  margin: 0 .5em 1em 0;
                 }
-                & .task{
-                    color: #884abb;
-                    font-style: oblique;
+              
+                .date {
+                  font-size: 14px;
+                  margin: 0 0 8px;
+                  color: white;
                 }
-            }
-        }
-    }
-    
+              
+                .school, .position{
+                  font-size: 17px;
+                  font-weight: 400;
+                  color: $white;
+                  margin-bottom: 1em;
+                }
+              
+                .level , .company, .task{
+                  font-size: 14px;
+                  color: rgba(white, 0.7);
+                  padding-bottom: .3em;
+                }
+              
+                &:not(:last-child) {
+                  &:after {
+                    height: 75%;
+                  }
+                 
+                }
+              }
+          }
+      }
+
 }
+
+
+
+// .steps {
+//   max-width: 300px;
+//   margin: 0 auto;
+// }
 
 // Skill ver 2
 
@@ -484,7 +435,7 @@ nav {
     text-align: left;
 
     & .title {
-        align-self: center;
+        align-self: left;
         color: $white;
         margin-bottom: 1em;
         padding: .1em;
@@ -614,7 +565,7 @@ nav {
     padding: 1em 15%;
 
     & .title {
-        text-align: center;
+        text-align: left;
         color: $white;
         margin-bottom: 1em;
         padding: .1em;
