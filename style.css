@@ -779,7 +779,6 @@ nav li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: rgba(15, 16, 63, 0.9);
   height: auto;
   color: #fffffe;
   font-size: 1em;
@@ -789,7 +788,7 @@ nav li a:hover {
 
 #contact .planet4 {
   top: -12em;
-  left: 10em;
+  left: 2em;
   position: absolute;
 }
 
@@ -843,10 +842,12 @@ nav li a:hover {
 }
 
 footer {
+  text-align: center;
+  padding: 1.5em;
+  background-color: rgba(4, 5, 38, 0.9);
   color: #ffe5b4;
   font-size: 1em;
   letter-spacing: 2px;
-  margin-top: 4em;
   font-family: monospace;
 }
 
