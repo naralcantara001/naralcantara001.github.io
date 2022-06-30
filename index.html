@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="og:description" content="Front-end Developer.">
-    <meta property="og:image" content="https://res.cloudinary.com/dmnxl9udz/image/upload/v1656125303/portfolio/display_ijbekc.png">
-    <meta name="keywords" content="Nar Alcantara, Nar Portfolio, naralcantara001, naralcantara01, https://naralcantara001.github.io/">
+    <meta property="og:image"
+        content="https://res.cloudinary.com/dmnxl9udz/image/upload/v1656125303/portfolio/display_ijbekc.png">
+    <meta name="keywords"
+        content="Nar Alcantara, Nar Portfolio, naralcantara001, naralcantara01, https://naralcantara001.github.io/">
     <meta name="author" content="Nar Alcantara">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="dp11.png">
@@ -16,6 +18,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js" defer></script>
     <title>Nar Alcantara</title>
 </head>
@@ -49,12 +52,14 @@
     <section id="home">
         <img class="planet1" src="planet1.png" alt="images">
         <img class="planet2" src="planet2.png" alt="images">
-        
-            <img class="myPhoto" src="dp11.png" alt="icon">
-        
+
+        <img class="myPhoto" src="dp11.png" alt="icon">
+
         <div class="name">
             <p class="greetings">Hello there!</p>
-            <h1 class="myName"><p style="font-size: 20px; color: #ddd; display: inline;">I'm</p> Nar Alcantara</h1>
+            <h1 class="myName">
+                <p style="font-size: 20px; color: #ddd; display: inline;">I'm</p> Nar Alcantara
+            </h1>
             <p class="profession">a Front-End Developer</p>
             <div class="social">
                 <a href="https://github.com/naralcantara001" target="_blank"> <i id="fabs"
@@ -63,8 +68,8 @@
                         class="fab fa-linkedin-in"></i></a>
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=naralcantara001@gmail.com" target="_blank"><i
                         id="fabs" class="fab fa-google"></i></a>
-                        <a href="https://codepen.io/naralcantara001" target="_blank"><i
-                            id="fabs" class="fa-brands fa-codepen"></i></a>
+                <a href="https://codepen.io/naralcantara001" target="_blank"><i id="fabs"
+                        class="fa-brands fa-codepen"></i></a>
             </div>
             <a href="#projects">
                 <button class="see-project-btn">
@@ -75,7 +80,7 @@
     </section>
 
     <!-- time line -->
-    <section id="about" class="timeline" >
+    <section id="about" class="timeline">
         <!-- container of time -->
         <div class='wrapper'>
 
@@ -141,7 +146,8 @@
                         <p class="date">February 21, 2013 - August 5, 2013</p>
                         <p class="position">Office Assistant</p>
                         <p class="company">House. Research. Development. Singapore PTE., LTD - Rosario Cavite</p>
-                        <p class="task">Add ventilation measurement on floorplan, saves client control number on the server.</p>
+                        <p class="task">Add ventilation measurement on floorplan, saves client control number on the
+                            server.</p>
                     </div>
                 </div>
                 <!-- each -->
@@ -160,74 +166,115 @@
         </div>
     </section>
 
-    <!-- skill ver 2 -->
+    <!-- skill ver 3 round-->
     <section id="skills">
         <img class="diamond" src="diamond.png" alt="images">
-        <img class="planet3" src="planet3.png" alt="images">
-        <h3 class="title">Skills</h3>
+        <h3 class="title">Stacks</h3>
         <div class="skill-container">
-
-            <div class="skill-status">
-                <span><i class="fa-brands fa-html5"></i></span>
-                <span class="skill-name">HTML5</span>
+            <!-- skill html -->
+            <div class="skill">
+                <!-- progress -->
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>90</span>%
+                </div>
+                <!-- info -->
+                <button class="icon"><i class="fa-brands fa-html5"></i>
+                    <span class="skill-name">HTML5</span>
+                </button>
                 <p class="description">semantic, meta, forms, inputs</p>
-                <div class="skill-set">
-                    <span class="bar" style="width:90%">90%</span>
-                </div>
             </div>
-
-            <div class="skill-status">
-                <span><i class="fa-brands fa-html5"></i></span>
-                <span class="skill-name">CSS3</span>
-                <p class="description">flexbox, grid, responsive, positioning</p>
-                <div class="skill-set">
-                    <span class="bar" style="width:70%">70%</span>
+            <!-- skill css -->
+            <div class="skill">
+                <!-- progress -->
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>80</span>%
                 </div>
+                <!-- info -->
+                <button class="icon"><i class="fa-brands fa-css3"></i>
+                    <span class="skill-name">CSS3</span>
+                </button>
+                <p class="description">flexbox, grid, responsive, positioning, media queries</p>
             </div>
-
-            <div class="skill-status">
-                <span><i class="fa-brands fa-sass"></i></span>
-                <span class="skill-name">SASS</span>
+            <!-- skill sass -->
+            <div class="skill">
+                <!-- progress -->
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>60</span>%
+                </div>
+                <!-- info -->
+                <button class="icon"><i class="fa-brands fa-sass"></i>
+                    <span class="skill-name">SASS</span>
+                </button>
                 <p class="description">variables, nesting, mixin, extend</p>
-                <div class="skill-set">
-                    <span class="bar" style="width:60%">60%</span>
-                </div>
             </div>
-
-            <div class="skill-status">
-                <span><i class="fa-brands fa-js-square"></i></span>
-                <span class="skill-name">Javascript</span>
-                <p class="description">function, DOM, objects, methods</p>
-                <div class="skill-set">
-                    <span class="bar" style="width:50%">50%</span>
+            <!-- skill javascript -->
+            <div class="skill">
+                <!-- progress -->
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>50</span>%
                 </div>
+                <!-- info -->
+                <button class="icon"><i class="fa-brands fa-js-square"></i>
+                    <span class="skill-name">JavaScript</span>
+                </button>
+                <p class="description">function, DOM, objects, methods, JSON</p>
             </div>
-
-            <div class="skill-status">
-                <span><i class="fa-brands fa-react"></i></span>
-                <span class="skill-name">ReactJS</span>
-                <p class="description">components, props, JSX, map data to components</p>
-                <div class="skill-set">
-                    <span class="bar" style="width:50%">50%</span>
+            <!-- skill ReactJS-->
+            <div class="skill">
+                <!-- progress -->
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>50</span>%
                 </div>
+                <!-- info -->
+                <button class="icon"><i class="fa-brands fa-react"></i>
+                    <span class="skill-name">ReactJS</span>
+                </button>
+                <p class="description">components, props, JSX</p>
             </div>
-
-            <div class="skill-status">
-                <span><i class="fa-brands fa-github"></i></span>
-                <span class="skill-name">Github</span>
-                <p class="description">repositories</p>
-                <div class="skill-set">
-                    <span class="bar" style="width:40%">40%</span>
+            <!-- skill github -->
+            <div class="skill">
+                <!-- progress -->
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>50</span>%
                 </div>
-            </div>
-
-            <div class="skill-status">
-                <span><i class="fa-brands fa-figma"></i></i></span>
-                <span class="skill-name">Figma</span>
+                <!-- info -->
+                <button class="icon"><i class="fa-brands fa-github"></i>
+                    <span class="skill-name">Github</span>
+                </button>
                 <p class="description"></p>
-                <div class="skill-set">
-                    <span class="bar" style="width:40%">40%</span>
+            </div>
+            <!-- skill figma -->
+            <div class="skill">
+                <!-- progress -->
+                <div class="progress">
+                    <div class="barOverflow">
+                        <div class="bar"></div>
+                    </div>
+                    <span>50</span>%
                 </div>
+                <!-- info -->
+                <button class="icon"><i class="fa-brands fa-html5"></i>
+                    <span class="skill-name">Figma</span>
+                </button>
+                <p class="description"></p>
             </div>
         </div>
         <!-- others -->
@@ -236,14 +283,14 @@
             <div class="list">
                 <span><b>*</b> Can build a static web from scratch using HTML, CSS, JavaScript, ReactJS</span>
                 <span><b>*</b> Can use figma as a template/design.</span>
-                <span><b>*</b> Familiar with Wordpress (I build an e-commerce website during college days))</span>
+                <span><b>*</b> Familiar with Wordpress (I build an e-commerce website during college days)</span>
                 <span><b>*</b> Familiar with UI/UX</span>
             </div>
         </div>
     </section>
+
     <!-- skill end -->
 
-    </section>
     <!-- projects -->
     <section id="projects">
         <img class="diamond" src="diamond.png" alt="images">
@@ -379,14 +426,13 @@
 
         </div>
         <!--  -->
-
-
-
-        <!-- don't touch -->  </section>
+        <!-- don't touch -->
+    </section>
 
     <!-- contact -->
     <section id="contact">
         <img class="planet4" src="planet4.png" alt="images">
+        <img class="planet3" src="planet0.png" alt="images">
         <div class="business">
             <h4>Business:</h4>
             <a href="https://github.com/naralcantara001" target="_blank"> <i id="faabs"
