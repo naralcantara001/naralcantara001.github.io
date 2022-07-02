@@ -66,7 +66,7 @@ $(".progress").each(function(){
     var perc = parseInt( $val.text(), 10);
   
     $({p:0}).animate({p:perc}, {
-      duration: 3000,
+      duration: 5000,
       easing: "swing",
       step: function(p) {
         $bar.css({
@@ -77,6 +77,8 @@ $(".progress").each(function(){
       }
     });
   });
+  //
+
   // scroll animation
   function reveal() {
     var reveals = document.querySelectorAll(".reveal");
@@ -93,7 +95,6 @@ $(".progress").each(function(){
       }
     }
   }
-  
   window.addEventListener("scroll", reveal);
   
   // preloader
