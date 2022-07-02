@@ -1225,9 +1225,17 @@ footer {
         background-color: $dark;
         height: auto;
         color: $white;
-        font-size: 1em;
+        font-size: .8em;
         letter-spacing: 2px;
         padding: 0 10% 3em 10%;
+        & .business {
+            & a {    
+                & #faabs {
+                    font-size: .7em;
+                    }
+                }
+    }
+        
         & .planet4{
             position: absolute;
             width: 150px;
@@ -1245,7 +1253,7 @@ footer {
     footer {
         font-size: .8em;
         padding: 0;
-        margin: 3em 0 1em 0;
+        margin: 3em 0 1.5em 0;
     }
 
     nav {

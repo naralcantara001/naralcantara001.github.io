@@ -1431,9 +1431,12 @@ footer {
     background-color: #0F103F;
     height: auto;
     color: #fffffe;
-    font-size: 1em;
+    font-size: .8em;
     letter-spacing: 2px;
     padding: 0 10% 3em 10%;
+  }
+  #contact .business a #faabs {
+    font-size: .7em;
   }
   #contact .planet4 {
     position: absolute;
@@ -1449,7 +1452,7 @@ footer {
   footer {
     font-size: .8em;
     padding: 0;
-    margin: 3em 0 1em 0;
+    margin: 3em 0 1.5em 0;
   }
   nav {
     padding: .3em 0;
