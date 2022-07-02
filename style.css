@@ -558,11 +558,11 @@ nav li a:hover {
   border-radius: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 10px solid #1C1C65;
+  border: 10px solid #0F103F;
   /* half gray, */
-  border-bottom-color: #eebbc3;
+  border-bottom-color: lightskyblue;
   /* half azure */
-  border-right-color: #eebbc3;
+  border-right-color: lightskyblue;
 }
 
 .skill {
@@ -585,7 +585,7 @@ nav li a:hover {
   margin: 30px;
   padding: 40px;
   border-radius: 50%;
-  background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.2) 24.79%, #0F103F 71.87%);
+  background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.2) 24.79%, #1C1C65 71.87%);
   -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
           box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
   -webkit-transition: ease .3s;

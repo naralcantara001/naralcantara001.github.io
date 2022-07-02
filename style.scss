@@ -473,9 +473,9 @@ nav {
   width: 200px; height: 200px; /* full circle! */
   border-radius: 50%;
   box-sizing: border-box;
-  border: 10px solid $darkviolet;     /* half gray, */
-  border-bottom-color: $pink;  /* half azure */
-  border-right-color: $pink;
+  border: 10px solid $dark;     /* half gray, */
+  border-bottom-color: lightskyblue;  /* half azure */
+  border-right-color: lightskyblue;
 }
 .skill{
     cursor: pointer;
@@ -488,7 +488,7 @@ nav {
     margin: 30px;
     padding: 40px;
     border-radius: 50%;
-    background: linear-gradient(105.95deg, $transparentWhite 24.79%, $dark 71.87%);
+    background: linear-gradient(105.95deg, $transparentWhite 24.79%, $darkviolet 71.87%);
     box-shadow: 2px 2px 2px rgba(255, 255, 255, .5);
     transition: ease .3s;
     &:hover {
