@@ -916,8 +916,8 @@ footer {
   text-align: center;
   padding: 2em;
   margin-top: 3em;
-  color: #fffffe;
-  font-size: .8em;
+  color: #ddde;
+  font-size: 1em;
   letter-spacing: 2px;
   font-family: monospace;
 }
@@ -1431,7 +1431,7 @@ footer {
     background-color: #0F103F;
     height: auto;
     color: #fffffe;
-    font-size: .7em;
+    font-size: 1em;
     letter-spacing: 2px;
     padding: 0 10% 3em 10%;
   }
@@ -1448,6 +1448,8 @@ footer {
   }
   footer {
     font-size: .8em;
+    padding: 0;
+    margin: 3em 0 1em 0;
   }
   nav {
     padding: .3em 0;
