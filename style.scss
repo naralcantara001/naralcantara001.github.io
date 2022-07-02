@@ -474,8 +474,8 @@ nav {
   border-radius: 50%;
   box-sizing: border-box;
   border: 10px solid $dark;     /* half gray, */
-  border-bottom-color: lightskyblue;  /* half azure */
-  border-right-color: lightskyblue;
+  border-bottom-color: $pink;  /* half azure */
+  border-right-color: $pink;
 }
 .skill{
     cursor: pointer;

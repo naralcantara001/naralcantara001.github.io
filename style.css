@@ -560,9 +560,9 @@ nav li a:hover {
           box-sizing: border-box;
   border: 10px solid #0F103F;
   /* half gray, */
-  border-bottom-color: lightskyblue;
+  border-bottom-color: #eebbc3;
   /* half azure */
-  border-right-color: lightskyblue;
+  border-right-color: #eebbc3;
 }
 
 .skill {
