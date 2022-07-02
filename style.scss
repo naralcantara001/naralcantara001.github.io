@@ -532,22 +532,22 @@ nav {
         letter-spacing: 1px;
     }
 }
- .other-skills{
-    display: grid;
-    place-items: center;
-    margin: 1em 0;
-    z-index: 1;
-    height: auto;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 10px;
-    background: linear-gradient(105.95deg, $transparentWhite 24.79%, $dark 71.87%);
-    box-shadow: 2px 2px 2px rgba(255, 255, 255, .5);
-    & .skill-name {
-        font-size: .5em;
-        color: $pink;
-    }
-}
+//  .other-skills{
+//     display: grid;
+//     place-items: center;
+//     margin: 1em 0;
+//     z-index: 1;
+//     height: auto;
+//     max-width: 400px;
+//     padding: 20px;
+//     border-radius: 10px;
+//     background: linear-gradient(105.95deg, $transparentWhite 24.79%, $dark 71.87%);
+//     box-shadow: 2px 2px 2px rgba(255, 255, 255, .5);
+//     & .skill-name {
+//         font-size: .5em;
+//         color: $pink;
+//     }
+// }
  .list{
     display: grid;
     // width: fit-content;

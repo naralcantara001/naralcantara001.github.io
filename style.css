@@ -647,26 +647,6 @@ nav li a:hover {
   letter-spacing: 1px;
 }
 
-.other-skills {
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  margin: 1em 0;
-  z-index: 1;
-  height: auto;
-  max-width: 400px;
-  padding: 20px;
-  border-radius: 10px;
-  background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.2) 24.79%, #0F103F 71.87%);
-  -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
-          box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
-}
-
-.other-skills .skill-name {
-  font-size: .5em;
-  color: #eebbc3;
-}
-
 .list {
   display: -ms-grid;
   display: grid;
