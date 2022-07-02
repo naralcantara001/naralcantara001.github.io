@@ -96,3 +96,8 @@ $(".progress").each(function(){
   
   window.addEventListener("scroll", reveal);
   
+  // preloader
+  var loader = document.getElementById("preloader");
+  window.addEventListener("load", function(){
+    loader.style.display = "none"
+  })
