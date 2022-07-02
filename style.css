@@ -1244,6 +1244,9 @@ footer {
     -webkit-transform: scale(1.1);
             transform: scale(1.1);
   }
+  .other-skills {
+    max-width: 350px;
+  }
   #projects {
     padding: 2em 11%;
   }
