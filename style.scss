@@ -108,8 +108,21 @@ section {
     }
 }
 //
-.title{
+.title {
+    position:relative;
+    display:inline-block;
     letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.title:after {
+    content:'';
+    position:absolute;
+    left:0; right:0;
+    top:100%;
+    margin:10px auto;
+    width:50%;
+    height:6px;
+    background:$white;
 }
 // header nav
 header {
@@ -155,6 +168,7 @@ nav {
 
         & a {
             text-decoration: none;
+            letter-spacing: 1px;
             color: $white;
             padding: .3em .8em;
             cursor: pointer;
@@ -381,11 +395,13 @@ nav {
     flex-direction: column;
     padding: 3em 15%;
     & .diamond{
-        top: 12em;
+        top: 0;
+        left: 0;
         position: absolute;
     }
     & .title{
         color: $pink;
+        margin-bottom: 1em;
     }
 }
 .skill-container{
@@ -397,7 +413,6 @@ nav {
 }
 .progress{
   position: relative;
-  margin: 4px;
   float:left;
   text-align: center;
   color: $white;
@@ -424,10 +439,13 @@ nav {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    width: 240px;
+    width: 280px;
     height: 280px;
     margin: 30px;
-    border-radius: 50px;
+    padding: 40px;
+    border-radius: 50%;
+    background-color: $transparentWhite;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, .5);
     & .icon{
         display: flex;
         align-items: center;
@@ -448,6 +466,7 @@ nav {
     }
     & .description{
         display: flex;
+        word-break: normal;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -458,18 +477,19 @@ nav {
     }
 }
  .other-skills{
-    // display: grid;
+    display: grid;
+    place-items: center;
     margin: 1em 0;
     z-index: 1;
     height: auto;
-    width: 97%;
+    max-width: 400px;
     padding: 20px;
     border-radius: 10px;
-    background-image: linear-gradient(to right, $darkviolet, #111);
+    background-color: $transparentWhite;
+    box-shadow: 2px 2px 2px rgba(255, 255, 255, .5);
     & .skill-name {
-        font-size: .6em;
+        font-size: .5em;
         color: $pink;
-        padding-left: 10px;
     }
 }
  .list{
@@ -484,15 +504,15 @@ nav {
         width: 100%;
         height: auto;
         text-align: left;
-        color: $white;
+        color: #ddde;
         font-size: 15px;
         padding: 20px;
         margin: 15px 0;
-        background-color: $transparentWhite;
+        background-color: $darkviolet;
         border-radius: 50px;
         cursor: pointer;
         transition: all ease .3s;
-        box-shadow: 1px 1px 5px rgba(255, 255,255, .3);
+        box-shadow: 2px 2px 2px rgba(255, 255,255, .3);
         &:hover{
             transform: scale(1.1);
         }
@@ -505,23 +525,21 @@ nav {
 // projects
 #projects {
     position: relative;
-    height: auto;
-    display: grid;
-    place-items: left;
-    padding: 1em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3em 15%;
     & .diamond{
-        z-index: 1;
-        position: absolute;
         top: 0;
         left: 0;
+        position: absolute;
     }
-    & .title {
-        z-index: 1;
-        text-align: left;
+    & .title{
         color: $pink;
         margin-bottom: 1em;
-        padding: .1em;
     }
+
     & .pro{
         z-index: 1;
     }
@@ -553,18 +571,6 @@ nav {
             padding: .5em;
             // display: block;
         }
-
-        // & .overlay-on-vid{
-        //     cursor: pointer;
-        //     position: absolute;
-        //     top: 0;
-        //     left: 0;
-        //     right: 0;
-        //     bottom: 0;
-        //     width: 100%;
-        //     border-radius: 10px;
-        //     background-color: rgba(0, 0, 0, .7);
-        // }
     }
 
     & .btn-and-description {
@@ -629,6 +635,7 @@ nav {
 
 
 // contact
+
 #contact {
     position: relative;
     display: flex;
@@ -639,26 +646,29 @@ nav {
     color: $white;
     font-size: 1em;
     letter-spacing: 2px;
-    padding: 2em 10%;
+    padding: 3em 10%;
     & .planet4{
-        top: -12em;
-        left:   2em;
         position: absolute;
+        width: 280px;
+        top: -130px;
+        left: 10em;
     }
-    & .planet3{
-        top: 0;
-        right: 0;
-        width: 30em;
+    & .planet0{
         position: absolute;
+        width: 350px;
+        top: -180px;
+        right: 0;
     }
 
     & .business {
         z-index: 1;
         display: flex;
-        align-items: left;
-        justify-content: left;
+        align-items: center;
+        justify-content: center;
         flex-direction: column;
         letter-spacing: 2px;
+        width: 100%;
+        border-top: 1px solid $transparentWhite;
 
         & a {
             color: $pink;
@@ -690,10 +700,10 @@ nav {
 // footer
 footer {
     text-align: center;
-    padding: 1.5em;
-    background-color: rgba(4, 5, 38, 0.9);
-    color: $lightOrange;
-    font-size: 1em;
+    padding: 2em;
+    margin-top: 3em;
+    color: $white;
+    font-size: .8em;
     letter-spacing: 2px;
     font-family: monospace;
 }
@@ -706,11 +716,6 @@ footer {
     }
     .diamond{
         width: 250px;
-    }
-    .planet4{
-        top: 0;
-        left: 0;
-        width: 300px;
     }
 
     #home {
@@ -787,18 +792,11 @@ footer {
         font-size: .8em
     }
 
+    #about{
+        padding-bottom: 3em;
+    }
+
     #projects {
-        height: auto;
-        display: grid;
-        place-items: left;
-        padding: 11%;
-
-        & .title {
-            margin-bottom: 1em;
-            padding: 0 .2em .2em 0;
-            margin-left: 0;
-        }
-
         & .project {
             display: flex;
             flex-direction: column;
@@ -1052,18 +1050,44 @@ footer {
     
     }
     // skill ver 3 round
+    #skills{
+        & .title{
+            z-index: 1;
+        }
+        & .diamond{
+            top: -60px;
+            width: 100px;
+        }
+    }
     .progress{
         font-size: 25px;
     }
     .skill{
-        margin: 0;
+        margin: 1em 0;
+    }
+    .list{
+        & span{
+            word-wrap: break-word;
+            width: 100%;
+            height: auto;
+            text-align: left;
+            color: $white;
+            font-size: 12px;
+            padding: 20px;
+            margin: 15px 0;
+            background-color: $darkviolet;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all ease .3s;
+            box-shadow: 2px 2px 2px rgba(255, 255,255, .3);
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
     }
 
     // project
     #projects {
-        height: auto;
-        display: grid;
-        place-items: left;
         padding: 2em 11%;
         & .diamond{
             width: 100px;
@@ -1153,8 +1177,15 @@ footer {
         letter-spacing: 2px;
         padding: 10%;
         & .planet4{
+            position: absolute;
+            width: 150px;
+            top: -20px;
+            left: 3em;
+        }
+        & .planet0{
+            position: absolute;
             width: 200px;
-            left: 0;
+            top: -50px;
         }
     }
 

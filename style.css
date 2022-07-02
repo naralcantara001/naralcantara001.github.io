@@ -121,7 +121,22 @@ section {
 }
 
 .title {
+  position: relative;
+  display: inline-block;
   letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.title:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin: 10px auto;
+  width: 50%;
+  height: 6px;
+  background: #fffffe;
 }
 
 header {
@@ -175,6 +190,7 @@ nav li {
 
 nav li a {
   text-decoration: none;
+  letter-spacing: 1px;
   color: #fffffe;
   padding: .3em .8em;
   cursor: pointer;
@@ -460,12 +476,14 @@ nav li a:hover {
 }
 
 #skills .diamond {
-  top: 12em;
+  top: 0;
+  left: 0;
   position: absolute;
 }
 
 #skills .title {
   color: #eebbc3;
+  margin-bottom: 1em;
 }
 
 .skill-container {
@@ -485,7 +503,6 @@ nav li a:hover {
 
 .progress {
   position: relative;
-  margin: 4px;
   float: left;
   text-align: center;
   color: #fffffe;
@@ -535,10 +552,14 @@ nav li a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 240px;
+  width: 280px;
   height: 280px;
   margin: 30px;
-  border-radius: 50px;
+  padding: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+          box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .skill .icon {
@@ -571,6 +592,7 @@ nav li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  word-break: normal;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -585,20 +607,23 @@ nav li a:hover {
 }
 
 .other-skills {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
   margin: 1em 0;
   z-index: 1;
   height: auto;
-  width: 97%;
+  max-width: 400px;
   padding: 20px;
   border-radius: 10px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#1C1C65), to(#111));
-  background-image: linear-gradient(to right, #1C1C65, #111);
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+          box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
 }
 
 .other-skills .skill-name {
-  font-size: .6em;
+  font-size: .5em;
   color: #eebbc3;
-  padding-left: 10px;
 }
 
 .list {
@@ -615,17 +640,17 @@ nav li a:hover {
   width: 100%;
   height: auto;
   text-align: left;
-  color: #fffffe;
+  color: #ddde;
   font-size: 15px;
   padding: 20px;
   margin: 15px 0;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #1C1C65;
   border-radius: 50px;
   cursor: pointer;
   -webkit-transition: all ease .3s;
   transition: all ease .3s;
-  -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
-          box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+  -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+          box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
 }
 
 .list span:hover {
@@ -635,26 +660,31 @@ nav li a:hover {
 
 #projects {
   position: relative;
-  height: auto;
-  display: -ms-grid;
-  display: grid;
-  place-items: left;
-  padding: 1em 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3em 15%;
 }
 
 #projects .diamond {
-  z-index: 1;
-  position: absolute;
   top: 0;
   left: 0;
+  position: absolute;
 }
 
 #projects .title {
-  z-index: 1;
-  text-align: left;
   color: #eebbc3;
   margin-bottom: 1em;
-  padding: .1em;
 }
 
 #projects .pro {
@@ -783,20 +813,21 @@ nav li a:hover {
   color: #fffffe;
   font-size: 1em;
   letter-spacing: 2px;
-  padding: 2em 10%;
+  padding: 3em 10%;
 }
 
 #contact .planet4 {
-  top: -12em;
-  left: 2em;
   position: absolute;
+  width: 280px;
+  top: -130px;
+  left: 10em;
 }
 
-#contact .planet3 {
-  top: 0;
-  right: 0;
-  width: 30em;
+#contact .planet0 {
   position: absolute;
+  width: 350px;
+  top: -180px;
+  right: 0;
 }
 
 #contact .business {
@@ -804,17 +835,19 @@ nav li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   letter-spacing: 2px;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #contact .business a {
@@ -843,10 +876,10 @@ nav li a:hover {
 
 footer {
   text-align: center;
-  padding: 1.5em;
-  background-color: rgba(4, 5, 38, 0.9);
-  color: #ffe5b4;
-  font-size: 1em;
+  padding: 2em;
+  margin-top: 3em;
+  color: #fffffe;
+  font-size: .8em;
   letter-spacing: 2px;
   font-family: monospace;
 }
@@ -857,11 +890,6 @@ footer {
   }
   .diamond {
     width: 250px;
-  }
-  .planet4 {
-    top: 0;
-    left: 0;
-    width: 300px;
   }
   #home {
     display: -webkit-box;
@@ -950,17 +978,8 @@ footer {
   .info > span {
     font-size: .8em;
   }
-  #projects {
-    height: auto;
-    display: -ms-grid;
-    display: grid;
-    place-items: left;
-    padding: 11%;
-  }
-  #projects .title {
-    margin-bottom: 1em;
-    padding: 0 .2em .2em 0;
-    margin-left: 0;
+  #about {
+    padding-bottom: 3em;
   }
   #projects .project {
     display: -webkit-box;
@@ -1237,17 +1256,41 @@ footer {
   .timeline .wrapper .steps .step:not(:last-child):after {
     height: 75%;
   }
+  #skills .title {
+    z-index: 1;
+  }
+  #skills .diamond {
+    top: -60px;
+    width: 100px;
+  }
   .progress {
     font-size: 25px;
   }
   .skill {
-    margin: 0;
+    margin: 1em 0;
+  }
+  .list span {
+    word-wrap: break-word;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #fffffe;
+    font-size: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: #1C1C65;
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+    -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+            box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+  }
+  .list span:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   #projects {
-    height: auto;
-    display: -ms-grid;
-    display: grid;
-    place-items: left;
     padding: 2em 11%;
   }
   #projects .diamond {
@@ -1351,8 +1394,15 @@ footer {
     padding: 10%;
   }
   #contact .planet4 {
+    position: absolute;
+    width: 150px;
+    top: -20px;
+    left: 3em;
+  }
+  #contact .planet0 {
+    position: absolute;
     width: 200px;
-    left: 0;
+    top: -50px;
   }
   footer {
     font-size: .5em;
