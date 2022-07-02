@@ -456,6 +456,7 @@ nav {
     flex-wrap: wrap;
 }
 .progress{
+    z-index: 99;
   position: relative;
   float:left;
   text-align: center;
@@ -474,9 +475,9 @@ nav {
   width: 200px; height: 200px; /* full circle! */
   border-radius: 50%;
   box-sizing: border-box;
-  border: 10px solid $dark;     /* half gray, */
-  border-bottom-color: $pink;  /* half azure */
-  border-right-color: $pink;
+  border: 10px dotted $dark;     /* half gray, */
+  border-bottom-color: #26abff;  /* half azure */
+  border-right-color: #26abff;
 }
 .skill{
     cursor: pointer;

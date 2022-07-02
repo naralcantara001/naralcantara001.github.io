@@ -530,6 +530,7 @@ nav li a:hover {
 }
 
 .progress {
+  z-index: 99;
   position: relative;
   float: left;
   text-align: center;
@@ -559,11 +560,11 @@ nav li a:hover {
   border-radius: 50%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 10px solid #0F103F;
+  border: 10px dotted #0F103F;
   /* half gray, */
-  border-bottom-color: #eebbc3;
+  border-bottom-color: #26abff;
   /* half azure */
-  border-right-color: #eebbc3;
+  border-right-color: #26abff;
 }
 
 .skill {
