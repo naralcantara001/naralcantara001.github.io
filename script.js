@@ -1,5 +1,3 @@
-
-
 const li = document.querySelectorAll('.links');
 const sec = document.querySelectorAll('section');
 const body = document.querySelector('body');
@@ -7,8 +5,8 @@ const body = document.querySelector('body');
 function activeMenu(){
     let len = sec.length;
     while(--len && window.scrollY + 97 < sec[len].offsetTop){}
-    li.forEach(ltx => ltx.classList.remove("active"));
-    li[len].classList.add("active");
+    li.forEach(ltx => ltx.classList.remove("actives"));
+    li[len].classList.add("actives");
 
     // sec.forEach(ltx => ltx.classList.remove(".section"));
     // sec[len].classList.add("active-sec");
@@ -49,7 +47,7 @@ navSlide();
 // Arrow Up
 let arrowUp = document.querySelector('#arrowUp');
 window.onscroll = function(){
-    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+    if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
         arrowUp.style.display = 'block';
     }else{
         arrowUp.style.display = 'none';
@@ -79,3 +77,22 @@ $(".progress").each(function(){
       }
     });
   });
+  // scroll animation
+  function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+  
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 150;
+  
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+      } else {
+        reveals[i].classList.remove("active");
+      }
+    }
+  }
+  
+  window.addEventListener("scroll", reveal);
+  

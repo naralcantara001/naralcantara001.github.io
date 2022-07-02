@@ -69,44 +69,24 @@ section {
 }
 
 // javascript active nav hover 
-.active {
+.actives {
     border-bottom: 4px solid $white;
 }
+// scroll animation
 
-.active-sec {
-    // animation: fadeInTop .3s  ;
-    animation: fadeInTop 1s none;
-}
 
-// section{
-//     animation: fadeInTop 1.2s both;
-// }
-@keyframes fadeInTop {
-    0% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
 
-    25% {
-        opacity: .3;
-        transform: translateY(75px);
-    }
-
-    50% {
-        opacity: .6;
-        transform: translateY(50px);
-    }
-
-    75% {
-        opacity: .7;
-        transform: translateY(750px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 //
 .title {
     position:relative;
