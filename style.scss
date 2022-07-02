@@ -130,6 +130,7 @@ section {
     font-size: 2em;
     height: auto;
     background-color: $dark;
+    border: none;
 }
 
 // javascript active nav hover 
@@ -1231,7 +1232,7 @@ footer {
         & .business {
             & a {    
                 & #faabs {
-                    font-size: .7em;
+                    font-size: .9em;
                     }
                 }
     }
@@ -1251,7 +1252,7 @@ footer {
 
     // footer
     footer {
-        font-size: .8em;
+        font-size: .9em;
         padding: 0;
         margin: 3em 0 1.5em 0;
     }

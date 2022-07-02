@@ -126,6 +126,7 @@ section {
   font-size: 2em;
   height: auto;
   background-color: #0F103F;
+  border: none;
 }
 
 .actives {
@@ -1436,7 +1437,7 @@ footer {
     padding: 0 10% 3em 10%;
   }
   #contact .business a #faabs {
-    font-size: .7em;
+    font-size: .9em;
   }
   #contact .planet4 {
     position: absolute;
@@ -1450,7 +1451,7 @@ footer {
     top: -50px;
   }
   footer {
-    font-size: .8em;
+    font-size: .9em;
     padding: 0;
     margin: 3em 0 1.5em 0;
   }
