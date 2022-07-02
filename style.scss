@@ -495,7 +495,11 @@ nav {
     margin: 30px;
     padding: 40px;
     border-radius: 50%;
-    background: linear-gradient(105.95deg, $transparentWhite 24.79%, $darkviolet 71.87%);
+    background-image:
+    linear-gradient(to bottom, rgba(245, 246, 252, .2), hsl(240, 57%, 25%)),
+    url('/star.png');
+    // background-image: linear-gradient(105.95deg, $transparentWhite 24.79%, $darkviolet 71.87%) url('./star.png');
+    background-size: cover;
     box-shadow: 2px 2px 2px rgba(255, 255, 255, .5);
     transition: ease .3s;
     &:hover {

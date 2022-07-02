@@ -589,7 +589,9 @@ nav li a:hover {
   margin: 30px;
   padding: 40px;
   border-radius: 50%;
-  background: linear-gradient(105.95deg, rgba(255, 255, 255, 0.2) 24.79%, #1C1C65 71.87%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.2)), to(#1b1b64)), url("/star.png");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), #1b1b64), url("/star.png");
+  background-size: cover;
   -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
           box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
   -webkit-transition: ease .3s;
