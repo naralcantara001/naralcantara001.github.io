@@ -196,7 +196,7 @@ header {
   font-size: 30px;
   font-size: 30px;
   color: #fffffe;
-  margin: .2em;
+  margin: .2em 0;
   text-shadow: -1px 1px 2px #7f1cdf, 1px 2px 6px #7f1cdf, 1px -1px 0 #26abff, -1px -1px 0 #26abff;
 }
 
