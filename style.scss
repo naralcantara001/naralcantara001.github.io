@@ -1112,6 +1112,11 @@ footer {
   }
 
   // skill ver 3 round
+  #skills{
+    & .diamond{
+        width: 100px;
+    }
+  }
   .progress {
     font-size: 10px;
   }
@@ -1275,7 +1280,7 @@ footer {
     letter-spacing: 2px;
     padding: 0 10% 3em 10%;
     & .quote{
-        font-size: 6px;
+        font-size: 7px;
     }
     & .business {
       & a {
@@ -1285,16 +1290,10 @@ footer {
       }
     }
 
-    & .planet4 {
-      position: absolute;
-      width: 150px;
-      top: -20px;
-      left: 3em;
-    }
     & .planet0 {
       position: absolute;
       width: 150px;
-      top: -50px;
+      top: 50px;
     }
   }
 
