@@ -502,7 +502,7 @@ nav {
     url("/star.png");
   // background-image: linear-gradient(105.95deg, $transparentWhite 24.79%, $darkviolet 71.87%) url('./star.png');
   background-size: cover;
-  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   transition: ease 0.3s;
   &:hover {
     transform: scale(1.1);
@@ -521,7 +521,7 @@ nav {
     border: none;
     border-radius: 10px;
     letter-spacing: 1px;
-    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
     i {
       color: $darkPink;
       margin-right: 10px;

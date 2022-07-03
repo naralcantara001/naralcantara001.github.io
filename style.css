@@ -596,8 +596,8 @@ nav li a:hover {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.2)), to(#1b1b64)), url("/star.png");
   background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), #1b1b64), url("/star.png");
   background-size: cover;
-  -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
-          box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+          box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
 }
@@ -627,8 +627,8 @@ nav li a:hover {
   border: none;
   border-radius: 10px;
   letter-spacing: 1px;
-  -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
-          box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 .skill .icon i {
