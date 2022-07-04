@@ -14,8 +14,8 @@ html {
 }
 // sass
 $darkviolet: #1c1c65;
-$pink: #eebbc3;
-$darkPink: #c961de;
+$pink: #ff83cd ;
+$darkPink: #ff83cd;
 $transparentWhite: rgba(255, 255, 255, 0.2);
 $orange: #ffa500;
 $lightOrange: #ffe5b4;
@@ -66,7 +66,7 @@ $white: #fffffe;
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #ff00ff;
+  border-top-color: $pink;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -185,13 +185,7 @@ header {
 }
 
 .logo {
-  font-weight: bolder;
-  font-size: 30px;
-  font-size: 20px;
-  color: rgb(220, 220, 223);
-  margin: 0.2em 0;
-  text-shadow: -1px 1px 2px #7f1cdf, 1px 2px 6px #7f1cdf, 1px -1px 0 #26abff,
-    -1px -1px 0 #26abff;
+  width: 30px;
 }
 
 //  header nav links
@@ -326,7 +320,7 @@ nav {
 }
 
 .cv {
-  background: linear-gradient(105.95deg, #c961de 24.79%, #2954a3 71.87%);
+  background: linear-gradient(105.95deg, $pink 24.79%, #2954a3 71.87%);
   box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
   color: $white;
   padding: 0.5em 1em;
@@ -336,7 +330,7 @@ nav {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 3px 5px 10px $darkviolet;
 
   & .arrow-down {
     margin-left: 0.8em;
@@ -479,7 +473,7 @@ nav {
   height: 200px; /* full circle! */
   border-radius: 50%;
   box-sizing: border-box;
-  border: 9px dotted $dark; /* half gray, */
+  border:10px solid $dark; /* half gray, */
   border-bottom-color: #26abff; /* half azure */
   border-right-color: #26abff;
 }
@@ -502,7 +496,7 @@ nav {
     url("/star.png");
   // background-image: linear-gradient(105.95deg, $transparentWhite 24.79%, $darkviolet 71.87%) url('./star.png');
   background-size: cover;
-  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5);
+  box-shadow: 3px 5px 10px $darkviolet;
   transition: ease 0.3s;
   &:hover {
     transform: scale(1.1);
@@ -521,7 +515,7 @@ nav {
     border: none;
     border-radius: 10px;
     letter-spacing: 1px;
-    box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+    box-shadow: 3px 5px 10px $darkviolet;
     i {
       color: $darkPink;
       margin-right: 10px;
@@ -681,7 +675,7 @@ nav {
       font-size: 0.7em;
       cursor: pointer;
       padding: 0.8em 1em;
-      background: linear-gradient(105.95deg, #c961de 24.79%, #2954a3 71.87%);
+      background: linear-gradient(105.95deg, $pink 24.79%, #2954a3 71.87%);
       box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
       color: $white;
       border-radius: 10px;
