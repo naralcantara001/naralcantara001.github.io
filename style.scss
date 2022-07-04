@@ -373,12 +373,12 @@ nav {
 }
 // projects
 #projects {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 3em 15%;
+  height: auto;
+  padding: 1em 15%;
   & .title {
     margin-bottom: 1em;
   }
