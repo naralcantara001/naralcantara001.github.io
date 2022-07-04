@@ -250,18 +250,6 @@ nav {
   letter-spacing: 2px;
   height: auto;
 }
-.planet1,
-.planet2 {
-  position: absolute;
-}
-.planet1 {
-  top: 0;
-  left: 0;
-}
-.planet2 {
-  right: 0;
-  top: 0;
-}
 
 .name {
   z-index: 1;
@@ -336,246 +324,52 @@ nav {
   }
 }
 
-// Time line
-.timeline {
-  display: grid;
+// skill ver 3
+#skills{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  justify-content: left;
-  height: auto;
   padding: 3em 15%;
-  & h5 {
-    color: $pink;
-    margin: 1em 0;
+  .title{
+    margin-bottom: 2em;
   }
-  & .wrapper {
+  .skill-container{
     display: flex;
-    flex-direction: column;
-    justify-content: left;
-    height: auto;
-    width: 600px;
-    & .steps {
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+    background-color: $transparentWhite;
+    .skill{
       display: flex;
-      flex-direction: column;
       justify-content: left;
-      width: auto;
-      & .step {
+      align-items: baseline;
+      flex-direction: column;
+      width: 100%;
+      margin: 10px;
+      padding: 10px;
+      background-image: linear-gradient(to right, $dark, $darkviolet);
+      .name{
+        font-size: 20px;
+        color: $white;
+      }
+      .progress{
         display: flex;
-        position: relative;
-        margin: 0 0.5em;
-
-        &:after {
-          content: "";
-          position: absolute;
-          left: 9px;
-          top: 23px;
-          width: 2px;
-          background-color: gray;
-        }
-        // dot
-        & .dot {
-          width: 19px;
-          height: 19px;
-          background-color: $white;
-          border-radius: 50%;
-          border: 2px solid $white;
-          flex-shrink: 0;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          font-size: 15px;
-          font-weight: 600;
-          margin-right: 14px;
-        }
-        // info
-        .info {
-          margin: 0 0.5em 1em 0;
-        }
-
-        .date {
-          font-size: 14px;
-          margin: 0 0 8px;
-          color: white;
-        }
-
-        .school,
-        .position {
-          font-size: 17px;
-          font-weight: 400;
-          color: $white;
-          margin-bottom: 1em;
-        }
-
-        .level,
-        .company,
-        .task {
-          font-size: 14px;
-          color: rgba(white, 0.7);
-          padding-bottom: 0.3em;
-        }
-
-        &:not(:last-child) {
-          &:after {
-            height: 75%;
-          }
-        }
+        width: 100%;
+        background-color: $transparentWhite; 
+        border-radius: 50px;
+      }
+      .bar{
+        color: $white;
+        font-size: 15px;
+        background-color: #26abff;
+        text-align: center;
+        border-radius: 50px;
       }
     }
   }
 }
-// skill ver 3
-#skills {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  padding: 3em 15%;
-  & .diamond {
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
-  & .title {
-    margin-bottom: 1em;
-  }
-}
-.skill-container {
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.progress {
-  z-index: 99;
-  position: relative;
-  float: left;
-  text-align: center;
-  color: $white;
-  font-size: 20px;
-}
-.barOverflow {
-  /* Wraps the rotating .bar */
-  position: relative;
-  overflow: hidden; /* Comment this line to understand the trick */
-  width: 200px;
-  height: 100px; /* Half circle (overflow) */
-  margin-bottom: -40px; /* bring the numbers up */
-}
-.bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px; /* full circle! */
-  border-radius: 50%;
-  box-sizing: border-box;
-  border: 9px solid $dark; /* half gray, */
-  border-bottom-color: $blue; /* half azure */
-  border-right-color: $blue;
-}
-.skill {
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 280px;
-  height: 280px;
-  margin: 30px;
-  padding: 40px;
-  border-radius: 50%;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(245, 246, 252, 0.2),
-      hsl(240, 57%, 25%)
-    ),
-    url("/star.png");
-  // background-image: linear-gradient(105.95deg, $transparentWhite 24.79%, $darkviolet 71.87%) url('./star.png');
-  background-size: cover;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  transition: ease 0.3s;
-  &:hover {
-    transform: scale(1.1);
-  }
-  & .icon {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: auto;
-    color: $white;
-    background-color: $darkviolet;
-    font-size: 15px;
-    padding: 5px 15px;
-    margin: 15px;
-    border: none;
-    border-radius: 10px;
-    letter-spacing: 1px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    i {
-      color: $pink;
-      margin-right: 10px;
-    }
-  }
-  & .description {
-    display: flex;
-    word-break: normal;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 15px;
-    color: #ddd;
-    font-size: 13px;
-    letter-spacing: 1px;
-  }
-}
-//  .other-skills{
-//     display: grid;
-//     place-items: center;
-//     margin: 1em 0;
-//     z-index: 1;
-//     height: auto;
-//     max-width: 400px;
-//     padding: 20px;
-//     border-radius: 10px;
-//     background: linear-gradient(105.95deg, $transparentWhite 24.79%, $dark 71.87%);
-//     box-shadow: 2px 2px 2px rgba(255, 255, 255, .5);
-//     & .skill-name {
-//         font-size: .5em;
-//         color: $pink;
-//     }
-// }
-.list {
-  display: grid;
-  // width: fit-content;
-
-  & b {
-    color: $pink;
-  }
-  & span {
-    word-wrap: break-word;
-    width: 100%;
-    height: auto;
-    text-align: left;
-    color: #ddde;
-    font-size: 15px;
-    padding: 20px;
-    margin: 15px 0;
-    background-color: $darkviolet;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all ease 0.3s;
-    box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-}
-
-// Skill ver 2
-
 // projects
 #projects {
   position: relative;
@@ -584,11 +378,6 @@ nav {
   justify-content: center;
   flex-direction: column;
   padding: 3em 15%;
-  & .diamond {
-    top: 0;
-    left: 0;
-    position: absolute;
-  }
   & .title {
     margin-bottom: 1em;
   }
@@ -709,12 +498,6 @@ nav {
   & em{
     font-size: 40px;
   }
-  & .planet0 {
-    position: absolute;
-    width: 350px;
-    top: -50px;
-    right: 0;
-  }
 
   & .business {
     z-index: 1;
@@ -764,9 +547,6 @@ footer {
 @media only screen and (max-width: 900px) {
   header {
     position: fixed;
-  }
-  .diamond {
-    width: 250px;
   }
 
   #home {
@@ -826,7 +606,7 @@ footer {
     text-align: center;
     right: 0px;
     height: auto;
-    top: 61px;
+    top: 39px;
     width: 100%;
     background-image: linear-gradient(135deg, $darkviolet, $dark);
     transform: translateX(100%);
@@ -863,14 +643,6 @@ footer {
       width: 100%;
       padding: 1em;
     }
-  }
-
-  .planet1 {
-    width: 200px;
-  }
-  .planet2 {
-    width: 500px;
-    top: 300px;
   }
 }
 
@@ -956,14 +728,6 @@ footer {
     flex-direction: column;
     height: 100vh;
     padding: 2em 0;
-    & .planet1 {
-      width: 120px;
-    }
-    & .planet2 {
-      width: 300px;
-      right: 0;
-      top: 350px;
-    }
   }
 
   .name {
@@ -1097,11 +861,7 @@ footer {
   }
 
   // skill ver 3 round
-  #skills{
-    & .diamond{
-        width: 100px;
-    }
-  }
+
   .progress {
     font-size: 10px;
   }
@@ -1177,10 +937,6 @@ footer {
   // project
   #projects {
     padding: 2em 11%;
-    & .diamond {
-      width: 100px;
-    }
-
     & .project {
       display: flex;
       flex-direction: column;
@@ -1268,12 +1024,6 @@ footer {
           font-size: 1em;
         }
       }
-    }
-
-    & .planet0 {
-      position: absolute;
-      width: 150px;
-      top: 50px;
     }
   }
 

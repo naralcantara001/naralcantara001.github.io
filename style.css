@@ -263,21 +263,6 @@ nav li a:hover {
   height: auto;
 }
 
-.planet1,
-.planet2 {
-  position: absolute;
-}
-
-.planet1 {
-  top: 0;
-  left: 0;
-}
-
-.planet2 {
-  right: 0;
-  top: 0;
-}
-
 .name {
   z-index: 1;
   line-height: 1.5em;
@@ -367,124 +352,6 @@ nav li a:hover {
   margin-left: 0.8em;
 }
 
-.timeline {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  height: auto;
-  padding: 3em 15%;
-}
-
-.timeline h5 {
-  color: #ff83cd;
-  margin: 1em 0;
-}
-
-.timeline .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  height: auto;
-  width: 600px;
-}
-
-.timeline .wrapper .steps {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  width: auto;
-}
-
-.timeline .wrapper .steps .step {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: relative;
-  margin: 0 0.5em;
-}
-
-.timeline .wrapper .steps .step:after {
-  content: "";
-  position: absolute;
-  left: 9px;
-  top: 23px;
-  width: 2px;
-  background-color: gray;
-}
-
-.timeline .wrapper .steps .step .dot {
-  width: 19px;
-  height: 19px;
-  background-color: #fffffe;
-  border-radius: 50%;
-  border: 2px solid #fffffe;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-  margin-right: 14px;
-}
-
-.timeline .wrapper .steps .step .info {
-  margin: 0 0.5em 1em 0;
-}
-
-.timeline .wrapper .steps .step .date {
-  font-size: 14px;
-  margin: 0 0 8px;
-  color: white;
-}
-
-.timeline .wrapper .steps .step .school,
-.timeline .wrapper .steps .step .position {
-  font-size: 17px;
-  font-weight: 400;
-  color: #fffffe;
-  margin-bottom: 1em;
-}
-
-.timeline .wrapper .steps .step .level,
-.timeline .wrapper .steps .step .company,
-.timeline .wrapper .steps .step .task {
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
-  padding-bottom: 0.3em;
-}
-
-.timeline .wrapper .steps .step:not(:last-child):after {
-  height: 75%;
-}
-
 #skills {
   position: relative;
   display: -webkit-box;
@@ -503,180 +370,63 @@ nav li a:hover {
   padding: 3em 15%;
 }
 
-#skills .diamond {
-  top: 0;
-  left: 0;
-  position: absolute;
-}
-
 #skills .title {
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
-.skill-container {
-  z-index: 1;
+#skills .skill-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  margin: 20px 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
-.progress {
-  z-index: 99;
-  position: relative;
-  float: left;
-  text-align: center;
-  color: #fffffe;
-  font-size: 20px;
-}
-
-.barOverflow {
-  /* Wraps the rotating .bar */
-  position: relative;
-  overflow: hidden;
-  /* Comment this line to understand the trick */
-  width: 200px;
-  height: 100px;
-  /* Half circle (overflow) */
-  margin-bottom: -40px;
-  /* bring the numbers up */
-}
-
-.bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
-  /* full circle! */
-  border-radius: 50%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border: 9px solid #0f103f;
-  /* half gray, */
-  border-bottom-color: #26abff;
-  /* half azure */
-  border-right-color: #26abff;
-}
-
-.skill {
-  cursor: pointer;
+#skills .skill-container .skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 280px;
-  height: 280px;
-  margin: 30px;
-  padding: 40px;
-  border-radius: 50%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.2)), to(#1b1b64)), url("/star.png");
-  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.2), #1b1b64), url("/star.png");
-  background-size: cover;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
-}
-
-.skill:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.skill .icon {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: auto;
-  color: #fffffe;
-  background-color: #1c1c65;
-  font-size: 15px;
-  padding: 5px 15px;
-  margin: 15px;
-  border: none;
-  border-radius: 10px;
-  letter-spacing: 1px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-
-.skill .icon i {
-  color: #ff83cd;
-  margin-right: 10px;
-}
-
-.skill .description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  word-break: normal;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  margin: 0 15px;
-  color: #ddd;
-  font-size: 13px;
-  letter-spacing: 1px;
-}
-
-.list {
-  display: -ms-grid;
-  display: grid;
-}
-
-.list b {
-  color: #ff83cd;
-}
-
-.list span {
-  word-wrap: break-word;
   width: 100%;
-  height: auto;
-  text-align: left;
-  color: #ddde;
-  font-size: 15px;
-  padding: 20px;
-  margin: 15px 0;
-  background-color: #1c1c65;
-  border-radius: 50px;
-  cursor: pointer;
-  -webkit-transition: all ease 0.3s;
-  transition: all ease 0.3s;
-  -webkit-box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
-          box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.3);
+  margin: 10px;
+  padding: 10px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0f103f), to(#1c1c65));
+  background-image: linear-gradient(to right, #0f103f, #1c1c65);
 }
 
-.list span:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+#skills .skill-container .skill .name {
+  font-size: 20px;
+  color: #fffffe;
+}
+
+#skills .skill-container .skill .progress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+}
+
+#skills .skill-container .skill .bar {
+  color: #fffffe;
+  font-size: 15px;
+  background-color: #26abff;
+  text-align: center;
+  border-radius: 50px;
 }
 
 #projects {
@@ -695,12 +445,6 @@ nav li a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 3em 15%;
-}
-
-#projects .diamond {
-  top: 0;
-  left: 0;
-  position: absolute;
 }
 
 #projects .title {
@@ -848,13 +592,6 @@ nav li a:hover {
   font-size: 40px;
 }
 
-#contact .planet0 {
-  position: absolute;
-  width: 350px;
-  top: -50px;
-  right: 0;
-}
-
 #contact .business {
   z-index: 1;
   display: -webkit-box;
@@ -911,9 +648,6 @@ footer {
 @media only screen and (max-width: 900px) {
   header {
     position: fixed;
-  }
-  .diamond {
-    width: 250px;
   }
   #home {
     display: -webkit-box;
@@ -984,7 +718,7 @@ footer {
     text-align: center;
     right: 0px;
     height: auto;
-    top: 61px;
+    top: 39px;
     width: 100%;
     background-image: linear-gradient(135deg, #1c1c65, #0f103f);
     -webkit-transform: translateX(100%);
@@ -1029,13 +763,6 @@ footer {
   #projects .btn-and-description {
     width: 100%;
     padding: 1em;
-  }
-  .planet1 {
-    width: 200px;
-  }
-  .planet2 {
-    width: 500px;
-    top: 300px;
   }
 }
 
@@ -1132,14 +859,6 @@ footer {
             flex-direction: column;
     height: 100vh;
     padding: 2em 0;
-  }
-  #home .planet1 {
-    width: 120px;
-  }
-  #home .planet2 {
-    width: 300px;
-    right: 0;
-    top: 350px;
   }
   .name {
     line-height: 1.1em;
@@ -1283,9 +1002,6 @@ footer {
   .timeline .wrapper .steps .step:not(:last-child):after {
     height: 75%;
   }
-  #skills .diamond {
-    width: 100px;
-  }
   .progress {
     font-size: 10px;
   }
@@ -1322,9 +1038,6 @@ footer {
   }
   #projects {
     padding: 2em 11%;
-  }
-  #projects .diamond {
-    width: 100px;
   }
   #projects .project {
     display: -webkit-box;
@@ -1425,11 +1138,6 @@ footer {
   }
   #contact .business a #faabs {
     font-size: 1em;
-  }
-  #contact .planet0 {
-    position: absolute;
-    width: 150px;
-    top: 50px;
   }
   footer {
     font-size: 0.9em;
