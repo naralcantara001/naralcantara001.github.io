@@ -26,7 +26,7 @@ loop: true
 typewriter
 .start()
 .pauseFor(200)
-.typeString("a Front-end Developer")
+.typeString("Front-end Developer")
 .pauseFor(700)
 .deleteChars(19)
 .changeDeleteSpeed(40)

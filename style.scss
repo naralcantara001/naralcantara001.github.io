@@ -238,27 +238,26 @@ nav {
 
 // home
 #home {
-  position: relative;
-  background-color: $dark;
-  object-fit: cover;
-  object-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  padding: 10% 15%;
   display: flex;
   flex-direction: column;
-  padding: 1em 0 3em 0;
+  align-items: baseline;
+  text-align: left;
+  justify-content: left;
   letter-spacing: 2px;
-  height: auto;
+  height: 100vh;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1009%26quot%3b)' fill='none'%3e%3cpath d='M614.11 338.29 a22.95 22.95 0 1 0 45.9 0 a22.95 22.95 0 1 0 -45.9 0z' fill='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M1048.33 450.94a20.22 20.22 0 1 0-26.81-30.27z' stroke='rgba(255%2c 131%2c 205%2c 1)'%3e%3c/path%3e%3cpath d='M1231.18 336.79L1250.13 336.79L1250.13 389.82L1231.18 389.82z' fill='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M861.17 542.25 a51.2 51.2 0 1 0 102.4 0 a51.2 51.2 0 1 0 -102.4 0z' stroke='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M866.4 314.97L882.53 314.97L882.53 331.1L866.4 331.1z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M1226.83 215.25L1268.11 215.25L1268.11 243.02L1226.83 243.02z' fill='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M1188.51 543.84a15.12 15.12 0 1 0 2.65 30.12z' fill='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M142.29 265.76L151.85 265.76L151.85 275.32L142.29 275.32z' stroke='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M136.65 99.63 a40.34 40.34 0 1 0 80.68 0 a40.34 40.34 0 1 0 -80.68 0z' stroke='rgba(255%2c 131%2c 205%2c 1)'%3e%3c/path%3e%3cpath d='M818.06 335.31 a48.8 48.8 0 1 0 97.6 0 a48.8 48.8 0 1 0 -97.6 0z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M1046.88 16.67L1051.96 16.67L1051.96 21.75L1046.88 21.75z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M390.35 414.06 a13.93 13.93 0 1 0 27.86 0 a13.93 13.93 0 1 0 -27.86 0z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M600.14 11.01L620.6 11.01L620.6 31.47L600.14 31.47z' stroke='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M209.87 413.56L265.1 413.56L265.1 468.79L209.87 468.79z' stroke='rgba(255%2c 131%2c 205%2c 1)'%3e%3c/path%3e%3cpath d='M723.8 26.87 a28.36 28.36 0 1 0 56.72 0 a28.36 28.36 0 1 0 -56.72 0z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M177.65 132.49L199.69 132.49L199.69 154.53L177.65 154.53z' stroke='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M36.04 230.78 a38.12 38.12 0 1 0 76.24 0 a38.12 38.12 0 1 0 -76.24 0z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M765.72 105.58 a43.05 43.05 0 1 0 86.1 0 a43.05 43.05 0 1 0 -86.1 0z' stroke='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M331.06 380.87L352.03 380.87L352.03 401.84L331.06 401.84z' stroke='rgba(255%2c 131%2c 205%2c 1)'%3e%3c/path%3e%3cpath d='M245.34 82.77a42.25 42.25 0 1 0-80.79-24.76z' fill='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M1203.2 445.27 a35.23 35.23 0 1 0 70.46 0 a35.23 35.23 0 1 0 -70.46 0z' fill='rgba(255%2c 131%2c 205%2c 1)'%3e%3c/path%3e%3cpath d='M302.68 516.73 a14.08 14.08 0 1 0 28.16 0 a14.08 14.08 0 1 0 -28.16 0z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M973.26 498.73L988.21 498.73L988.21 513.68L973.26 513.68z' stroke='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M358.71 75.79L404.12 75.79L404.12 91.83L358.71 91.83z' stroke='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M1306.96 407.06L1351.05 407.06L1351.05 449.45L1306.96 449.45z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M1402.74 218.2L1407.8 218.2L1407.8 223.26L1402.74 223.26z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M617.53 299.1a54.08 54.08 0 1 0-87.58-63.48z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M1286.82 335a16.93 16.93 0 1 0-8.76 32.71z' stroke='rgba(255%2c 131%2c 205%2c 1)'%3e%3c/path%3e%3cpath d='M762.26 359.57 a48 48 0 1 0 96 0 a48 48 0 1 0 -96 0z' fill='rgba(28%2c 28%2c 101%2c 1)'%3e%3c/path%3e%3cpath d='M143.87 100.86L151.65 100.86L151.65 108.87L143.87 108.87z' fill='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M46.69 8.57a22.3 22.3 0 1 0 36.76 25.25z' stroke='rgba(255%2c 131%2c 205%2c 1)'%3e%3c/path%3e%3cpath d='M231.85 422.32L247.41 422.32L247.41 472.34L231.85 472.34z' stroke='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3cpath d='M1358.42 85.91 a32.92 32.92 0 1 0 65.84 0 a32.92 32.92 0 1 0 -65.84 0z' fill='rgba(38%2c 171%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1009'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  object-fit: cover;
+  background-repeat: no-repeat;
 }
 
 .name {
-  z-index: 1;
   line-height: 1.5em;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
   & .myName {
     z-index: 1;
     font-size: 1.3em;
@@ -326,21 +325,24 @@ nav {
 
 // skill ver 3
 #skills{
-  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  padding: 3em 15%;
-  .title{
-    margin-bottom: 2em;
+  .grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em 15%;
   }
   .skill-container{
     display: flex;
     align-items: center;
-    margin: 20px 0;
-    width: 100%;
+    margin: 20px 10px;
     background-color: $transparentWhite;
+    .name-container{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
     .skill{
       display: flex;
       justify-content: left;
@@ -550,16 +552,11 @@ footer {
   }
 
   #home {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 3em;
+    padding-top: 3em;
   }
 
   .name {
     display: grid;
-    place-items: center;
     margin: 0;
   }
 
@@ -625,6 +622,32 @@ footer {
   #about {
     padding-bottom: 3em;
   }
+  //
+
+  #skills{
+    .grid{
+      padding: 0;
+    }
+    .skill-container{
+
+      margin: 10px;
+      .skill{
+        padding: 11px;
+        margin: 5px;
+        .name{
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        .progress{
+          height: 13px;
+        }
+        .bar{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  //
 
   #projects {
     & .project {
@@ -720,13 +743,7 @@ footer {
 
   // home
   #home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
     height: 100vh;
-    padding: 2em 0;
   }
 
   .name {
@@ -747,8 +764,6 @@ footer {
   }
 
   .name {
-    display: grid;
-    place-items: center;
     & .myName {
       font-size: 0.7em;
     }
@@ -770,100 +785,17 @@ footer {
     font-size: 0.5em;
   }
 
-  // time line
-  .timeline {
-    display: grid;
-    flex-direction: column;
-    justify-content: left;
-    height: auto;
-    padding: 3em 15%;
-    & h5 {
-      color: $pink;
-      margin: 1em;
-      font-size: 16px;
-    }
-    & .wrapper {
-      display: flex;
-      flex-direction: column;
-      justify-content: left;
-      height: auto;
-      width: 600px;
-      & .steps {
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        width: 300px;
-        & .step {
-          display: flex;
-          position: relative;
-          margin: 0 0.5em;
-
-          &:after {
-            content: "";
-            position: absolute;
-            left: 7px;
-            top: 23px;
-            width: 3px;
-            background-color: gray;
-          }
-          // dot
-          & .dot {
-            width: 15px;
-            height: 15px;
-            background-color: $white;
-            border-radius: 50%;
-            border: 2px solid $white;
-            flex-shrink: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 15px;
-            font-weight: 600;
-            margin-right: 14px;
-          }
-          // info
-          .info {
-            margin: 0 0.5em 1em 0;
-          }
-
-          .date {
-            font-size: 12px;
-            margin: 0 0 8px;
-            color: white;
-          }
-
-          .school,
-          .position {
-            font-size: 13px;
-            font-weight: 400;
-            color: $white;
-            margin-bottom: 1em;
-          }
-
-          .level,
-          .company,
-          .task {
-            font-size: 12px;
-            color: rgba(white, 0.7);
-            padding-bottom: 0.3em;
-          }
-
-          &:not(:last-child) {
-            &:after {
-              height: 75%;
-            }
-          }
-        }
-      }
-    }
-  }
 
   // skill ver 3 round
   #skills{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     padding: 2em 11%;
-    .title{
-      margin-bottom: 2em;
+    .grid{
+      display: flex;
+      flex-direction: column;
     }
     .skill-container{
       margin: 9px 0;
