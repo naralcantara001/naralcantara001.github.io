@@ -212,10 +212,10 @@ nav {
       padding: 0.3em 0.8em;
       cursor: pointer;
       &:hover {
-        background-color: $pink;
+        background-color: $blue;
         color: $white;
         transition: all ease 0.6s;
-        border-radius: 3px;
+        border-radius: 2px;
       }
     }
   }
@@ -294,9 +294,8 @@ nav {
   // github, linkedin, gmail - icon
   color: $white;
   border-radius: 50px;
-  background-color: #1c1c1c;
   padding: 0.5em;
-  font-size: 0.5em;
+  font-size: 0.6em;
   margin: 0 0.5em;
   cursor: pointer;
   border: none;
@@ -607,7 +606,7 @@ nav {
     justify-content: center;
     width: 100%;
     background-color: $transparentWhite;
-    box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.3);
+    box-shadow: 3px 5px 10px $darkviolet;
   }
 
   & .screenshot-container {
