@@ -822,7 +822,6 @@ footer {
     text-align: center;
     right: 0px;
     height: auto;
-    top: 65px;
     width: 100%;
     background-image: -webkit-gradient(linear, left top, right top, from(#0f103f), to(#111));
     background-image: linear-gradient(to right, #0f103f, #111);
@@ -1002,6 +1001,29 @@ footer {
   }
   .timeline .wrapper .steps .step:not(:last-child):after {
     height: 75%;
+  }
+  #skills {
+    padding: 2em 11%;
+  }
+  #skills .title {
+    margin-bottom: 2em;
+  }
+  #skills .skill-container {
+    margin: 9px 0;
+  }
+  #skills .skill-container .skill {
+    padding: 11px;
+    margin: 5px;
+  }
+  #skills .skill-container .skill .name {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  #skills .skill-container .skill .progress {
+    height: 13px;
+  }
+  #skills .skill-container .skill .bar {
+    font-size: 10px;
   }
   #projects {
     padding: 2em 11%;

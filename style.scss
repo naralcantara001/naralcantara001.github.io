@@ -477,7 +477,6 @@ nav {
 }
 
 // contact
-
 #contact {
   position: relative;
   display: flex;
@@ -700,7 +699,6 @@ footer {
     text-align: center;
     right: 0px;
     height: auto;
-    top: 65px;
     width: 100%;
     background-image: linear-gradient(to right, $dark, #111);
     transform: translateX(100%);
@@ -862,8 +860,29 @@ footer {
   }
 
   // skill ver 3 round
-
-
+  #skills{
+    padding: 2em 11%;
+    .title{
+      margin-bottom: 2em;
+    }
+    .skill-container{
+      margin: 9px 0;
+      .skill{
+        padding: 11px;
+        margin: 5px;
+        .name{
+          font-size: 12px;
+          margin-bottom: 5px;
+        }
+        .progress{
+          height: 13px;
+        }
+        .bar{
+          font-size: 10px;
+        }
+      }
+    }
+  }
   // project
   #projects {
     padding: 2em 11%;
