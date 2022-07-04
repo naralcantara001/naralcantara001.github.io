@@ -329,7 +329,7 @@ nav {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  box-shadow: 3px 5px 10px $darkviolet;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 
   & .arrow-down {
     margin-left: 0.8em;
@@ -471,9 +471,9 @@ nav {
   height: 200px; /* full circle! */
   border-radius: 50%;
   box-sizing: border-box;
-  border:10px solid $dark; /* half gray, */
-  border-bottom-color: #26abff; /* half azure */
-  border-right-color: #26abff;
+  border: 9px solid $dark; /* half gray, */
+  border-bottom-color: $blue; /* half azure */
+  border-right-color: $blue;
 }
 .skill {
   cursor: pointer;
@@ -494,7 +494,7 @@ nav {
     url("/star.png");
   // background-image: linear-gradient(105.95deg, $transparentWhite 24.79%, $darkviolet 71.87%) url('./star.png');
   background-size: cover;
-  box-shadow: 3px 5px 10px $darkviolet;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   transition: ease 0.3s;
   &:hover {
     transform: scale(1.1);
@@ -513,7 +513,7 @@ nav {
     border: none;
     border-radius: 10px;
     letter-spacing: 1px;
-    box-shadow: 3px 5px 10px $darkviolet;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     i {
       color: $pink;
       margin-right: 10px;
@@ -606,7 +606,7 @@ nav {
     justify-content: center;
     width: 100%;
     background-color: $transparentWhite;
-    box-shadow: 3px 5px 10px $darkviolet;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
 
   & .screenshot-container {
@@ -1226,7 +1226,6 @@ footer {
         margin-bottom: 0.7em;
         border: none;
         transition: ease 0.3s;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
         &:hover {
           transform: scale(1.2);
         }
@@ -1240,8 +1239,6 @@ footer {
         border-radius: 10px;
         border: none;
         transition: ease 0.3s;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-
         &:hover {
           transform: scale(1.2);
         }
@@ -1257,15 +1254,12 @@ footer {
     flex-direction: column;
     text-align: center;
     font-family: monospace;
-    background-color: $dark;
     line-height: 20px;
     height: auto;
-    color: $white;
     font-size: 0.8em;
     letter-spacing: 2px;
     padding: 0 10% 3em 10%;
     & .quote{
-        color: $white;
         font-size: 7px;
     }
     & .business {
