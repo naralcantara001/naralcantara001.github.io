@@ -299,7 +299,7 @@ nav li a:hover {
   color: #171120;
   border-radius: 50px;
   padding: 0.5em;
-  font-size: 0.6em;
+  font-size: 20px;
   margin: 0 0.5em;
   cursor: pointer;
   border: none;
@@ -975,7 +975,8 @@ footer {
     font-size: 0.7em;
   }
   #fabs {
-    font-size: 0.4em;
+    font-size: 15px;
+    margin: 0;
   }
   .myPhoto {
     margin-top: 1.5em;
@@ -1170,7 +1171,7 @@ footer {
     font-size: 8px;
   }
   #contact .business a #faabs {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0 7px;
   }
   footer {
