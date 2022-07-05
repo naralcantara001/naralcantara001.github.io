@@ -633,9 +633,8 @@ nav li a:hover {
   font-size: 0.6em;
   cursor: pointer;
   padding: 0.8em 1em;
-  color: #171120;
+  color: #7f1cdf;
   background-color: #fffffe;
-  opacity: .8;
   margin-bottom: 10px;
   border-radius: 5px;
   -webkit-transition: ease 0.3s;
@@ -1172,7 +1171,7 @@ footer {
   }
   #contact .business a #faabs {
     font-size: 15px;
-    margin: 0 7px;
+    margin: 0 10px;
   }
   footer {
     font-size: 0.9em;

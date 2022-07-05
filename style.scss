@@ -509,9 +509,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
       font-size: 0.6em;
       cursor: pointer;
       padding: 0.8em 1em;
-      color: $black;
+      color: $violet;
       background-color: $white;
-      opacity: .8;
       margin-bottom: 10px;
       border-radius: 5px;
       transition: ease 0.3s;
@@ -995,7 +994,7 @@ footer {
       & a {
         & #faabs {
           font-size: 15px;
-          margin: 0 7px;
+          margin: 0 10px;
         }
       }
     }
