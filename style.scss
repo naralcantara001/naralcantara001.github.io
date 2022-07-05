@@ -68,7 +68,7 @@ $white: #fffffe;
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: $blue;
+  border-top-color: $violet;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -102,7 +102,7 @@ $white: #fffffe;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: $dark;
+  background-color: $black;
   color: $white;
   padding: 12px 20px;
   border-radius: 50%;
@@ -111,12 +111,6 @@ $white: #fffffe;
   z-index: 99;
   cursor: pointer;
   box-shadow: 1px 2px 10px #777;
-
-  &:hover {
-    transition: 0.3s;
-    background-color: $darkviolet;
-    color: $white;
-  }
 }
 
 body {
@@ -130,12 +124,12 @@ section {
   align-items: center;
   font-size: 2em;
   height: auto;
-  background-color: $black;
+  background-color: $white;
 }
 
 // javascript active nav hover
 .actives {
-  border-bottom: 3px solid $blue;
+  border-bottom: 3px solid $violet;
 }
 // scroll animation
 
@@ -153,7 +147,7 @@ section {
 
 //
 .title {
-  color: $white;
+  color: $black;
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -167,12 +161,12 @@ section {
   margin: 10px auto;
   width: 50%;
   height: 6px;
-  background: $blue;
+  background: $violet;
 }
 // header nav
 header {
   width: 100%;
-  background-image: linear-gradient(to right, $transparentWhite, $black);
+  background-image: linear-gradient(to right, $violet, $black);
   position: sticky;
   top: 0;
   z-index: 2;
@@ -188,6 +182,7 @@ header {
 
 .logo {
   width: 30px;
+  margin: 10px 0;
 }
 
 //  header nav links
@@ -214,7 +209,7 @@ nav {
       padding: 0.3em 0.8em;
       cursor: pointer;
       &:hover {
-        background-color: $blue;
+        background-color: $violet;
         color: $white;
         transition: all ease 0.6s;
         border-radius: 2px;
@@ -248,8 +243,7 @@ nav {
   justify-content: center;
   letter-spacing: 2px;
   height: 100vh;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1480' height='600' preserveAspectRatio='none' viewBox='0 0 1480 600'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1115%26quot%3b)' fill='none'%3e%3cpath d='M530.026%2c629.376C560.958%2c628.527%2c591.58%2c617.224%2c607.527%2c590.706C623.933%2c563.423%2c624.052%2c528.396%2c606.865%2c501.598C590.831%2c476.598%2c559.712%2c470.793%2c530.026%2c469.87C498.013%2c468.875%2c462.455%2c470.066%2c444.441%2c496.548C424.622%2c525.682%2c425.702%2c565.554%2c444.787%2c595.174C462.56%2c622.757%2c497.225%2c630.276%2c530.026%2c629.376' fill='rgba(127%2c 28%2c 223%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1077.8042045063596 168.57659364290737L1163.3888537833654 210.31901617628276 1205.1312763167407 124.73436689927703 1119.546627039735 82.99194436590165z' fill='rgba(127%2c 28%2c 223%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M496.9046349590891 229.28567853577167L608.8620042250714 247.0179838071717 626.5943094964714 135.06061454118935 514.6369402304891 117.32830926978934z' fill='rgba(127%2c 28%2c 223%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1297.7121244552902 499.8060348011686L1350.7192878876158 361.71765299317997 1212.6309060796273 308.7104895608543 1159.6237426473017 446.7988713688429z' fill='rgba(127%2c 28%2c 223%2c 1)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M49.65433153727432 309.7698043161799L68.99770185065417 419.47150870458336 178.69940623905765 400.1281383912035 159.3560359256778 290.4264340028z' fill='rgba(127%2c 28%2c 223%2c 1)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M899.753%2c165.596C928.092%2c163.754%2c953.276%2c149.809%2c968.633%2c125.92C985.543%2c99.615%2c995.592%2c66.904%2c980.963%2c39.266C965.567%2c10.18%2c932.655%2c-4.904%2c899.753%2c-4.209C868.034%2c-3.539%2c840.91%2c15.56%2c824.273%2c42.574C806.65%2c71.189%2c795.823%2c107.365%2c813.398%2c136.009C830.453%2c163.806%2c867.21%2c167.711%2c899.753%2c165.596' fill='rgba(127%2c 28%2c 223%2c 1)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1143.738%2c686.205C1179.468%2c687.227%2c1210.942%2c665.673%2c1229.919%2c635.381C1250.306%2c602.84%2c1262.502%2c561.382%2c1242.455%2c528.63C1222.979%2c496.81%2c1181.023%2c493.295%2c1143.738%2c494.579C1109.283%2c495.766%2c1073.285%2c505.14%2c1056.136%2c535.047C1039.056%2c564.835%2c1048.481%2c600.973%2c1065.698%2c630.681C1082.856%2c660.286%2c1109.534%2c685.226%2c1143.738%2c686.205' fill='rgba(127%2c 28%2c 223%2c 1)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1115'%3e%3crect width='1480' height='600' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
-  object-fit: cover;
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1252%26quot%3b)' fill='none'%3e%3ccircle r='46.666666666666664' cx='728.88' cy='25.84' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/circle%3e%3cpath d='M1198.06 240.59a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1192.61 225.54a5.6 5.6 0 1 0-3.82-10.52 5.6 5.6 0 1 0 3.82 10.52zM1187.15 210.5a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1181.7 195.46a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1224.01 265.22a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1218.55 250.17a5.6 5.6 0 1 0-3.81-10.52 5.6 5.6 0 1 0 3.81 10.52zM1213.1 235.13a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1207.65 220.09a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1249.96 289.85a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1244.5 274.8a5.6 5.6 0 1 0-3.81-10.53 5.6 5.6 0 1 0 3.81 10.53zM1239.05 259.76a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1233.6 244.72a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53z' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/path%3e%3crect width='216' height='216' clip-path='url(%26quot%3b%23SvgjsClipPath1253%26quot%3b)' x='173.85' y='334.9' fill='url(%23SvgjsPattern1254)' transform='rotate(205.25%2c 281.85%2c 442.9)'%3e%3c/rect%3e%3crect width='240' height='240' clip-path='url(%26quot%3b%23SvgjsClipPath1255%26quot%3b)' x='404.53' y='39.88' fill='url(%23SvgjsPattern1256)' transform='rotate(190.18%2c 524.53%2c 159.88)'%3e%3c/rect%3e%3cpath d='M917.15 472.41 L839.77 432.51L934.842152779629 396.07784722037104z' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/path%3e%3ccircle r='86.20009855305237' cx='181.22' cy='172.01' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='1.38' stroke-dasharray='2%2c 2'%3e%3c/circle%3e%3cpath d='M1101.08 102.55L1109.9 93.27 1120.9 99.84 1129.72 90.55 1140.71 97.12 1149.53 87.84 1160.53 94.41M1102.17 110.48L1110.99 101.19 1121.98 107.76 1130.8 98.48 1141.8 105.05 1150.62 95.76 1161.61 102.33' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='2.68' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3crect width='117.4' height='117.4' clip-path='url(%26quot%3b%23SvgjsClipPath1257%26quot%3b)' x='1124.19' y='481.97' fill='url(%23SvgjsPattern1258)' transform='rotate(117.19%2c 1182.89%2c 540.67)'%3e%3c/rect%3e%3ccircle r='46.666666666666664' cx='809.45' cy='329.08' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/circle%3e%3cpath d='M355.38 504.13a5.6 5.6 0 1 0 7.98 7.86 5.6 5.6 0 1 0-7.98-7.86zM366.78 515.36a5.6 5.6 0 1 0 7.98 7.86 5.6 5.6 0 1 0-7.98-7.86zM378.18 526.59a5.6 5.6 0 1 0 7.98 7.86 5.6 5.6 0 1 0-7.98-7.86zM389.58 537.81a5.6 5.6 0 1 0 7.98 7.86 5.6 5.6 0 1 0-7.98-7.86z' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='1' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3crect width='144' height='144' clip-path='url(%26quot%3b%23SvgjsClipPath1259%26quot%3b)' x='122.44' y='124.15' fill='url(%23SvgjsPattern1260)' transform='rotate(324.5%2c 194.44%2c 196.15)'%3e%3c/rect%3e%3cpath d='M840.25 486.24 L830.96 586.02L880.2482203196223 580.7732203196223z' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1252'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1254'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(127%2c 28%2c 223%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1253'%3e%3ccircle r='54' cx='281.85' cy='442.9'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='240' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1256'%3e%3crect width='240' height='3' x='0' y='0' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/rect%3e%3crect width='240' height='3' x='0' y='3' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1255'%3e%3ccircle r='60' cx='524.53' cy='159.88'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='117.4' height='11.74' patternUnits='userSpaceOnUse' id='SvgjsPattern1258'%3e%3crect width='117.4' height='5.87' x='0' y='0' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/rect%3e%3crect width='117.4' height='5.87' x='0' y='5.87' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1257'%3e%3ccircle r='29.35' cx='1182.89' cy='540.67'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1260'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(127%2c 28%2c 223%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1259'%3e%3ccircle r='36' cx='194.44' cy='196.15'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
   background-repeat: no-repeat;
 }
 
@@ -263,7 +257,7 @@ nav {
   & .myName {
     z-index: 1;
     font-size: 1.3em;
-    color: $white;
+    color: $black;
   }
   & .greetings {
     font-size: 0.5em;
@@ -273,7 +267,7 @@ nav {
   }
 
   & .profession {
-    color: $blue;
+    color: $violet;
     font-weight: 800;
     font-size: 0.6em;
   }
@@ -281,7 +275,7 @@ nav {
 
 #fabs {
   // github, linkedin, gmail - icon
-  color: $white;
+  color: $black;
   border-radius: 50px;
   padding: 0.5em;
   font-size: 0.6em;
@@ -303,12 +297,12 @@ nav {
   cursor: pointer;
   transition: all ease-in-out 0.5s;
   height: 7em;
-  box-shadow: 3px 5px 10px $darkviolet;
+  box-shadow: 3px 5px 10px $violet;
   border-radius: 50%;
 }
 
 .cv {
-  background-image: linear-gradient(to right, $violet, $blue);
+  background-image: linear-gradient(to right, $violet, $black);
   box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
   color: $white;
   padding: 0.5em 1em;
@@ -335,11 +329,17 @@ nav {
     grid-template-columns: 1fr 1fr;
     padding: 2em 15%;
   }
+  .skill-container:hover{
+      transform: scale(1.1);
+  }
   .skill-container{
+    transition: .3s;
+    cursor: pointer;
     display: flex;
     align-items: center;
     margin: 20px 10px;
-    background-color: $transparentWhite;
+    border: 1px solid $violet;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     .name-container{
       width: 100%;
       display: flex;
@@ -353,22 +353,24 @@ nav {
       width: 100%;
       margin: 10px;
       padding: 10px;
-      background-image: linear-gradient(to right, $black, $violet);
       .name{
         font-size: 20px;
-        color: $white;
+        color: $violet;
+      }
+      i{
+        font-size: 20px;
+        color: $violet;
       }
       .progress{
         display: flex;
         width: 100%;
         height: 15px;
-        background-color: $transparentWhite; 
+        border: 1px solid $violet;
         border-radius: 50px;
       }
       .bar{
-        color: $white;
         font-size: 15px;
-        background-color: $blue;
+        background-image: linear-gradient(to right, $violet, $black);
         text-align: center;
         border-radius: 50px;
       }
@@ -395,56 +397,54 @@ nav {
     z-index: 1;
     display: flex;
     margin-bottom: 4em;
-    padding: 0.5em;
-    color: $white;
+    padding: 15px;
+    color: $black;
     justify-content: center;
     width: 100%;
-    background-color: $transparentWhite;
+    border: 1px solid $violet;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   }
 
   & .screenshot-container {
+    margin: 15px;
     width: fit-content;
     display: grid;
     place-items: center;
-    background-color: $black;
     width: 70%;
     position: relative;
-
     & .screenshot {
       cursor: pointer;
       width: 100%;
       height: auto;
-      padding: 0.5em;
-      // display: block;
     }
   }
 
   & .btn-and-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    height: auto;
     width: 50%;
-    padding: 0.7em;
-    background-image: linear-gradient(to bottom, $black, $violet);
-
     & .project-title {
       font-size: 0.6em;
       padding-bottom: 1em;
-      margin-bottom: 1.5em;
-      border-bottom: 3px solid $blue;
+      border-bottom: 3px solid $violet;
     }
 
     & .sub-title{
       font-size: .8em;
-      color: rgba(255, 255, 255, 0.5);
+      color: $violet;
     }
 
     & .using {
       font-size: 0.5em;
-      color: rgba(255, 255, 255, 0.5);
+      color: $violet;
+      opacity: .6;
     }
 
     & .project-btn-container {
       display: grid;
-      margin-top: 1.5em;
       font-family: monospace;
     }
 
@@ -453,10 +453,10 @@ nav {
       font-size: 0.6em;
       cursor: pointer;
       padding: 0.8em 1em;
-      background-color: $transparentWhite;
-      color: $white;
+      color: $black;
+      background-color: $white;
       margin-bottom: 0.7em;
-      border-radius: 10px;
+      border-radius: 5px;
       border: none;
       transition: ease 0.3s;
       box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
@@ -471,10 +471,10 @@ nav {
       font-size: 0.7em;
       cursor: pointer;
       padding: 0.8em 1em;
-      background-image: linear-gradient(to right, $violet, $blue);
+      background-image: linear-gradient(to right, $violet, $black);
       box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
       color: $white;
-      border-radius: 10px;
+      border-radius: 5px;
       border: none;
       transition: ease 0.3s;
 
@@ -493,19 +493,18 @@ nav {
   justify-content: center;
   flex-direction: column;
   height: auto;
-  color: $white;
   font-size: 1em;
   letter-spacing: 2px;
   text-align: center;
   padding: 3em 10%;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1599%26quot%3b)' fill='none'%3e%3crect width='201.52' height='201.52' clip-path='url(%26quot%3b%23SvgjsClipPath1600%26quot%3b)' x='528.03' y='194.79' fill='url(%23SvgjsPattern1601)' transform='rotate(252.86%2c 628.79%2c 295.55)'%3e%3c/rect%3e%3crect width='118.6' height='118.6' clip-path='url(%26quot%3b%23SvgjsClipPath1602%26quot%3b)' x='-36.23' y='-28.76' fill='url(%23SvgjsPattern1603)' transform='rotate(135.46%2c 23.07%2c 30.54)'%3e%3c/rect%3e%3cpath d='M974.83 485.51L962.11 486.97 957.9 474.87 945.17 476.33 940.96 464.23 928.24 465.69 924.03 453.59M979.09 478.74L966.36 480.19 962.15 468.1 949.43 469.55 945.22 457.46 932.49 458.91 928.28 446.82' stroke='rgba(127%2c 28%2c 223%2c 1)' stroke-width='1.35'%3e%3c/path%3e%3cpath d='M280.25 396.71a5.6 5.6 0 1 0-11.18-0.64 5.6 5.6 0 1 0 11.18 0.64zM264.28 395.8a5.6 5.6 0 1 0-11.19-0.64 5.6 5.6 0 1 0 11.19 0.64zM248.3 394.89a5.6 5.6 0 1 0-11.18-0.64 5.6 5.6 0 1 0 11.18 0.64zM232.33 393.98a5.6 5.6 0 1 0-11.18-0.64 5.6 5.6 0 1 0 11.18 0.64zM313.11 382.55a5.6 5.6 0 1 0-11.18-0.63 5.6 5.6 0 1 0 11.18 0.63zM297.13 381.64a5.6 5.6 0 1 0-11.18-0.63 5.6 5.6 0 1 0 11.18 0.63zM281.16 380.73a5.6 5.6 0 1 0-11.18-0.63 5.6 5.6 0 1 0 11.18 0.63zM265.19 379.82a5.6 5.6 0 1 0-11.19-0.63 5.6 5.6 0 1 0 11.19 0.63zM345.97 368.4a5.6 5.6 0 1 0-11.19-0.64 5.6 5.6 0 1 0 11.19 0.64zM329.99 367.49a5.6 5.6 0 1 0-11.18-0.64 5.6 5.6 0 1 0 11.18 0.64zM314.02 366.58a5.6 5.6 0 1 0-11.18-0.64 5.6 5.6 0 1 0 11.18 0.64zM298.04 365.67a5.6 5.6 0 1 0-11.18-0.64 5.6 5.6 0 1 0 11.18 0.64z' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/path%3e%3crect width='132' height='132' clip-path='url(%26quot%3b%23SvgjsClipPath1604%26quot%3b)' x='1141.38' y='-63.52' fill='url(%23SvgjsPattern1605)' transform='rotate(220.55%2c 1207.38%2c 2.48)'%3e%3c/rect%3e%3ccircle r='77.77763437462177' cx='40.13' cy='171.56' stroke='rgba(127%2c 28%2c 223%2c 1)' stroke-width='1.12' stroke-dasharray='2%2c 2'%3e%3c/circle%3e%3crect width='60' height='60' clip-path='url(%26quot%3b%23SvgjsClipPath1606%26quot%3b)' x='452.91' y='436.19' fill='url(%23SvgjsPattern1607)' transform='rotate(322.19%2c 482.91%2c 466.19)'%3e%3c/rect%3e%3crect width='312' height='312' clip-path='url(%26quot%3b%23SvgjsClipPath1608%26quot%3b)' x='230.37' y='232.97' fill='url(%23SvgjsPattern1609)' transform='rotate(330.49%2c 386.37%2c 388.97)'%3e%3c/rect%3e%3ccircle r='71.84427150017707' cx='866.09' cy='185.81' stroke='rgba(127%2c 28%2c 223%2c 1)' stroke-width='2.37'%3e%3c/circle%3e%3cpath d='M1252.7 467.49a5.6 5.6 0 1 0-1.53-11.09 5.6 5.6 0 1 0 1.53 11.09zM1250.51 451.64a5.6 5.6 0 1 0-1.54-11.09 5.6 5.6 0 1 0 1.54 11.09zM1248.31 435.79a5.6 5.6 0 1 0-1.53-11.09 5.6 5.6 0 1 0 1.53 11.09zM1246.12 419.94a5.6 5.6 0 1 0-1.54-11.09 5.6 5.6 0 1 0 1.54 11.09zM1272.94 496.99a5.6 5.6 0 1 0-1.54-11.09 5.6 5.6 0 1 0 1.54 11.09zM1270.74 481.14a5.6 5.6 0 1 0-1.53-11.09 5.6 5.6 0 1 0 1.53 11.09zM1268.55 465.3a5.6 5.6 0 1 0-1.54-11.1 5.6 5.6 0 1 0 1.54 11.1zM1266.36 449.45a5.6 5.6 0 1 0-1.54-11.1 5.6 5.6 0 1 0 1.54 11.1z' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='2.48' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3cpath d='M111.13 252.03L121.58 244.63 131.09 253.21 141.55 245.81 151.06 254.39 161.51 246.99 171.03 255.57' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='2.01' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3cpath d='M613.12 532.36 L685.95 477.13L615.3066009601387 470.5166009601386z' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1599'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='9.16' height='9.16' patternUnits='userSpaceOnUse' id='SvgjsPattern1601'%3e%3cpath d='M4.58 1L4.58 8.16M1 4.58L8.16 4.58' stroke='rgba(37%2c 28%2c 51%2c 1)' fill='none' stroke-width='2.34'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1600'%3e%3ccircle r='50.38' cx='628.79' cy='295.55'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='11.86' height='11.86' patternUnits='userSpaceOnUse' id='SvgjsPattern1603'%3e%3cpath d='M0 11.86L5.93 0L11.86 11.86' stroke='rgba(127%2c 28%2c 223%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1602'%3e%3ccircle r='29.65' cx='23.07' cy='30.54'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1605'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(37%2c 28%2c 51%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1604'%3e%3ccircle r='33' cx='1207.38' cy='2.48'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1607'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(37%2c 28%2c 51%2c 1)' fill='none' stroke-width='1'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1606'%3e%3ccircle r='15' cx='482.91' cy='466.19'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1609'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(37%2c 28%2c 51%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1608'%3e%3ccircle r='78' cx='386.37' cy='388.97'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
   & .quote{
     z-index: 1;
     font-size: 15px;
-    color: $white;
+    color: $black;
     line-height: 30px;
-  }
-  & em{
-    font-size: 40px;
   }
 
   & .business {
@@ -517,25 +516,18 @@ nav {
     letter-spacing: 2px;
     width: 100%;
     margin-top: 20px;
-    border-top: 1px solid $blue;
+    border-top: 1px solid $violet;
     & a {
-      color: $blue;
       letter-spacing: 1px;
       font-size: 0.8em;
 
       & #faabs {
-        color: $white;
+        color: $black;
         border-radius: 50px;
         font-size: 1.5em;
         margin: 1.5em 1em 0.3em 0.3em;
         cursor: pointer;
-        border: 1px solid $black;
         transition: ease 0.3s;
-
-        &:hover {
-          background-color: $white;
-          color: $black;
-        }
       }
     }
   }
@@ -546,9 +538,10 @@ footer {
   text-align: center;
   padding: 2em;
   margin-top: 3em;
-  color: #ddde;
+  color: $black;
   font-size: 1em;
   letter-spacing: 2px;
+  opacity: .6;
   font-family: monospace;
 }
 
@@ -564,7 +557,6 @@ footer {
 
   .name {
     display: grid;
-    margin: 0;
   }
 
   #about,
@@ -610,7 +602,7 @@ footer {
     text-align: center;
     right: 0px;
     height: auto;
-    top: 39px;
+    top: 50px;
     width: 100%;
     background-image: linear-gradient(135deg, $black, $violet);
     transform: translateX(100%);
@@ -643,7 +635,7 @@ footer {
       .skill{
         padding: 11px;
         margin: 5px;
-        .name{
+        .name, i{
           font-size: 12px;
           margin-bottom: 5px;
         }
@@ -669,11 +661,18 @@ footer {
 
     & .screenshot-container {
       width: fit-content;
+      margin: 10px;
+    }
+    & .using{
+      margin-top: 1em;
     }
 
     & .btn-and-description {
       width: 100%;
       padding: 1em;
+    }
+    & .project-btn-container{
+      margin-top: 1em;
     }
   }
 }
@@ -794,7 +793,6 @@ footer {
     font-size: 0.5em;
   }
 
-
   // skill ver 3 round
   #skills{
     display: flex;
@@ -853,8 +851,8 @@ footer {
       }
 
       & .using {
+        margin-top: 1em;
         font-size: 0.3em;
-        color: rgba(255, 255, 255, 0.5);
       }
 
       & .project-btn-container {
