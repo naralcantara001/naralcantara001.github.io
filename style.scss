@@ -102,7 +102,7 @@ $white: #fffffe;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: $black;
+  background-color: $violet;
   color: $white;
   padding: 12px 20px;
   border-radius: 50%;
@@ -110,7 +110,7 @@ $white: #fffffe;
   outline: none;
   z-index: 99;
   cursor: pointer;
-  box-shadow: 1px 2px 10px #777;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 body {
