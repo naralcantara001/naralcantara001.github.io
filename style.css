@@ -573,8 +573,8 @@ nav li a:hover {
   padding: 0.8em 1em;
   background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
   background-image: linear-gradient(to right, #7f1cdf, #171120);
-  -webkit-box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
-          box-shadow: 0px 10px 20px rgba(7, 7, 26, 0.15);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   color: #fffffe;
   border-radius: 5px;
   border: none;
