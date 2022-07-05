@@ -153,7 +153,7 @@ section {
   left: 0;
   right: 0;
   top: 100%;
-  margin: 10px auto;
+  margin: 2px auto;
   width: 50%;
   height: 6px;
   background: #7f1cdf;
@@ -347,6 +347,74 @@ nav li a:hover {
   margin-left: 0.8em;
 }
 
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: auto;
+  padding: 3em 15%;
+}
+
+#about .title {
+  margin-bottom: 2em;
+}
+
+#about .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#about i {
+  color: #7f1cdf;
+  margin: 18px;
+}
+
+#about .i-do {
+  border: 1px solid #7f1cdf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px;
+  max-width: 300px;
+  max-height: 500px;
+  height: 350px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 20px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#about .i-do-title {
+  font-size: 20px;
+}
+
+#about .i-do-sub-title {
+  color: #7f1cdf;
+  font-size: 13px;
+  opacity: .7;
+}
+
 #skills {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,6 +487,7 @@ nav li a:hover {
 #skills .skill-container .skill .name {
   font-size: 20px;
   color: #7f1cdf;
+  opacity: .6;
 }
 
 #skills .skill-container .skill i {
@@ -516,26 +585,26 @@ nav li a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   height: auto;
   width: 50%;
 }
 
 #projects .btn-and-description .project-title {
-  font-size: 0.6em;
-  padding-bottom: 1em;
+  font-size: 23px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
   border-bottom: 3px solid #7f1cdf;
 }
 
 #projects .btn-and-description .sub-title {
-  font-size: .8em;
+  font-size: 17px;
   color: #7f1cdf;
 }
 
 #projects .btn-and-description .using {
   font-size: 0.5em;
   color: #7f1cdf;
+  margin-bottom: 10px;
   opacity: .6;
 }
 
@@ -552,7 +621,7 @@ nav li a:hover {
   padding: 0.8em 1em;
   color: #171120;
   background-color: #fffffe;
-  margin-bottom: 0.7em;
+  margin-bottom: 10px;
   border-radius: 5px;
   border: none;
   -webkit-transition: ease 0.3s;
@@ -744,9 +813,6 @@ footer {
   .info > span {
     font-size: 0.8em;
   }
-  #about {
-    padding-bottom: 3em;
-  }
   #skills .title {
     margin-bottom: 1.5em;
   }
@@ -913,6 +979,40 @@ footer {
     padding: 0.5em 1em;
     font-size: 0.5em;
   }
+  #about {
+    padding: 3em 10%;
+  }
+  #about .title {
+    margin-bottom: 2em;
+  }
+  #about .about-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #about i {
+    font-size: 15px;
+    margin: 15px;
+  }
+  #about .i-do {
+    padding: 25px;
+    max-width: 200px;
+    width: 200px;
+    max-height: 270px;
+    height: 270px;
+  }
+  #about .i-do-title {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  #about .i-do-sub-title {
+    font-size: 10px;
+    opacity: .7;
+  }
   #skills {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -987,13 +1087,14 @@ footer {
     padding: 0.3em;
   }
   #projects .btn-and-description .project-title {
-    font-size: 0.4em;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
+    font-size: 15px;
+  }
+  #projects .btn-and-description .sub-title {
+    font-size: 10px;
   }
   #projects .btn-and-description .using {
-    margin-top: 1em;
-    font-size: 0.3em;
+    margin: 0;
+    font-size: 10px;
   }
   #projects .btn-and-description .project-btn-container {
     display: -ms-grid;
