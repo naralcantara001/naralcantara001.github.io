@@ -638,12 +638,11 @@ nav li a:hover {
   opacity: .8;
   margin-bottom: 10px;
   border-radius: 5px;
-  border: none;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
   border: 1px solid #7f1cdf;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 #projects .btn-and-description .project-btn-git:hover {
