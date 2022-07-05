@@ -333,6 +333,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     display: flex;
   }
   i{
+    font-size: 35px;
     color: $violet;
     margin: 18px;
   }
@@ -359,7 +360,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   }
   .i-do-sub-title{
     color: $violet;
-    font-size: 13px;
+    font-size: 15px;
     opacity: .7;
   }
 } 
@@ -501,8 +502,9 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
       font-size: 0.6em;
       cursor: pointer;
       padding: 0.8em 1em;
-      color: $black;
-      background-color: $white;
+      color: $white;
+      background-color: $violet;
+      opacity: .6;
       margin-bottom: 10px;
       border-radius: 5px;
       border: none;
@@ -601,7 +603,7 @@ footer {
   }
 
   #home {
-    padding-top: 3em;
+    padding: 10%;
   }
 
   .name {
@@ -892,11 +894,11 @@ footer {
         padding: 11px;
         margin: 5px;
         .name, i{
-          font-size: 14px;
+          font-size: 16px;
           margin-bottom: 5px;
         }
         .progress{
-          height: 14px;
+          height: 15px;
         }
         .bar{
           font-size: 10px;
@@ -962,7 +964,6 @@ footer {
         font-size: 0.5em;
         cursor: pointer;
         padding: 1.1em 1.5em;
-        border-radius: 10px;
         border: none;
         transition: ease 0.3s;
         &:hover {

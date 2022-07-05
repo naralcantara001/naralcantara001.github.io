@@ -376,6 +376,7 @@ nav li a:hover {
 }
 
 #about i {
+  font-size: 35px;
   color: #7f1cdf;
   margin: 18px;
 }
@@ -418,7 +419,7 @@ nav li a:hover {
 
 #about .i-do-sub-title {
   color: #7f1cdf;
-  font-size: 13px;
+  font-size: 15px;
   opacity: .7;
 }
 
@@ -626,8 +627,9 @@ nav li a:hover {
   font-size: 0.6em;
   cursor: pointer;
   padding: 0.8em 1em;
-  color: #171120;
-  background-color: #fffffe;
+  color: #fffffe;
+  background-color: #7f1cdf;
+  opacity: .6;
   margin-bottom: 10px;
   border-radius: 5px;
   border: none;
@@ -747,7 +749,7 @@ footer {
     position: fixed;
   }
   #home {
-    padding-top: 3em;
+    padding: 10%;
   }
   .name {
     display: -ms-grid;
@@ -1059,11 +1061,11 @@ footer {
     margin: 5px;
   }
   #skills .skill-container .skill .name, #skills .skill-container .skill i {
-    font-size: 14px;
+    font-size: 16px;
     margin-bottom: 5px;
   }
   #skills .skill-container .skill .progress {
-    height: 14px;
+    height: 15px;
   }
   #skills .skill-container .skill .bar {
     font-size: 10px;
@@ -1135,7 +1137,6 @@ footer {
     font-size: 0.5em;
     cursor: pointer;
     padding: 1.1em 1.5em;
-    border-radius: 10px;
     border: none;
     -webkit-transition: ease 0.3s;
     transition: ease 0.3s;
