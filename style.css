@@ -1170,7 +1170,8 @@ footer {
     font-size: 8px;
   }
   #contact .business a #faabs {
-    font-size: 1em;
+    font-size: 14px;
+    margin: 0 7px;
   }
   footer {
     font-size: 0.9em;
