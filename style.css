@@ -1011,7 +1011,7 @@ footer {
             align-items: center;
   }
   #about i {
-    font-size: 17px;
+    font-size: 35px;
     margin: 15px;
   }
   #about .i-do {
@@ -1019,11 +1019,11 @@ footer {
     height: 350px;
   }
   #about .i-do-title {
-    font-size: 17px;
+    font-size: 20px;
     margin-bottom: 5px;
   }
   #about .i-do-sub-title {
-    font-size: 12px;
+    font-size: 15px;
     opacity: .7;
   }
   #skills {
