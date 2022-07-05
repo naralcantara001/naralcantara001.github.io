@@ -14,7 +14,7 @@ html {
 }
 
 #preloader {
-  background-color: #fffffe;
+  background-color: #111;
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -59,7 +59,7 @@ html {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #171120;
+  border-top-color: #fbfbfb;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -91,7 +91,7 @@ html {
   bottom: 30px;
   right: 30px;
   background-color: #7f1cdf;
-  color: #fffffe;
+  color: #111;
   padding: 12px 20px;
   border-radius: 50%;
   border: none;
@@ -118,7 +118,7 @@ section {
           align-items: center;
   font-size: 2em;
   height: auto;
-  background-color: #fffffe;
+  background-color: #111;
 }
 
 .actives {
@@ -141,7 +141,7 @@ section {
 }
 
 .title {
-  color: #171120;
+  color: #fbfbfb;
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -161,8 +161,8 @@ section {
 
 header {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
-  background-image: linear-gradient(to right, #7f1cdf, #171120);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#fbfbfb));
+  background-image: linear-gradient(to right, #7f1cdf, #fbfbfb);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -210,14 +210,14 @@ nav li {
 nav li a {
   text-decoration: none;
   letter-spacing: 1px;
-  color: #fffffe;
+  color: #111;
   padding: 0.3em 0.8em;
   cursor: pointer;
 }
 
 nav li a:hover {
   background-color: #7f1cdf;
-  color: #fffffe;
+  color: #111;
   -webkit-transition: all ease 0.6s;
   transition: all ease 0.6s;
   border-radius: 2px;
@@ -279,7 +279,7 @@ nav li a:hover {
 .name .myName {
   z-index: 1;
   font-size: 1.3em;
-  color: #171120;
+  color: #fbfbfb;
 }
 
 .name .greetings {
@@ -296,7 +296,7 @@ nav li a:hover {
 }
 
 #fabs {
-  color: #171120;
+  color: #fbfbfb;
   border-radius: 50px;
   padding: 0.5em;
   font-size: 20px;
@@ -306,8 +306,8 @@ nav li a:hover {
 }
 
 #fabs:hover {
-  color: #171120;
-  background-color: #fffffe;
+  color: #fbfbfb;
+  background-color: #111;
   -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
 }
@@ -327,9 +327,9 @@ nav li a:hover {
 }
 
 .cv {
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
-  background-image: linear-gradient(to right, #7f1cdf, #171120);
-  color: #fffffe;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#fbfbfb));
+  background-image: linear-gradient(to right, #7f1cdf, #fbfbfb);
+  color: #111;
   padding: 0.5em 1em;
   font-size: 0.5em;
   letter-spacing: 1px;
@@ -414,6 +414,7 @@ nav li a:hover {
 
 #about .i-do-title {
   font-size: 20px;
+  color: #fbfbfb;
 }
 
 #about .i-do-sub-title {
@@ -515,8 +516,8 @@ nav li a:hover {
 
 #skills .skill-container .skill .bar {
   font-size: 15px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
-  background-image: linear-gradient(to right, #7f1cdf, #171120);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#fbfbfb));
+  background-image: linear-gradient(to right, #7f1cdf, #fbfbfb);
   text-align: center;
   border-radius: 50px;
 }
@@ -554,7 +555,7 @@ nav li a:hover {
   display: flex;
   margin-bottom: 4em;
   padding: 20px;
-  color: #171120;
+  color: #fbfbfb;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -611,7 +612,7 @@ nav li a:hover {
 
 #projects .btn-and-description .sub-title {
   font-size: 17px;
-  color: #171120;
+  color: #fbfbfb;
   opacity: .7;
 }
 
@@ -634,7 +635,7 @@ nav li a:hover {
   cursor: pointer;
   padding: 0.8em 1em;
   color: #7f1cdf;
-  background-color: #fffffe;
+  background-color: #111;
   margin-bottom: 10px;
   border-radius: 5px;
   -webkit-transition: ease 0.3s;
@@ -654,11 +655,11 @@ nav li a:hover {
   font-size: 0.7em;
   cursor: pointer;
   padding: 0.8em 1em;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
-  background-image: linear-gradient(to right, #7f1cdf, #171120);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#fbfbfb));
+  background-image: linear-gradient(to right, #7f1cdf, #fbfbfb);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  color: #fffffe;
+  color: #111;
   border-radius: 5px;
   border: none;
   -webkit-transition: ease 0.3s;
@@ -699,7 +700,7 @@ nav li a:hover {
 #contact .quote {
   z-index: 1;
   font-size: 15px;
-  color: #171120;
+  color: #fbfbfb;
   line-height: 30px;
 }
 
@@ -743,7 +744,7 @@ footer {
   text-align: center;
   padding: 2em;
   margin-top: 3em;
-  color: #171120;
+  color: #fbfbfb;
   font-size: 1em;
   letter-spacing: 2px;
   opacity: .6;
@@ -818,7 +819,7 @@ footer {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-    background-color: #fffffe;
+    background-color: #111;
   }
   .nav-links li {
     width: 100%;
@@ -827,7 +828,7 @@ footer {
     border-bottom: 1px solid #7f1cdf;
   }
   .nav-links .links {
-    color: #171120;
+    color: #fbfbfb;
   }
   .info > span {
     font-size: 0.8em;

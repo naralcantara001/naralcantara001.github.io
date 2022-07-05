@@ -13,7 +13,7 @@ html {
   font-family: "Poppins", sans-serif;
 }
 // sass
-$black: #171120;
+$black: #fbfbfb;
 $blue: #26abff;
 $violet: #7f1cdf;
 $darkviolet: #1c1c65;
@@ -22,7 +22,7 @@ $transparentWhite: rgba(255, 255, 255, 0.2);
 $orange: #ffa500;
 $lightOrange: #ffe5b4;
 $dark: #0f103f;
-$white: #fffffe;
+$white: #111;
 
 // pre loader
 #preloader {
@@ -358,6 +358,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   }
   .i-do-title{
     font-size: 20px;
+    color: $black;
   }
   .i-do-sub-title{
     color: $violet;
