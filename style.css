@@ -14,7 +14,7 @@ html {
 }
 
 #preloader {
-  background-color: #171120;
+  background-color: #fbfafa;
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -59,7 +59,7 @@ html {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #fbfafa;
+  border-top-color: #171120;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -91,15 +91,15 @@ html {
   bottom: 30px;
   right: 30px;
   background-color: #7f1cdf;
-  color: #171120;
+  color: #fbfafa;
   padding: 12px 20px;
   border-radius: 50%;
   border: none;
   outline: none;
   z-index: 99;
   cursor: pointer;
-  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -118,7 +118,7 @@ section {
           align-items: center;
   font-size: 2em;
   height: auto;
-  background-color: #171120;
+  background-color: #fbfafa;
 }
 
 .actives {
@@ -141,7 +141,7 @@ section {
 }
 
 .title {
-  color: #fbfafa;
+  color: #171120;
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -161,14 +161,14 @@ section {
 
 header {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#fbfafa));
-  background-image: linear-gradient(to right, #7f1cdf, #fbfafa);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
+  background-image: linear-gradient(to right, #7f1cdf, #171120);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 2;
-  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+          box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .main-nav {
@@ -182,6 +182,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 15%;
+}
+
+.main-nav .fa-sun {
+  cursor: pointer;
+  color: #171120;
+  font-size: 28px;
 }
 
 .logo {
@@ -210,14 +216,14 @@ nav li {
 nav li a {
   text-decoration: none;
   letter-spacing: 1px;
-  color: #171120;
+  color: #fbfafa;
   padding: 0.3em 0.8em;
   cursor: pointer;
 }
 
 nav li a:hover {
   background-color: #7f1cdf;
-  color: #171120;
+  color: #fbfafa;
   -webkit-transition: all ease 0.6s;
   transition: all ease 0.6s;
   border-radius: 2px;
@@ -232,7 +238,7 @@ nav li a:hover {
 .burger div {
   width: 3em;
   height: 0.2em;
-  background-color: #171120;
+  background-color: #fbfafa;
   margin: 0.5em 0;
 }
 
@@ -279,7 +285,7 @@ nav li a:hover {
 .name .myName {
   z-index: 1;
   font-size: 1.3em;
-  color: #fbfafa;
+  color: #171120;
 }
 
 .name .greetings {
@@ -296,7 +302,7 @@ nav li a:hover {
 }
 
 #fabs {
-  color: #fbfafa;
+  color: #171120;
   border-radius: 50px;
   padding: 0.5em;
   font-size: 20px;
@@ -306,8 +312,8 @@ nav li a:hover {
 }
 
 #fabs:hover {
-  color: #fbfafa;
-  background-color: #171120;
+  color: #171120;
+  background-color: #fbfafa;
   -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
 }
@@ -327,9 +333,9 @@ nav li a:hover {
 }
 
 .cv {
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#fbfafa));
-  background-image: linear-gradient(to right, #7f1cdf, #fbfafa);
-  color: #171120;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
+  background-image: linear-gradient(to right, #7f1cdf, #171120);
+  color: #fbfafa;
   padding: 0.5em 1em;
   font-size: 0.5em;
   letter-spacing: 1px;
@@ -337,8 +343,8 @@ nav li a:hover {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cv .arrow-down {
@@ -403,13 +409,13 @@ nav li a:hover {
   -webkit-transition: .3s;
   transition: .3s;
   border-radius: 5px;
-  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #about .i-do-title {
   font-size: 20px;
-  color: #fbfafa;
+  color: #171120;
 }
 
 #about .i-do-sub-title {
@@ -454,8 +460,8 @@ nav li a:hover {
           align-items: center;
   margin: 20px 10px;
   border: 1px solid #7f1cdf;
-  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
 
@@ -511,8 +517,8 @@ nav li a:hover {
 
 #skills .skill-container .skill .bar {
   font-size: 15px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#fbfafa));
-  background-image: linear-gradient(to right, #7f1cdf, #fbfafa);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
+  background-image: linear-gradient(to right, #7f1cdf, #171120);
   text-align: center;
   border-radius: 50px;
 }
@@ -550,15 +556,15 @@ nav li a:hover {
   display: flex;
   margin-bottom: 4em;
   padding: 20px;
-  color: #fbfafa;
+  color: #171120;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
   border: 1px solid #7f1cdf;
   border-radius: 5px;
-  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 #projects .screenshot-container {
@@ -594,6 +600,7 @@ nav li a:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  line-height: 22px;
   height: auto;
   width: 50%;
 }
@@ -607,8 +614,14 @@ nav li a:hover {
 
 #projects .btn-and-description .sub-title {
   font-size: 17px;
-  color: #fbfafa;
+  color: #171120;
   opacity: .7;
+}
+
+#projects .btn-and-description .date {
+  font-size: 12px;
+  color: #171120;
+  opacity: .5;
 }
 
 #projects .btn-and-description .using {
@@ -630,14 +643,14 @@ nav li a:hover {
   cursor: pointer;
   padding: 0.8em 1em;
   color: #7f1cdf;
-  background-color: #171120;
+  background-color: #fbfafa;
   margin-bottom: 10px;
   border-radius: 5px;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
   border: 1px solid #7f1cdf;
-  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 #projects .btn-and-description .project-btn-git:hover {
@@ -650,11 +663,11 @@ nav li a:hover {
   font-size: 0.7em;
   cursor: pointer;
   padding: 0.8em 1em;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#fbfafa));
-  background-image: linear-gradient(to right, #7f1cdf, #fbfafa);
-  -webkit-box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
-  color: #171120;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
+  background-image: linear-gradient(to right, #7f1cdf, #171120);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  color: #fbfafa;
   border-radius: 5px;
   border: none;
   -webkit-transition: ease 0.3s;
@@ -695,7 +708,7 @@ nav li a:hover {
 #contact .quote {
   z-index: 1;
   font-size: 15px;
-  color: #fbfafa;
+  color: #171120;
   line-height: 30px;
 }
 
@@ -739,7 +752,7 @@ footer {
   text-align: center;
   padding: 2em;
   margin-top: 3em;
-  color: #fbfafa;
+  color: #171120;
   font-size: 1em;
   letter-spacing: 2px;
   opacity: .6;
@@ -806,7 +819,7 @@ footer {
     text-align: center;
     right: 0px;
     height: auto;
-    top: 58px;
+    top: 60px;
     width: 100%;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -814,7 +827,7 @@ footer {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-    background-color: #171120;
+    background-color: #fbfafa;
   }
   .nav-links li {
     width: 100%;
@@ -823,7 +836,7 @@ footer {
     border-bottom: 1px solid #7f1cdf;
   }
   .nav-links .links {
-    color: #fbfafa;
+    color: #171120;
   }
   .info > span {
     font-size: 0.8em;
@@ -941,6 +954,7 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
     text-align: center;
+    top: 65px;
     right: 0px;
     height: auto;
     width: 100%;
