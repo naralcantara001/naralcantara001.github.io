@@ -1016,7 +1016,7 @@ footer {
   }
   #about .i-do {
     width: 80%;
-    height: 350px;
+    height: 380px;
   }
   #about .i-do-title {
     font-size: 20px;
@@ -1100,14 +1100,14 @@ footer {
     padding: 0.3em;
   }
   #projects .btn-and-description .project-title {
-    font-size: 15px;
+    font-size: 18px;
   }
   #projects .btn-and-description .sub-title {
-    font-size: 10px;
+    font-size: 13px;
   }
   #projects .btn-and-description .using {
     margin: 0;
-    font-size: 10px;
+    font-size: 13px;
   }
   #projects .btn-and-description .project-btn-container {
     display: -ms-grid;
