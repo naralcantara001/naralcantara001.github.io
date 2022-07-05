@@ -13,7 +13,7 @@ html {
   font-family: "Poppins", sans-serif;
 }
 // sass
-$black: #fbfbfb;
+$black: #fbfafa;
 $blue: #26abff;
 $violet: #7f1cdf;
 $darkviolet: #1c1c65;
@@ -22,7 +22,7 @@ $transparentWhite: rgba(255, 255, 255, 0.2);
 $orange: #ffa500;
 $lightOrange: #ffe5b4;
 $dark: #0f103f;
-$white: #111;
+$white: #171120;
 
 // pre loader
 #preloader {
@@ -110,7 +110,8 @@ $white: #111;
   outline: none;
   z-index: 99;
   cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 }
 
 body {
@@ -171,7 +172,8 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
-  box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+  // box-shadow: 1px 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 }
 
 .main-nav {
@@ -230,7 +232,7 @@ nav {
 .burger div {
   width: 3em;
   height: 0.2em;
-  background-color: #dde;
+  background-color: $white;
   margin: 0.5em 0;
 }
 
@@ -312,7 +314,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 
   & .arrow-down {
     margin-left: 0.8em;
@@ -351,10 +354,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     margin: 20px;
     transition: .3s;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  }
-  .i-do:hover{
-    transform: scale(1.1);
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
   }
   .i-do-title{
     font-size: 20px;
@@ -388,7 +389,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     align-items: center;
     margin: 20px 10px;
     border: 1px solid $violet;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
     border-radius: 5px;
     .name-container{
       width: 100%;
@@ -454,7 +456,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     width: 100%;
     border: 1px solid $violet;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
   }
 
   & .screenshot-container {
@@ -516,8 +519,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
       border-radius: 5px;
       transition: ease 0.3s;
       border: 1px solid $violet;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-
+      // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
       &:hover {
         transform: scale(1.2);
       }
@@ -529,7 +532,8 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
       cursor: pointer;
       padding: 0.8em 1em;
       background-image: linear-gradient(to right, $violet, $black);
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      // box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
       color: $white;
       border-radius: 5px;
       border: none;
