@@ -135,7 +135,7 @@ section {
 
 // javascript active nav hover
 .actives {
-  border-bottom: 4px solid $blue;
+  border-bottom: 3px solid $blue;
 }
 // scroll animation
 
@@ -512,7 +512,7 @@ nav {
     letter-spacing: 2px;
     width: 100%;
     margin-top: 20px;
-    border-top: 1px solid $transparentWhite;
+    border-top: 1px solid $blue;
     & a {
       color: $blue;
       letter-spacing: 1px;

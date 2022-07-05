@@ -129,7 +129,7 @@ section {
 }
 
 .actives {
-  border-bottom: 4px solid #26abff;
+  border-bottom: 3px solid #26abff;
 }
 
 .reveal {
@@ -621,7 +621,7 @@ nav li a:hover {
   letter-spacing: 2px;
   width: 100%;
   margin-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 1px solid #26abff;
 }
 
 #contact .business a {
