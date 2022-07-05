@@ -566,7 +566,6 @@ nav li a:hover {
 }
 
 #projects .screenshot-container {
-  margin: 0 15px;
   margin-right: 20px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -666,6 +665,7 @@ nav li a:hover {
   border: none;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
+  margin-bottom: 5px;
 }
 
 #projects .btn-and-description .project-btn-preview:hover {

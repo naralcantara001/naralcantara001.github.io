@@ -457,7 +457,6 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
   }
 
   & .screenshot-container {
-    margin: 0 15px;
     margin-right: 20px;
     width: fit-content;
     display: grid;
@@ -536,7 +535,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
       border-radius: 5px;
       border: none;
       transition: ease 0.3s;
-
+      margin-bottom: 5px;
       &:hover {
         transform: scale(1.2);
       }
