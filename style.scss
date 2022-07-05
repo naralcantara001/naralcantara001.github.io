@@ -840,7 +840,7 @@ footer {
 
   // about mobile ver
   #about{
-    padding: 3em 10%;
+    padding: 3em 5%;
     .title{
       margin-bottom: 2em;
     }
@@ -849,22 +849,23 @@ footer {
       flex-direction: column;
     }
     i{
-      font-size: 15px;
+      font-size: 17px;
       margin: 15px;
     }
     .i-do{
       padding: 25px;
-      max-width: 200px;
-      width: 200px;
-      max-height: 270px;
-      height: 270px;
+      max-width: 250px;
+      min-width: 200px;
+      max-height: 300px;
+      min-height: 250px;
+      height: 300px;
     }
     .i-do-title{
-      font-size: 15px;
+      font-size: 17px;
       margin-bottom: 5px;
     }
     .i-do-sub-title{
-      font-size: 10px;
+      font-size: 12px;
       opacity: .7;
     }
   } 
