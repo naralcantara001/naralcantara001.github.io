@@ -522,9 +522,9 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
       font-size: 0.8em;
 
       & #faabs {
-        color: $black;
+        color: $violet;
         border-radius: 50px;
-        font-size: 1.5em;
+        font-size: 2em;
         margin: 1.5em 1em 0.3em 0.3em;
         cursor: pointer;
         transition: ease 0.3s;
@@ -731,7 +731,6 @@ footer {
     right: 0px;
     height: auto;
     width: 100%;
-    background-image: linear-gradient(to right, $black, #111);
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
 
@@ -902,9 +901,9 @@ footer {
     height: auto;
     font-size: 0.8em;
     letter-spacing: 2px;
-    padding: 0 10% 3em 10%;
+    padding: 0 9% 3em 9%;
     & .quote{
-        font-size: 7px;
+        font-size: 8px;
     }
     & .business {
       & a {

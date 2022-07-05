@@ -646,9 +646,9 @@ nav li a:hover {
 }
 
 #contact .business a #faabs {
-  color: #171120;
+  color: #7f1cdf;
   border-radius: 50px;
-  font-size: 1.5em;
+  font-size: 2em;
   margin: 1.5em 1em 0.3em 0.3em;
   cursor: pointer;
   -webkit-transition: ease 0.3s;
@@ -860,8 +860,6 @@ footer {
     right: 0px;
     height: auto;
     width: 100%;
-    background-image: -webkit-gradient(linear, left top, right top, from(#171120), to(#111));
-    background-image: linear-gradient(to right, #171120, #111);
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5s ease-in;
@@ -1049,10 +1047,10 @@ footer {
     height: auto;
     font-size: 0.8em;
     letter-spacing: 2px;
-    padding: 0 10% 3em 10%;
+    padding: 0 9% 3em 9%;
   }
   #contact .quote {
-    font-size: 7px;
+    font-size: 8px;
   }
   #contact .business a #faabs {
     font-size: 1em;
