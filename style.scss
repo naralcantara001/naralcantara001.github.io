@@ -840,25 +840,23 @@ footer {
 
   // about mobile ver
   #about{
-    padding: 3em 5%;
+    padding: 3em 0;
     .title{
       margin-bottom: 2em;
     }
     .about-container{
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
     i{
       font-size: 17px;
       margin: 15px;
     }
     .i-do{
-      padding: 25px;
-      max-width: 250px;
-      min-width: 200px;
-      max-height: 300px;
-      min-height: 250px;
-      height: 300px;
+      width: 75%;
+      height: 350px;
     }
     .i-do-title{
       font-size: 17px;

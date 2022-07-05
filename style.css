@@ -980,7 +980,7 @@ footer {
     font-size: 0.5em;
   }
   #about {
-    padding: 3em 5%;
+    padding: 3em 0;
   }
   #about .title {
     margin-bottom: 2em;
@@ -993,18 +993,20 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #about i {
     font-size: 17px;
     margin: 15px;
   }
   #about .i-do {
-    padding: 25px;
-    max-width: 250px;
-    min-width: 200px;
-    max-height: 300px;
-    min-height: 250px;
-    height: 300px;
+    width: 75%;
+    height: 350px;
   }
   #about .i-do-title {
     font-size: 17px;
