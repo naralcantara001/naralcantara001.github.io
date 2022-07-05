@@ -1058,12 +1058,12 @@ footer {
     padding: 11px;
     margin: 5px;
   }
-  #skills .skill-container .skill .name {
-    font-size: 12px;
+  #skills .skill-container .skill .name, #skills .skill-container .skill i {
+    font-size: 14px;
     margin-bottom: 5px;
   }
   #skills .skill-container .skill .progress {
-    height: 13px;
+    height: 14px;
   }
   #skills .skill-container .skill .bar {
     font-size: 10px;
