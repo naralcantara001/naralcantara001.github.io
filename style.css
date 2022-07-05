@@ -1131,14 +1131,6 @@ footer {
     font-size: 0.5em;
     cursor: pointer;
     padding: 0.8em 1em;
-    margin-bottom: 0.7em;
-    border: none;
-    -webkit-transition: ease 0.3s;
-    transition: ease 0.3s;
-  }
-  #projects .btn-and-description .project-btn-git:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
   }
   #projects .btn-and-description .project-btn-preview {
     font-family: monospace;

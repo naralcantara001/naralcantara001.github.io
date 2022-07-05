@@ -959,12 +959,6 @@ footer {
         font-size: 0.5em;
         cursor: pointer;
         padding: 0.8em 1em;
-        margin-bottom: 0.7em;
-        border: none;
-        transition: ease 0.3s;
-        &:hover {
-          transform: scale(1.2);
-        }
       }
 
       & .project-btn-preview {
