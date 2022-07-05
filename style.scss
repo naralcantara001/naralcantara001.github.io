@@ -651,16 +651,20 @@ footer {
     text-align: center;
     right: 0px;
     height: auto;
-    top: 50px;
+    top: 58px;
     width: 100%;
-    background-image: linear-gradient(135deg, $black, $violet);
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
+    background-color: $white;
 
     & li {
       width: 100%;
       margin: 0;
       padding: 1em;
+      border-bottom: 1px solid $violet;
+    }
+    & .links {
+      color: $black;
     }
   }
   .info > span {
@@ -791,7 +795,6 @@ footer {
       padding: 1em;
 
       & .links {
-        color: $white;
         padding: 0.3em;
       }
     }

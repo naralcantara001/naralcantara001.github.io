@@ -802,20 +802,24 @@ footer {
     text-align: center;
     right: 0px;
     height: auto;
-    top: 50px;
+    top: 58px;
     width: 100%;
-    background-image: linear-gradient(135deg, #171120, #7f1cdf);
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
+    background-color: #fffffe;
   }
   .nav-links li {
     width: 100%;
     margin: 0;
     padding: 1em;
+    border-bottom: 1px solid #7f1cdf;
+  }
+  .nav-links .links {
+    color: #171120;
   }
   .info > span {
     font-size: 0.8em;
@@ -950,7 +954,6 @@ footer {
     padding: 1em;
   }
   .nav-links li .links {
-    color: #fffffe;
     padding: 0.3em;
   }
   #home {
