@@ -131,6 +131,7 @@ section {
 .actives {
   border-bottom: 3px solid $violet;
 }
+
 // scroll animation
 
 .reveal {
@@ -181,8 +182,8 @@ header {
 }
 
 .logo {
-  width: 30px;
-  margin: 10px 0;
+  width: 32px;
+  margin: 13px 0;
 }
 
 //  header nav links
@@ -199,7 +200,7 @@ nav {
   & li {
     border: none;
     display: inline-block;
-    margin: 1em 0 1em 1em;
+    margin: .5em 0 1em 1em;
     padding: 0;
 
     & a {
