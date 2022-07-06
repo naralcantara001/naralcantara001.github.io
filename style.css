@@ -190,7 +190,9 @@ header {
 }
 
 .logo {
-  width: 32px;
+  font-size: 21px;
+  font-weight: bolder;
+  color: #dcd6f7;
   margin: 13px 0;
 }
 
@@ -328,8 +330,7 @@ nav li a {
 }
 
 .cv {
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#424874));
-  background-image: linear-gradient(to right, #7f1cdf, #424874);
+  background-color: #424874;
   color: #fdfdfd;
   padding: 0.5em 1em;
   font-size: 0.5em;
@@ -514,8 +515,7 @@ nav li a {
 
 #skills .skill-container .skill .bar {
   font-size: 15px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#424874));
-  background-image: linear-gradient(to right, #7f1cdf, #424874);
+  background-color: #424874;
   text-align: center;
   border-radius: 50px;
 }
@@ -640,13 +640,13 @@ nav li a {
   font-size: 0.6em;
   cursor: pointer;
   padding: 0.8em 1em;
-  color: #7f1cdf;
+  color: #424874;
   background-color: #fdfdfd;
   margin-bottom: 10px;
   border-radius: 5px;
   -webkit-transition: ease 0.3s;
   transition: ease 0.3s;
-  border: 1px solid #7f1cdf;
+  border: 1px solid #424874;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -661,8 +661,7 @@ nav li a {
   font-size: 0.7em;
   cursor: pointer;
   padding: 0.8em 1em;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#424874));
-  background-image: linear-gradient(to right, #7f1cdf, #424874);
+  background-color: #424874;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   color: #fdfdfd;
