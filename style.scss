@@ -44,7 +44,7 @@ $black: #171120;
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: $violet;
+  border-top-color: $darkViolet;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -57,7 +57,7 @@ $black: #171120;
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: $purple;
+  border-top-color: $violet;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
@@ -70,7 +70,7 @@ $black: #171120;
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: $white;
+  border-top-color: $purple;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
