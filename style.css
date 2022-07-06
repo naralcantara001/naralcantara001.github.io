@@ -14,7 +14,7 @@ html {
 }
 
 #preloader {
-  background-color: #fbfafa;
+  background-color: #fdfdfd;
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -45,7 +45,7 @@ html {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #26abff;
+  border-top-color: #1c1c65;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
@@ -59,7 +59,7 @@ html {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #171120;
+  border-top-color: #424874;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -91,7 +91,7 @@ html {
   bottom: 30px;
   right: 30px;
   background-color: #7f1cdf;
-  color: #fbfafa;
+  color: #fdfdfd;
   padding: 12px 20px;
   border-radius: 50%;
   border: none;
@@ -118,11 +118,11 @@ section {
           align-items: center;
   font-size: 2em;
   height: auto;
-  background-color: #fbfafa;
+  background-color: #dcd6f7;
 }
 
 .actives {
-  border-bottom: 3px solid #7f1cdf;
+  border-bottom: 2px solid #fdfdfd;
 }
 
 .reveal {
@@ -141,7 +141,7 @@ section {
 }
 
 .title {
-  color: #171120;
+  color: #424874;
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
@@ -161,8 +161,8 @@ section {
 
 header {
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
-  background-image: linear-gradient(to right, #7f1cdf, #171120);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#424874));
+  background-image: linear-gradient(to right, #7f1cdf, #424874);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -186,7 +186,7 @@ header {
 
 .main-nav .fa-sun {
   cursor: pointer;
-  color: #171120;
+  color: #424874;
   font-size: 28px;
 }
 
@@ -216,17 +216,10 @@ nav li {
 nav li a {
   text-decoration: none;
   letter-spacing: 1px;
-  color: #fbfafa;
-  padding: 0.3em 0.8em;
+  color: #fdfdfd;
+  padding: 3px 5px;
+  margin: 5px;
   cursor: pointer;
-}
-
-nav li a:hover {
-  background-color: #7f1cdf;
-  color: #fbfafa;
-  -webkit-transition: all ease 0.6s;
-  transition: all ease 0.6s;
-  border-radius: 2px;
 }
 
 .burger {
@@ -238,7 +231,7 @@ nav li a:hover {
 .burger div {
   width: 3em;
   height: 0.2em;
-  background-color: #fbfafa;
+  background-color: #fdfdfd;
   margin: 0.5em 0;
 }
 
@@ -260,6 +253,7 @@ nav li a:hover {
           justify-content: center;
   letter-spacing: 2px;
   height: 100vh;
+  background-color: #fdfdfd;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1252%26quot%3b)' fill='none'%3e%3ccircle r='46.666666666666664' cx='728.88' cy='25.84' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/circle%3e%3cpath d='M1198.06 240.59a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1192.61 225.54a5.6 5.6 0 1 0-3.82-10.52 5.6 5.6 0 1 0 3.82 10.52zM1187.15 210.5a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1181.7 195.46a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1224.01 265.22a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1218.55 250.17a5.6 5.6 0 1 0-3.81-10.52 5.6 5.6 0 1 0 3.81 10.52zM1213.1 235.13a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1207.65 220.09a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1249.96 289.85a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1244.5 274.8a5.6 5.6 0 1 0-3.81-10.53 5.6 5.6 0 1 0 3.81 10.53zM1239.05 259.76a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53zM1233.6 244.72a5.6 5.6 0 1 0-3.82-10.53 5.6 5.6 0 1 0 3.82 10.53z' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/path%3e%3crect width='216' height='216' clip-path='url(%26quot%3b%23SvgjsClipPath1253%26quot%3b)' x='173.85' y='334.9' fill='url(%23SvgjsPattern1254)' transform='rotate(205.25%2c 281.85%2c 442.9)'%3e%3c/rect%3e%3crect width='240' height='240' clip-path='url(%26quot%3b%23SvgjsClipPath1255%26quot%3b)' x='404.53' y='39.88' fill='url(%23SvgjsPattern1256)' transform='rotate(190.18%2c 524.53%2c 159.88)'%3e%3c/rect%3e%3cpath d='M917.15 472.41 L839.77 432.51L934.842152779629 396.07784722037104z' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/path%3e%3ccircle r='86.20009855305237' cx='181.22' cy='172.01' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='1.38' stroke-dasharray='2%2c 2'%3e%3c/circle%3e%3cpath d='M1101.08 102.55L1109.9 93.27 1120.9 99.84 1129.72 90.55 1140.71 97.12 1149.53 87.84 1160.53 94.41M1102.17 110.48L1110.99 101.19 1121.98 107.76 1130.8 98.48 1141.8 105.05 1150.62 95.76 1161.61 102.33' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='2.68' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3crect width='117.4' height='117.4' clip-path='url(%26quot%3b%23SvgjsClipPath1257%26quot%3b)' x='1124.19' y='481.97' fill='url(%23SvgjsPattern1258)' transform='rotate(117.19%2c 1182.89%2c 540.67)'%3e%3c/rect%3e%3ccircle r='46.666666666666664' cx='809.45' cy='329.08' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/circle%3e%3cpath d='M355.38 504.13a5.6 5.6 0 1 0 7.98 7.86 5.6 5.6 0 1 0-7.98-7.86zM366.78 515.36a5.6 5.6 0 1 0 7.98 7.86 5.6 5.6 0 1 0-7.98-7.86zM378.18 526.59a5.6 5.6 0 1 0 7.98 7.86 5.6 5.6 0 1 0-7.98-7.86zM389.58 537.81a5.6 5.6 0 1 0 7.98 7.86 5.6 5.6 0 1 0-7.98-7.86z' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='1' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3crect width='144' height='144' clip-path='url(%26quot%3b%23SvgjsClipPath1259%26quot%3b)' x='122.44' y='124.15' fill='url(%23SvgjsPattern1260)' transform='rotate(324.5%2c 194.44%2c 196.15)'%3e%3c/rect%3e%3cpath d='M840.25 486.24 L830.96 586.02L880.2482203196223 580.7732203196223z' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1252'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1254'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(127%2c 28%2c 223%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1253'%3e%3ccircle r='54' cx='281.85' cy='442.9'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='240' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1256'%3e%3crect width='240' height='3' x='0' y='0' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/rect%3e%3crect width='240' height='3' x='0' y='3' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1255'%3e%3ccircle r='60' cx='524.53' cy='159.88'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='117.4' height='11.74' patternUnits='userSpaceOnUse' id='SvgjsPattern1258'%3e%3crect width='117.4' height='5.87' x='0' y='0' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/rect%3e%3crect width='117.4' height='5.87' x='0' y='5.87' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1257'%3e%3ccircle r='29.35' cx='1182.89' cy='540.67'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern1260'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(127%2c 28%2c 223%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath1259'%3e%3ccircle r='36' cx='194.44' cy='196.15'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
   background-repeat: no-repeat;
 }
@@ -284,8 +278,9 @@ nav li a:hover {
 
 .name .myName {
   z-index: 1;
-  font-size: 1.3em;
-  color: #171120;
+  font-size: 50px;
+  color: #424874;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .name .greetings {
@@ -298,22 +293,23 @@ nav li a:hover {
 .name .profession {
   color: #7f1cdf;
   font-weight: 800;
-  font-size: 0.6em;
+  font-size: 20px;
 }
 
 #fabs {
-  color: #171120;
+  color: #424874;
   border-radius: 50px;
   padding: 0.5em;
   font-size: 20px;
   margin: 0 0.5em;
   cursor: pointer;
   border: none;
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 #fabs:hover {
-  color: #171120;
-  background-color: #fbfafa;
+  color: #424874;
+  background-color: #fdfdfd;
   -webkit-transition: all ease-out 0.5s;
   transition: all ease-out 0.5s;
 }
@@ -333,9 +329,9 @@ nav li a:hover {
 }
 
 .cv {
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
-  background-image: linear-gradient(to right, #7f1cdf, #171120);
-  color: #fbfafa;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#424874));
+  background-image: linear-gradient(to right, #7f1cdf, #424874);
+  color: #fdfdfd;
   padding: 0.5em 1em;
   font-size: 0.5em;
   letter-spacing: 1px;
@@ -387,6 +383,7 @@ nav li a:hover {
 
 #about .i-do {
   border: 1px solid #7f1cdf;
+  background-color: #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -415,7 +412,7 @@ nav li a:hover {
 
 #about .i-do-title {
   font-size: 20px;
-  color: #171120;
+  color: #424874;
 }
 
 #about .i-do-sub-title {
@@ -460,6 +457,7 @@ nav li a:hover {
           align-items: center;
   margin: 20px 10px;
   border: 1px solid #7f1cdf;
+  background-color: #fdfdfd;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -496,7 +494,7 @@ nav li a:hover {
 
 #skills .skill-container .skill .name {
   font-size: 20px;
-  color: #7f1cdf;
+  color: #424874;
   opacity: .6;
 }
 
@@ -517,8 +515,8 @@ nav li a:hover {
 
 #skills .skill-container .skill .bar {
   font-size: 15px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
-  background-image: linear-gradient(to right, #7f1cdf, #171120);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#424874));
+  background-image: linear-gradient(to right, #7f1cdf, #424874);
   text-align: center;
   border-radius: 50px;
 }
@@ -556,7 +554,8 @@ nav li a:hover {
   display: flex;
   margin-bottom: 4em;
   padding: 20px;
-  color: #171120;
+  color: #424874;
+  background-color: #fdfdfd;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -614,13 +613,13 @@ nav li a:hover {
 
 #projects .btn-and-description .sub-title {
   font-size: 17px;
-  color: #171120;
+  color: #424874;
   opacity: .7;
 }
 
 #projects .btn-and-description .date {
   font-size: 12px;
-  color: #171120;
+  color: #424874;
   opacity: .5;
 }
 
@@ -643,7 +642,7 @@ nav li a:hover {
   cursor: pointer;
   padding: 0.8em 1em;
   color: #7f1cdf;
-  background-color: #fbfafa;
+  background-color: #fdfdfd;
   margin-bottom: 10px;
   border-radius: 5px;
   -webkit-transition: ease 0.3s;
@@ -663,11 +662,11 @@ nav li a:hover {
   font-size: 0.7em;
   cursor: pointer;
   padding: 0.8em 1em;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#171120));
-  background-image: linear-gradient(to right, #7f1cdf, #171120);
+  background-image: -webkit-gradient(linear, left top, right top, from(#7f1cdf), to(#424874));
+  background-image: linear-gradient(to right, #7f1cdf, #424874);
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-  color: #fbfafa;
+  color: #fdfdfd;
   border-radius: 5px;
   border: none;
   -webkit-transition: ease 0.3s;
@@ -695,20 +694,23 @@ nav li a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: auto;
+  height: 100vh;
   font-size: 1em;
   letter-spacing: 2px;
   text-align: center;
   padding: 3em 10%;
+  background-color: #1c1c65;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2546%26quot%3b)' fill='none'%3e%3ccircle r='46.666666666666664' cx='221.81' cy='105.71' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/circle%3e%3cpath d='M956.3 111.28a5.6 5.6 0 1 0-10.89 2.64 5.6 5.6 0 1 0 10.89-2.64zM940.75 115.05a5.6 5.6 0 1 0-10.89 2.64 5.6 5.6 0 1 0 10.89-2.64zM925.2 118.82a5.6 5.6 0 1 0-10.89 2.64 5.6 5.6 0 1 0 10.89-2.64zM909.65 122.59a5.6 5.6 0 1 0-10.89 2.64 5.6 5.6 0 1 0 10.89-2.64zM983.62 88.19a5.6 5.6 0 1 0-10.88 2.64 5.6 5.6 0 1 0 10.88-2.64zM968.07 91.96a5.6 5.6 0 1 0-10.88 2.64 5.6 5.6 0 1 0 10.88-2.64zM952.53 95.73a5.6 5.6 0 1 0-10.89 2.64 5.6 5.6 0 1 0 10.89-2.64zM936.98 99.5a5.6 5.6 0 1 0-10.89 2.64 5.6 5.6 0 1 0 10.89-2.64z' stroke='rgba(127%2c 28%2c 223%2c 1)' stroke-width='2.21' stroke-dasharray='2%2c 2'%3e%3c/path%3e%3cpath d='M54.21 70.19999999999999 L149.59 176.83999999999997L168.06172305617406 57.35827694382594z' stroke='rgba(127%2c 28%2c 223%2c 1)' stroke-width='1'%3e%3c/path%3e%3crect width='139.2' height='139.2' clip-path='url(%26quot%3b%23SvgjsClipPath2547%26quot%3b)' x='1118.32' y='-47.76' fill='url(%23SvgjsPattern2548)' transform='rotate(342.66%2c 1187.92%2c 21.84)'%3e%3c/rect%3e%3ccircle r='81.02168838858509' cx='1345.83' cy='366.45' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='1' stroke-dasharray='2%2c 2'%3e%3c/circle%3e%3cpath d='M14.17 365.38a5.6 5.6 0 1 0 4.43-10.28 5.6 5.6 0 1 0-4.43 10.28zM20.5 350.69a5.6 5.6 0 1 0 4.43-10.28 5.6 5.6 0 1 0-4.43 10.28zM26.83 336a5.6 5.6 0 1 0 4.43-10.29 5.6 5.6 0 1 0-4.43 10.29zM33.16 321.3a5.6 5.6 0 1 0 4.43-10.28 5.6 5.6 0 1 0-4.43 10.28zM16.2 401.1a5.6 5.6 0 1 0 4.43-10.28 5.6 5.6 0 1 0-4.43 10.28zM22.53 386.41a5.6 5.6 0 1 0 4.43-10.29 5.6 5.6 0 1 0-4.43 10.29zM28.86 371.72a5.6 5.6 0 1 0 4.43-10.29 5.6 5.6 0 1 0-4.43 10.29zM35.19 357.02a5.6 5.6 0 1 0 4.44-10.28 5.6 5.6 0 1 0-4.44 10.28z' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='1.04' stroke-dasharray='4%2c 4'%3e%3c/path%3e%3ccircle r='53.02276511268818' cx='936.3' cy='178.16' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/circle%3e%3crect width='60' height='60' clip-path='url(%26quot%3b%23SvgjsClipPath2549%26quot%3b)' x='82.45' y='299.07' fill='url(%23SvgjsPattern2550)' transform='rotate(47.53%2c 112.45%2c 329.07)'%3e%3c/rect%3e%3cpath d='M154.91 449.19 L166.78 531.22L202.61072018746555 448.4392798125345z' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/path%3e%3cpath d='M258.68 6.12L255.17 18.43 242.38 17.71 238.87 30.03 226.08 29.3 222.57 41.62 209.79 40.89M254.04-0.4L250.53 11.91 237.75 11.19 234.23 23.51 221.45 22.78 217.93 35.1 205.15 34.37M249.41-6.92L245.89 5.4 233.11 4.67 229.6 16.99 216.81 16.26 213.3 28.58 200.51 27.85' stroke='rgba(127%2c 28%2c 223%2c 1)' stroke-width='1' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3cpath d='M623.19 267.88 L520.2 167.89L659.0041354342591 130.57586456574103z' stroke='rgba(127%2c 28%2c 223%2c 1)' stroke-width='1.31' stroke-dasharray='3%2c 3'%3e%3c/path%3e%3crect width='85.4' height='85.4' clip-path='url(%26quot%3b%23SvgjsClipPath2551%26quot%3b)' x='1226.43' y='-14.92' fill='url(%23SvgjsPattern2552)' transform='rotate(302.78%2c 1269.13%2c 27.78)'%3e%3c/rect%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2546'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='13.92' height='13.92' patternUnits='userSpaceOnUse' id='SvgjsPattern2548'%3e%3cpath d='M6.96 1L6.96 12.92M1 6.96L12.92 6.96' stroke='rgba(127%2c 28%2c 223%2c 1)' fill='none' stroke-width='4.21'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2547'%3e%3ccircle r='34.8' cx='1187.92' cy='21.84'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern2550'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(127%2c 28%2c 223%2c 1)' fill='none' stroke-width='1.27'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2549'%3e%3ccircle r='15' cx='112.45' cy='329.07'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='85.4' height='8.54' patternUnits='userSpaceOnUse' id='SvgjsPattern2552'%3e%3crect width='85.4' height='4.27' x='0' y='0' fill='rgba(127%2c 28%2c 223%2c 1)'%3e%3c/rect%3e%3crect width='85.4' height='4.27' x='0' y='4.27' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2551'%3e%3ccircle r='21.35' cx='1269.13' cy='27.78'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #contact .quote {
+  margin-top: 3em;
   z-index: 1;
   font-size: 15px;
-  color: #171120;
+  color: #fdfdfd;
+  opacity: .9;
   line-height: 30px;
 }
 
@@ -752,10 +754,10 @@ footer {
   text-align: center;
   padding: 2em;
   margin-top: 3em;
-  color: #171120;
-  font-size: 1em;
+  color: #fdfdfd;
+  font-size: .9em;
   letter-spacing: 2px;
-  opacity: .6;
+  opacity: .8;
   font-family: monospace;
 }
 
@@ -827,7 +829,7 @@ footer {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-    background-color: #fbfafa;
+    background-color: #fdfdfd;
   }
   .nav-links li {
     width: 100%;
@@ -836,7 +838,7 @@ footer {
     border-bottom: 1px solid #7f1cdf;
   }
   .nav-links .links {
-    color: #171120;
+    color: #424874;
   }
   .info > span {
     font-size: 0.8em;
@@ -976,37 +978,48 @@ footer {
   }
   #home {
     height: 100vh;
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .name {
+  #home .name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
     line-height: 1.1em;
   }
-  .profession {
-    font-size: 0.7em;
-  }
-  #fabs {
-    font-size: 15px;
-    margin: 0;
-  }
-  .myPhoto {
-    margin-top: 1.5em;
-    height: 5em;
-  }
-  .name .myName {
-    font-size: 0.7em;
-  }
-  .name .greetings {
-    font-size: 0.4em;
-    font-weight: 600;
-    color: #999;
-  }
-  .name .profession {
-    font-weight: 800;
-    font-size: 0.6em;
-  }
-  .see-project-btn {
+  #home .name .see-project-btn {
     margin-top: 2.5em;
     padding: 0.5em 1em;
     font-size: 0.5em;
+  }
+  #home .name .profession {
+    font-size: 14px;
+  }
+  #home .name .myName {
+    font-size: 25px;
+  }
+  #home .name .cv {
+    font-size: 12px;
+  }
+  #home .name #fabs {
+    font-size: 15px;
+    margin: 0px;
   }
   #about {
     padding: 3em 0;
