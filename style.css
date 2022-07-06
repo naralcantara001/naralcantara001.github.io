@@ -820,7 +820,7 @@ footer {
     text-align: center;
     right: 0px;
     height: 50vh;
-    top: 60px;
+    top: 56px;
     width: 100%;
     -webkit-transform: translateX(100%);
             transform: translateX(100%);
@@ -828,15 +828,12 @@ footer {
     transition: -webkit-transform 0.5s ease-in;
     transition: transform 0.5s ease-in;
     transition: transform 0.5s ease-in, -webkit-transform 0.5s ease-in;
-    background-color: #1c1c65;
-    border-bottom: 1px solid #1c1c65;
-    border-left: 1px solid #1c1c65;
+    background-color: #424874;
   }
   .nav-links li {
     width: 100%;
     margin: 0;
     padding: 1em;
-    border-bottom: 1px solid #1c1c65;
   }
   .nav-links .links {
     color: #fdfdfd;
