@@ -376,10 +376,10 @@ background-repeat: no-repeat;
     color: $darkBlue;
   }
   .i-do-sub-title{
-    color: $violet;
-    font-size: 15px;
+    color: $darkBlue;
+    font-size: 14px;
     font-weight: bold;
-    opacity: .7;
+    opacity: .6;
   }
 } 
 
@@ -424,7 +424,6 @@ background-repeat: no-repeat;
       .name{
         font-size: 20px;
         color: $darkBlue;
-        opacity: .6;
       }
       i{
         font-size: 20px;
@@ -434,12 +433,12 @@ background-repeat: no-repeat;
         display: flex;
         width: 100%;
         height: 15px;
-        border: 1px solid $violet;
+        border: 1px solid $purple;
         border-radius: 50px;
       }
       .bar{
         font-size: 15px;
-        background-color: $darkBlue;
+        background-color: $purple;
         text-align: center;
         border-radius: 50px;
       }
@@ -520,17 +519,17 @@ background-repeat: no-repeat;
       opacity: .7;
     }
     & .date{
-      font-size: 12px;
+      font-size: 14px;
       color: $darkBlue;
       opacity: .5;
     }
 
     & .using {
-      font-size: 0.5em;
+      font-size: 12px;
       font-weight: bolder;
-      color: $violet;
+      color: $darkBlue;
       margin-bottom: 10px;
-      opacity: .8;
+      opacity: .5;
     }
 
     & .project-btn-container {
@@ -871,7 +870,7 @@ footer {
         font-size: 30px;
       }
       & .cv{
-        font-size: 12px;
+        font-size: 14px;
       }
       & #fabs {
         font-size: 17px;
@@ -905,7 +904,7 @@ footer {
       margin-bottom: 5px;
     }
     .i-do-sub-title{
-      font-size: 15px;
+      font-size: 14px;
       opacity: .7;
     }
   } 
@@ -965,11 +964,14 @@ footer {
         font-size: 16px;
       }
       & .sub-title{
-        font-size: 13px;
+        font-size: 14px;
+      }
+      & .date{
+        font-size: 12px;
       }
       & .using {
         margin: 0;
-        font-size: 12px;
+        font-size: 10px;
       }
 
       & .project-btn-container {

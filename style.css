@@ -419,10 +419,10 @@ nav li a {
 }
 
 #about .i-do-sub-title {
-  color: #7f1cdf;
-  font-size: 15px;
+  color: #424874;
+  font-size: 14px;
   font-weight: bold;
-  opacity: .7;
+  opacity: .6;
 }
 
 #skills {
@@ -499,7 +499,6 @@ nav li a {
 #skills .skill-container .skill .name {
   font-size: 20px;
   color: #424874;
-  opacity: .6;
 }
 
 #skills .skill-container .skill i {
@@ -513,13 +512,13 @@ nav li a {
   display: flex;
   width: 100%;
   height: 15px;
-  border: 1px solid #7f1cdf;
+  border: 1px solid #dcd6f7;
   border-radius: 50px;
 }
 
 #skills .skill-container .skill .bar {
   font-size: 15px;
-  background-color: #424874;
+  background-color: #dcd6f7;
   text-align: center;
   border-radius: 50px;
 }
@@ -634,17 +633,17 @@ nav li a {
 }
 
 #projects .btn-and-description .date {
-  font-size: 12px;
+  font-size: 14px;
   color: #424874;
   opacity: .5;
 }
 
 #projects .btn-and-description .using {
-  font-size: 0.5em;
+  font-size: 12px;
   font-weight: bolder;
-  color: #7f1cdf;
+  color: #424874;
   margin-bottom: 10px;
-  opacity: .8;
+  opacity: .5;
 }
 
 #projects .btn-and-description .project-btn-container {
@@ -1031,7 +1030,7 @@ footer {
     font-size: 30px;
   }
   #home .name .cv {
-    font-size: 12px;
+    font-size: 14px;
   }
   #home .name #fabs {
     font-size: 17px;
@@ -1071,7 +1070,7 @@ footer {
     margin-bottom: 5px;
   }
   #about .i-do-sub-title {
-    font-size: 15px;
+    font-size: 14px;
     opacity: .7;
   }
   #skills {
@@ -1151,11 +1150,14 @@ footer {
     font-size: 16px;
   }
   #projects .btn-and-description .sub-title {
-    font-size: 13px;
+    font-size: 14px;
+  }
+  #projects .btn-and-description .date {
+    font-size: 12px;
   }
   #projects .btn-and-description .using {
     margin: 0;
-    font-size: 12px;
+    font-size: 10px;
   }
   #projects .btn-and-description .project-btn-container {
     display: -ms-grid;
