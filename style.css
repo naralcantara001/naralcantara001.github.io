@@ -14,7 +14,7 @@ html {
 }
 
 #preloader {
-  background-color: #fdfdfd;
+  background-color: #424874;
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -31,7 +31,7 @@ html {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #dcd6f7;
+  border-top-color: #7f1cdf;
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
@@ -45,7 +45,7 @@ html {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #7f1cdf;
+  border-top-color: #dcd6f7;
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
 }
@@ -59,7 +59,7 @@ html {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #424874;
+  border-top-color: #fdfdfd;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -384,7 +384,7 @@ nav li a {
 }
 
 #about .i-do {
-  border: 1px solid #424874;
+  border: 1px solid #dcd6f7;
   background-color: #fdfdfd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,6 +421,7 @@ nav li a {
 #about .i-do-sub-title {
   color: #7f1cdf;
   font-size: 15px;
+  font-weight: bold;
   opacity: .7;
 }
 
@@ -459,7 +460,7 @@ nav li a {
       -ms-flex-align: center;
           align-items: center;
   margin: 20px 10px;
-  border: 1px solid #424874;
+  border: 1px solid #dcd6f7;
   background-color: #fdfdfd;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -562,7 +563,7 @@ nav li a {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  border: 1px solid #424874;
+  border: 1px solid #dcd6f7;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -622,7 +623,7 @@ nav li a {
   padding-bottom: 10px;
   margin-top: 3px;
   margin-bottom: 10px;
-  border-bottom: 3px solid #424874;
+  border-bottom: 3px solid #dcd6f7;
 }
 
 #projects .btn-and-description .sub-title {
@@ -640,9 +641,10 @@ nav li a {
 
 #projects .btn-and-description .using {
   font-size: 0.5em;
+  font-weight: bolder;
   color: #7f1cdf;
   margin-bottom: 10px;
-  opacity: .6;
+  opacity: .8;
 }
 
 #projects .btn-and-description .project-btn-container {
@@ -870,6 +872,7 @@ footer {
     margin: 5px;
   }
   #skills .skill-container .skill .name, #skills .skill-container .skill i {
+    font-weight: bold;
     font-size: 12px;
     margin-bottom: 5px;
   }
