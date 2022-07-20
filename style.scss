@@ -485,7 +485,7 @@ nav {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 2em 15%;
+    padding: 1em 15%;
 
     .item {
       display: flex;
@@ -953,7 +953,7 @@ footer {
   // project
 #projects {
   .project-container {
-    padding: 0;
+    padding: 0 0 2em 0;
     .item {
       padding: 20px;
       margin: 30px 20px;
@@ -962,21 +962,21 @@ footer {
         width: 100%;
       }
       .project-title{
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 8px;
       }
       .project-sub{
-        font-size: 12px;
+        font-size: 14px;
         padding-bottom: 8px;
       }
       .project-description{
         text-align: center;
-        font-size: 8px;
+        font-size: 12px;
         margin: 0;
       }
       .source-code, .view-website{
         padding: 8px;
-        font-size: 8px;
+        font-size: 10px;
         font-weight: bold;
         margin: 0;
       }

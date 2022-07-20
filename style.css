@@ -544,7 +544,7 @@ nav li a {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  padding: 2em 15%;
+  padding: 1em 15%;
 }
 
 #projects .project-container .item {
@@ -1060,7 +1060,7 @@ footer {
     font-size: 10px;
   }
   #projects .project-container {
-    padding: 0;
+    padding: 0 0 2em 0;
   }
   #projects .project-container .item {
     padding: 20px;
@@ -1071,21 +1071,21 @@ footer {
     width: 100%;
   }
   #projects .project-container .item .project-title {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 8px;
   }
   #projects .project-container .item .project-sub {
-    font-size: 12px;
+    font-size: 14px;
     padding-bottom: 8px;
   }
   #projects .project-container .item .project-description {
     text-align: center;
-    font-size: 8px;
+    font-size: 12px;
     margin: 0;
   }
   #projects .project-container .item .source-code, #projects .project-container .item .view-website {
     padding: 8px;
-    font-size: 8px;
+    font-size: 10px;
     font-weight: bold;
     margin: 0;
   }
