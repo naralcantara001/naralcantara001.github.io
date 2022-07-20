@@ -9,7 +9,6 @@ html {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Inter", sans-serif;
   font-family: "Poppins", sans-serif;
 }
 
@@ -281,7 +280,7 @@ nav li a {
 
 .name .myName {
   z-index: 1;
-  font-size: 50px;
+  font-size: 60px;
   color: #424874;
   text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -537,161 +536,103 @@ nav li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: auto;
-  padding: 1em 15%;
 }
 
-#projects .title {
-  margin-bottom: 1em;
+#projects .project-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  padding: 2em 15%;
 }
 
-#projects .pro {
-  z-index: 1;
-}
-
-#projects .project {
-  z-index: 1;
+#projects .project-container .item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 4em;
-  padding: 20px;
-  color: #424874;
-  background-color: #fdfdfd;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
-  border: 1px solid #dcd6f7;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 30px;
+  margin: 30px 20px;
+  background-color: #fdfdfd;
   border-radius: 5px;
+  border: 1px solid #dcd6f7;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-#projects .screenshot-container {
-  margin-right: 20px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-  width: 70%;
-  position: relative;
-}
-
-#projects .screenshot-container .screenshot {
-  cursor: pointer;
-  width: 100%;
-  height: auto;
+#projects .project-container .item img {
   border-radius: 5px;
+  width: 100%;
 }
 
-#projects .btn-and-description {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  line-height: 22px;
-  height: auto;
-  width: 50%;
+#projects .project-container .item .project-title {
+  margin-top: 16px;
+  color: #7f1cdf;
 }
 
-#projects .btn-and-description .project-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  font-size: 23px;
-  font-weight: bolder;
-  padding-bottom: 10px;
-  margin-top: 3px;
-  margin-bottom: 10px;
-  border-bottom: 3px solid #dcd6f7;
-}
-
-#projects .btn-and-description .sub-title {
-  font-size: 17px;
-  margin-top: 7px;
+#projects .project-container .item .project-sub {
   color: #424874;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 16px;
+  margin-bottom: 8px;
+  opacity: .8;
+  border-bottom: 1px solid #dcd6f7;
+  width: 100%;
+}
+
+#projects .project-container .item .project-description {
+  color: #424874;
+  font-size: 14px;
+  margin: 12px;
+  font-weight: 600;
   opacity: .7;
 }
 
-#projects .btn-and-description .date {
-  font-size: 14px;
-  color: #424874;
-  opacity: .5;
-}
-
-#projects .btn-and-description .using {
-  font-size: 12px;
-  font-weight: bolder;
-  color: #424874;
-  margin-bottom: 10px;
-  opacity: .5;
-}
-
-#projects .btn-and-description .project-btn-container {
-  display: -ms-grid;
-  display: grid;
-  font-family: monospace;
-}
-
-#projects .btn-and-description .project-btn-git {
-  font-family: monospace;
-  font-size: 0.6em;
+#projects .project-container .item .source-code, #projects .project-container .item .view-website {
   cursor: pointer;
-  padding: 0.8em 1em;
+  padding: 12px;
+  margin: 20px;
+  font-size: 14px;
+  font-weight: bold;
   color: #424874;
-  background-color: #fdfdfd;
-  margin-bottom: 10px;
-  border-radius: 5px;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
   border: 1px solid #424874;
+  border-radius: 5px;
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
           box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
-#projects .btn-and-description .project-btn-git:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+#projects .project-container .item .source-code:hover, #projects .project-container .item .view-website:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-#projects .btn-and-description .project-btn-preview {
-  font-family: monospace;
-  font-size: 0.7em;
-  cursor: pointer;
-  padding: 0.8em 1em;
-  background-color: #424874;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+#projects .project-container .item i {
+  color: #7f1cdf;
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+#projects .project-container .item .source-code {
+  background-color: #fdfdfd;
+}
+
+#projects .project-container .item .view-website {
   color: #fdfdfd;
-  border-radius: 5px;
-  border: none;
-  -webkit-transition: ease 0.3s;
-  transition: ease 0.3s;
-  margin-bottom: 5px;
-}
-
-#projects .btn-and-description .project-btn-preview:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  background-color: #424874;
 }
 
 #contact {
@@ -857,31 +798,7 @@ footer {
   .info > span {
     font-size: 0.8em;
   }
-  #skills .title {
-    margin-bottom: 1.5em;
-  }
-  #skills .grid {
-    padding: 0;
-  }
-  #skills .skill-container {
-    margin: 10px;
-  }
-  #skills .skill-container .skill {
-    padding: 11px;
-    margin: 5px;
-  }
-  #skills .skill-container .skill .name, #skills .skill-container .skill i {
-    font-weight: bold;
-    font-size: 12px;
-    margin-bottom: 5px;
-  }
-  #skills .skill-container .skill .progress {
-    height: 13px;
-  }
-  #skills .skill-container .skill .bar {
-    font-size: 10px;
-  }
-  #projects .project {
+  #about .about-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -895,23 +812,49 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 2em;
   }
-  #projects .screenshot-container {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
+  #skills .title {
+    margin-bottom: 1.5em;
+  }
+  #skills .grid {
+    padding: 0;
+  }
+  #skills .skill-container {
     margin: 10px;
   }
-  #projects .using {
-    margin-top: 1em;
+  #skills .skill-container .skill {
+    padding: 11px;
+    margin: 5px;
   }
-  #projects .btn-and-description {
-    width: 100%;
-    padding: 1em;
+  #skills .skill-container .skill .name,
+  #skills .skill-container .skill i {
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
   }
-  #projects .project-btn-container {
-    margin-top: 1em;
+  #skills .skill-container .skill .progress {
+    height: 13px;
+  }
+  #skills .skill-container .skill .bar {
+    font-size: 10px;
+  }
+  #projects .project-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #projects .project-container .item .source-code, #projects .project-container .item .view-website {
+    margin: 10px;
   }
   #contact {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask2613%26quot%3b)' fill='none'%3e%3crect width='252' height='252' clip-path='url(%26quot%3b%23SvgjsClipPath2614%26quot%3b)' x='-8.2' y='15.89' fill='url(%23SvgjsPattern2615)' transform='rotate(276.45%2c 117.8%2c 141.89)'%3e%3c/rect%3e%3cpath d='M1133.01 570.09 L1073.08 474.66L1044.3192308245204 581.1007691754797z' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/path%3e%3crect width='60' height='60' clip-path='url(%26quot%3b%23SvgjsClipPath2616%26quot%3b)' x='192.55' y='455.42' fill='url(%23SvgjsPattern2617)' transform='rotate(137.19%2c 222.55%2c 485.42)'%3e%3c/rect%3e%3cpath d='M1274.98 418.75a5.6 5.6 0 1 0 7.52 8.3 5.6 5.6 0 1 0-7.52-8.3zM1285.73 430.61a5.6 5.6 0 1 0 7.51 8.3 5.6 5.6 0 1 0-7.51-8.3zM1296.47 442.47a5.6 5.6 0 1 0 7.52 8.3 5.6 5.6 0 1 0-7.52-8.3zM1307.21 454.33a5.6 5.6 0 1 0 7.52 8.3 5.6 5.6 0 1 0-7.52-8.3zM1241.64 405.78a5.6 5.6 0 1 0 7.52 8.3 5.6 5.6 0 1 0-7.52-8.3zM1252.38 417.63a5.6 5.6 0 1 0 7.52 8.31 5.6 5.6 0 1 0-7.52-8.31zM1263.13 429.49a5.6 5.6 0 1 0 7.51 8.3 5.6 5.6 0 1 0-7.51-8.3zM1273.87 441.35a5.6 5.6 0 1 0 7.52 8.3 5.6 5.6 0 1 0-7.52-8.3zM1208.3 392.8a5.6 5.6 0 1 0 7.52 8.3 5.6 5.6 0 1 0-7.52-8.3zM1219.04 404.66a5.6 5.6 0 1 0 7.52 8.3 5.6 5.6 0 1 0-7.52-8.3zM1229.78 416.52a5.6 5.6 0 1 0 7.52 8.3 5.6 5.6 0 1 0-7.52-8.3zM1240.53 428.38a5.6 5.6 0 1 0 7.51 8.3 5.6 5.6 0 1 0-7.51-8.3z' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/path%3e%3cpath d='M681.73 397.68L686.77 385.91 699.36 388.23 704.39 376.46 716.99 378.78 722.02 367.01 734.61 369.33M685.51 404.73L690.55 392.96 703.14 395.28 708.17 383.51 720.77 385.83 725.8 374.06 738.39 376.38' stroke='rgba(127%2c 28%2c 223%2c 1)' stroke-width='2.56' stroke-dasharray='3%2c 2'%3e%3c/path%3e%3crect width='60' height='60' clip-path='url(%26quot%3b%23SvgjsClipPath2618%26quot%3b)' x='372.56' y='110.44' fill='url(%23SvgjsPattern2619)' transform='rotate(128.82%2c 402.56%2c 140.44)'%3e%3c/rect%3e%3crect width='117' height='117' clip-path='url(%26quot%3b%23SvgjsClipPath2620%26quot%3b)' x='836.73' y='386.73' fill='url(%23SvgjsPattern2621)' transform='rotate(158.81%2c 895.23%2c 445.23)'%3e%3c/rect%3e%3ccircle r='74.4560076645051' cx='794.41' cy='9.6' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='1.04' stroke-dasharray='4%2c 4'%3e%3c/circle%3e%3ccircle r='46.666666666666664' cx='556.43' cy='420.99' stroke='rgba(37%2c 28%2c 51%2c 1)' stroke-width='2.79' stroke-dasharray='3%2c 3'%3e%3c/circle%3e%3crect width='305.36' height='305.36' clip-path='url(%26quot%3b%23SvgjsClipPath2622%26quot%3b)' x='-83.47' y='71.04' fill='url(%23SvgjsPattern2623)' transform='rotate(186.58%2c 69.21%2c 223.72)'%3e%3c/rect%3e%3crect width='60' height='60' clip-path='url(%26quot%3b%23SvgjsClipPath2624%26quot%3b)' x='1059.1' y='18.89' fill='url(%23SvgjsPattern2625)' transform='rotate(22.19%2c 1089.1%2c 48.89)'%3e%3c/rect%3e%3cpath d='M1029.3899999999999 537.92 L1065.08 624.7L1012.8807564375137 615.6642435624861z' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask2613'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern2615'%3e%3cpath d='M3 1L3 5M1 3L5 3' stroke='rgba(127%2c 28%2c 223%2c 1)' fill='none' stroke-width='1.18'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2614'%3e%3ccircle r='63' cx='117.8' cy='141.89'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern2617'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(37%2c 28%2c 51%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2616'%3e%3ccircle r='15' cx='222.55' cy='485.42'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern2619'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(37%2c 28%2c 51%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2618'%3e%3ccircle r='15' cx='402.56' cy='140.44'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='11.7' height='11.7' patternUnits='userSpaceOnUse' id='SvgjsPattern2621'%3e%3cpath d='M5.85 1L5.85 10.7M1 5.85L10.7 5.85' stroke='rgba(37%2c 28%2c 51%2c 1)' fill='none' stroke-width='1'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2620'%3e%3ccircle r='29.25' cx='895.23' cy='445.23'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='305.36' height='13.88' patternUnits='userSpaceOnUse' id='SvgjsPattern2623'%3e%3crect width='305.36' height='6.94' x='0' y='0' fill='rgba(37%2c 28%2c 51%2c 1)'%3e%3c/rect%3e%3crect width='305.36' height='6.94' x='0' y='6.94' fill='rgba(0%2c 0%2c 0%2c 0)'%3e%3c/rect%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2622'%3e%3ccircle r='76.34' cx='69.21' cy='223.72'%3e%3c/circle%3e%3c/clipPath%3e%3cpattern x='0' y='0' width='6' height='6' patternUnits='userSpaceOnUse' id='SvgjsPattern2625'%3e%3cpath d='M0 6L3 0L6 6' stroke='rgba(37%2c 28%2c 51%2c 1)' fill='none'%3e%3c/path%3e%3c/pattern%3e%3cclipPath id='SvgjsClipPath2624'%3e%3ccircle r='15' cx='1089.1' cy='48.89'%3e%3c/circle%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
@@ -1105,7 +1048,8 @@ footer {
     padding: 11px;
     margin: 5px;
   }
-  #skills .skill-container .skill .name, #skills .skill-container .skill i {
+  #skills .skill-container .skill .name,
+  #skills .skill-container .skill i {
     font-size: 12px;
     margin-bottom: 5px;
   }
@@ -1115,75 +1059,39 @@ footer {
   #skills .skill-container .skill .bar {
     font-size: 10px;
   }
-  #projects {
-    padding: 2em 11%;
+  #projects .project-container {
+    padding: 0;
   }
-  #projects .project {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-bottom: 2em;
-    padding: 0.2em;
-    justify-content: center;
+  #projects .project-container .item {
+    padding: 20px;
+    margin: 30px 20px;
+  }
+  #projects .project-container .item img {
+    border-radius: 5px;
     width: 100%;
   }
-  #projects .screenshot-container {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  #projects .btn-and-description {
-    width: 100%;
-    padding: 0.3em;
-  }
-  #projects .btn-and-description .project-title {
-    font-size: 16px;
-  }
-  #projects .btn-and-description .sub-title {
+  #projects .project-container .item .project-title {
     font-size: 14px;
+    margin-top: 8px;
   }
-  #projects .btn-and-description .date {
+  #projects .project-container .item .project-sub {
     font-size: 12px;
+    padding-bottom: 8px;
   }
-  #projects .btn-and-description .using {
+  #projects .project-container .item .project-description {
+    text-align: center;
+    font-size: 8px;
     margin: 0;
+  }
+  #projects .project-container .item .source-code, #projects .project-container .item .view-website {
+    padding: 8px;
+    font-size: 8px;
+    font-weight: bold;
+    margin: 0;
+  }
+  #projects .project-container .item i {
     font-size: 10px;
-  }
-  #projects .btn-and-description .project-btn-container {
-    display: -ms-grid;
-    display: grid;
-    margin-top: 0.7em;
-    margin-bottom: 0.2em;
-    font-family: monospace;
-  }
-  #projects .btn-and-description .project-btn-git {
-    font-family: monospace;
-    font-size: 0.5em;
-    cursor: pointer;
-    padding: 0.8em 1em;
-  }
-  #projects .btn-and-description .project-btn-preview {
-    font-family: monospace;
-    font-size: 0.5em;
-    cursor: pointer;
-    padding: 1.1em 1.5em;
-    border: none;
-    -webkit-transition: ease 0.3s;
-    transition: ease 0.3s;
-  }
-  #projects .btn-and-description .project-btn-preview:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
+    margin-right: 4px;
   }
   #contact {
     display: -webkit-box;
