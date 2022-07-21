@@ -84,3 +84,6 @@ arrowUp.addEventListener('click', () => {
   window.addEventListener("load", function(){
     loader.style.display = "none"
   })
+  
+// tab color theme
+// document.querySelector('meta[name="theme-color"]').setAttribute('content',  '#7f1cdf');
