@@ -347,6 +347,7 @@ nav li a {
   justify-content: center;
   height: 100vh;
   text-align: center;
+  padding: 3em 0;
 }
 #skills .grid {
   margin-top: 30px;
@@ -384,6 +385,7 @@ nav li a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding: 3em 0;
 }
 #projects .project-container {
   width: 100%;
@@ -454,8 +456,8 @@ nav li a {
 #projects .project-container .item .source-code:hover, #projects .project-container .item .view-website:hover {
   transform: scale(1.1);
 }
-#projects .project-container .item i {
-  color: #7f1cdf;
+#projects .project-container .item .source-code i {
+  color: #424874;
   font-size: 16px;
   margin-right: 4px;
 }
@@ -751,6 +753,9 @@ footer {
   #skills .skill-container .skill .bar {
     font-size: 10px;
   }
+  #projects {
+    padding: 3em 5%;
+  }
   #projects .project-container {
     padding: 0 0 2em 0;
   }
@@ -777,7 +782,7 @@ footer {
   }
   #projects .project-container .item .source-code, #projects .project-container .item .view-website {
     padding: 8px;
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
     margin: 0;
   }
