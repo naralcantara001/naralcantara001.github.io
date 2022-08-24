@@ -351,8 +351,9 @@ nav li a {
 }
 #skills .grid {
   margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
 }
 #skills .skill-container:hover {
   transform: scale(1.1);
@@ -588,6 +589,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  #skills {
+    display: flex;
+    height: auto;
   }
   #skills .grid {
     display: grid;

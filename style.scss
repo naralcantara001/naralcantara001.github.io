@@ -416,8 +416,9 @@ nav {
 
   .grid {
     margin-top: 30px;
-    display: flex;
-    flex-wrap: wrap; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
   }
 
   .skill-container:hover {
@@ -688,6 +689,8 @@ footer {
 
 
 #skills{
+  display: flex;
+  height: auto;
   .grid{
     display: grid;
   grid-template-columns: 1fr 1fr;
