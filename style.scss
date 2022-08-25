@@ -464,8 +464,9 @@ nav {
 
     .item {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      text-align: left;
+      align-self: baseline;
+      justify-content: baseline;
       flex-direction: column;
       padding: 30px;
       margin: 30px 20px;
@@ -496,6 +497,7 @@ nav {
       }
       .project-description{
         align-self: baseline;
+        text-align: left;
         color: $darkBlue;
         font-size: 14px;
         margin-right: 12px;
@@ -925,7 +927,6 @@ footer {
         padding-bottom: 8px;
       }
       .project-description{
-        text-align: center;
         font-size: 12px;
         margin: 0;
       }

@@ -396,8 +396,9 @@ nav li a {
 }
 #projects .project-container .item {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
+  align-self: baseline;
+  justify-content: baseline;
   flex-direction: column;
   padding: 30px;
   margin: 30px 20px;
@@ -429,6 +430,7 @@ nav li a {
 }
 #projects .project-container .item .project-description {
   align-self: baseline;
+  text-align: left;
   color: #424874;
   font-size: 14px;
   margin-right: 12px;
@@ -781,7 +783,6 @@ footer {
     padding-bottom: 8px;
   }
   #projects .project-container .item .project-description {
-    text-align: center;
     font-size: 12px;
     margin: 0;
   }
