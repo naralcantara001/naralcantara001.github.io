@@ -179,7 +179,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 15%;
+  padding: 20px 15%;
 }
 .main-nav .fa-sun {
   cursor: pointer;
@@ -581,7 +581,7 @@ footer {
     cursor: pointer;
   }
   nav {
-    padding: 0.3em 0;
+    padding: 20px 0;
   }
   .links {
     padding: 0.3em 0;
@@ -590,7 +590,7 @@ footer {
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0 10%;
+    padding: 0px 10%;
   }
   .burger {
     font-size: 0.7em;
