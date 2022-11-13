@@ -1,3 +1,36 @@
+window.onload = function() {
+  Particles.init({
+    selector: '.background',
+    maxParticles: 70,
+    sizeVariations: 3,
+    speed: 1,
+    color: '#dcd6f7',
+    minDistance: 120,
+    connectParticles: true, 
+    responsive: [
+      {
+        breakpoint:  1000,
+        options: {
+          maxParticles: 40,
+        }
+      },
+      {
+        breakpoint:  768,
+        options: {
+          maxParticles: 40,
+          minDistance: 100,
+        }
+      },
+      {
+        breakpoint:  400,
+        options: {
+          maxParticles: 20,
+        }
+      }
+    ]
+  });
+};
+
 const li = document.querySelectorAll('.links');
 const sec = document.querySelectorAll('section');
 const body = document.querySelector('body');
@@ -19,7 +52,7 @@ window.addEventListener("scroll", activeMenu);
 
 // Typewriter
 const textAnim = document.querySelector(".profession");
-const typewriter = new Typewriter(textAnim, {
+const typewriter = new Typewriter(textAnim, { 
 loop: true
 });
 
