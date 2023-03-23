@@ -14,7 +14,7 @@ html {
 }
 
 // sass
-$white: #fcfbfd;
+$white: #ffff;
 $violet: #7f1cdf;
 $darkBlue: #424874;
 $blue: #26abff;
@@ -28,11 +28,12 @@ $dark: #0f103f;
 $black: #171120;
 
 // 
-$first: #fefefe;
-$second:#020202;
-$third: #eee;
-$fourt: #f7f1ed;
-$six: #ed91c0;
+$first: #fcf4fd;
+$second:#4f3551;
+$third: #dfd2ee;
+$fourt: #999;
+$six: #b4daf5;
+$seven: #9eadce;
 
 // scroll bar
 /* width */
@@ -42,7 +43,7 @@ $six: #ed91c0;
 
 /* Track */
 ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px $black; 
+  // box-shadow: inset 0 0 2px $black; 
   border-radius: 1px;
 }
  
@@ -150,7 +151,7 @@ $six: #ed91c0;
   outline: none;
   z-index: 99;
   cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   // box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -165,12 +166,12 @@ section {
   align-items: center;
   font-size: 2em;
   height: auto;
-  background-color: $third;
+  background-color: $white;
 }
 
 // javascript active nav hover
 .actives {
-  border-bottom: 2px solid $second;
+  border-bottom: 3px solid $seven;
 }
 
 
@@ -190,11 +191,11 @@ section {
 
 //
 .title {
-  color: $second;
+  color: $seven;
   position: relative;
   display: inline-block;
   letter-spacing: 1px;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  // text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .title:after {
@@ -206,8 +207,8 @@ section {
   margin: 1px auto;
   width: 40%;
   height: 4px;
-  background: $fourt;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: $six;
+  // text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 // header nav
@@ -218,7 +219,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 2;
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
+  // box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
   // box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 }
 
@@ -226,7 +227,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 15%;
+  padding: 10px 15%;
 
   .fa-sun {
     cursor: pointer;
@@ -251,20 +252,23 @@ nav {
   & ul {
     display: flex;
     list-style: none;
+    font-size: 14px;
+    font-weight: 600;
   }
 
   & li {
     border: none;
     display: inline-block;
-    margin: .5em 0 1em 1em;
-    padding: 0;
+    margin-right: 15px;
+    margin-left: 15px;
 
     & a {
       text-decoration: none;
       letter-spacing: 1px;
       color: $second;
-      padding: 3px 5px;
-      margin: 5px;
+      padding-bottom: 2px;
+    
+  
       cursor: pointer;
     }
   }
@@ -321,8 +325,8 @@ nav {
   & .myName {
     z-index: 1;
     font-size: 60px;
-    color: $second;
-    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: $seven;
+    // text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
 
   & .greetings {
@@ -333,7 +337,7 @@ nav {
   }
 
   & .profession {
-    color: $second;
+    color: #9eadce;
     font-weight: 800;
     font-size: 20px;
     margin-bottom: 10px;
@@ -351,14 +355,14 @@ nav {
 
 #fabs, #fabs1 {
   // github, linkedin, gmail - icon
-  color: $second;
+  color: $six;
   border-radius: 50px;
   padding-right: 30px;
   font-size: 20px;
   margin: 0;
   cursor: pointer;
   border: none;
-  text-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  // text-shadow: 0 5px 5px rgba(0, 0, 0, .1);
 
   &:hover {
     color: $second;
@@ -377,7 +381,7 @@ nav {
   cursor: pointer;
   transition: all ease-in-out 0.5s;
   height: 7em;
-  box-shadow: 3px 5px 10px $violet;
+  // box-shadow: 3px 5px 5px $violet;
   border-radius: 50%;
 }
 
@@ -391,7 +395,7 @@ nav {
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   // box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
 
   & .arrow-down {
@@ -418,7 +422,7 @@ nav {
 
   i {
     font-size: 35px;
-    color: $second;
+    color: $six;
     margin: 18px;
   }
 
@@ -437,14 +441,14 @@ nav {
     margin: 20px;
     transition: .3s;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     // box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
   }
 
   .i-do-title {
     font-size: 20px;
     font-weight: bolder;
-    color: $second;
+    color: $seven;
   }
 
   .i-do-sub-title {
@@ -487,10 +491,10 @@ nav {
     border-radius: 10px;
     // padding: 30px;
     margin: 30px;
-    color: $second;
+    color: $seven;
     transition: .3s;
     border-radius: 5px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
   }
   i{
     font-size: 50px;
@@ -528,14 +532,14 @@ nav {
       background-color: $first;
       border-radius: 5px;
       // border: 1px solid $purple;
-      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+      // box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
       img {
         border-radius: 5px;
         width: 100%;
       }
       .project-title{
         margin-top: 16px;
-        color: $second;
+        color: $seven;
         text-align: left;
         align-self: baseline;
       }
@@ -576,7 +580,7 @@ nav {
         color: $second;
         border: 1px solid $second;
         border-radius: 5px;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         transition: .3s;
       }
       .source-code:hover, .view-website:hover{
@@ -639,7 +643,7 @@ nav {
       font-size: 0.8em;
 
       & #faabs {
-        color: $second;
+        color: $six;
         border-radius: 50px;
         font-size: 2em;
         margin: 1.5em 1em 0.3em 0.3em;
