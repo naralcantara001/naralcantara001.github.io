@@ -2,7 +2,7 @@ window.onload = function() {
   Particles.init({
     selector: '.background',
     maxParticles: 70,
-    sizeVariations: 3,
+    sizeVariations: 10,
     speed: 1,
     color: '#b4daf5',
     minDistance: 120,

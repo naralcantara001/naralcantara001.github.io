@@ -30,7 +30,7 @@ $black: #171120;
 // 
 $first: #fcf4fd;
 $second:#4f3551;
-$third: #dfd2ee;
+$third: #7334a4;
 $fourt: #999;
 $six: #b4daf5;
 $seven: #9eadce;
@@ -239,7 +239,7 @@ header {
 .logo {
   font-size: 21px;
   font-weight: bolder;
-  color: $second;
+  color: $white;
   margin: 13px 0;
 }
 
@@ -265,7 +265,7 @@ nav {
     & a {
       text-decoration: none;
       letter-spacing: 1px;
-      color: $second;
+      color: $white;
       padding-bottom: 2px;
     
   
@@ -302,7 +302,7 @@ nav {
   padding: 0 15%;
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   text-align: left;
   justify-content: center;
   letter-spacing: 2px;
@@ -318,14 +318,14 @@ nav {
   line-height: 1.5em;
   display: flex;
   flex-direction: column;
-  justify-content: left;
-  align-items: left;
-  text-align: left;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 
   & .myName {
     z-index: 1;
     font-size: 60px;
-    color: $seven;
+    color: $third;
     // text-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -386,10 +386,10 @@ nav {
 }
 
 .cv {
-  background-color: $darkBlue;
+  background-color: $third;
   color: $white;
   padding: 0.5em 1em;
-  font-size: 0.5em;
+  font-size: 14px;
   letter-spacing: 1px;
   margin-top: 2em;
   border-radius: 5px;
@@ -428,6 +428,7 @@ nav {
 
   .i-do {
     // border: 1px solid $second;
+    // border: 1px solid #7334a4;
     background-color: $first;
     display: flex;
     padding: 25px;
@@ -442,7 +443,7 @@ nav {
     transition: .3s;
     border-radius: 5px;
     // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
-    // box-shadow: 0 5px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 1px 1px 1px #7334a4;
   }
 
   .i-do-title {
@@ -474,7 +475,7 @@ nav {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 30px;
+    gap: 10px;
   }
 
   .skill-container:hover {
@@ -495,6 +496,7 @@ nav {
     transition: .3s;
     border-radius: 5px;
     // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 1px #7334a4;
   }
   i{
     font-size: 50px;
@@ -533,6 +535,7 @@ nav {
       border-radius: 5px;
       // border: 1px solid $purple;
       // box-shadow: 0 5px 3px rgba(0, 0, 0, 0.2);
+      box-shadow: 1px 1px 1px #7334a4;
       img {
         border-radius: 5px;
         width: 100%;
@@ -577,8 +580,8 @@ nav {
         padding: 12px;
         font-size: 14px;
         font-weight: bold;
-        color: $second;
-        border: 1px solid $second;
+        color: $third;
+        border: 1px solid $third;
         border-radius: 5px;
         // box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
         transition: .3s;
@@ -596,7 +599,7 @@ nav {
       }
       .view-website{
         color: $white;
-        background-color: $second;
+        background-color: $third;
       }
     }
   }
