@@ -38,29 +38,29 @@ $seven: #9eadce;
 // scroll bar
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   // box-shadow: inset 0 0 2px $black; 
-  border-radius: 1px;
+  border-radius: 50px;
 }
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: $second; 
-  border-radius: 1px;
+  background: $third; 
+  border-radius: 50px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: $darkBlue; 
+  background: $six; 
 }
 
 // pre loader
 #preloader {
-  background-color: $second;
+  background-color: $third;
   height: 100vh;
   width: 100%;
   z-index: 100;
@@ -105,7 +105,7 @@ $seven: #9eadce;
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: $dark;
+  border-top-color: $six;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -143,7 +143,7 @@ $seven: #9eadce;
   position: fixed;
   bottom: 30px;
   right: 30px;
-  background-color: $second;
+  background-color: $third;
   color: $first;
   padding: 10px 20px;
   border-radius: 50%;
@@ -285,7 +285,7 @@ nav {
 .burger div {
   width: 3em;
   height: 0.2em;
-  background-color: $black;
+  background-color: $white;
   margin: 0.5em 0;
 }
 
@@ -731,7 +731,7 @@ footer {
     }
 
     & .links {
-      color: $second;
+      // color: $second;
     }
   }
 
