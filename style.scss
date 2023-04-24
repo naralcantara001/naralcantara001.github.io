@@ -550,14 +550,15 @@ nav {
         color: $seven;
         text-align: left;
         align-self: baseline;
+        font-size: 20px;
       }
       .project-sub{
         color: $second;
         text-align: left;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 700;
-        padding-bottom: 16px;
-        margin-bottom: 8px;
+        padding-bottom: 10px;
+        // margin-bottom: 8px;
         opacity: .5;
         // border-bottom: 1px solid $purple;
         width: 100%;
@@ -566,7 +567,7 @@ nav {
         align-self: baseline;
         text-align: left;
         color: $second;
-        font-size: 14px;
+        font-size: 12px;
         margin-right: 12px;
         font-weight: 600;
         opacity: .5;
