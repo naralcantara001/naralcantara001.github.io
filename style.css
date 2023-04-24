@@ -460,6 +460,11 @@ nav li a {
   font-weight: 600;
   opacity: 0.5;
 }
+#projects .project-container .item .tools {
+  color: #0f103f;
+  margin-top: 10px;
+  font-size: 10px;
+}
 #projects .project-container .item .project-button {
   width: 100%;
   display: flex;
