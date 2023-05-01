@@ -38,6 +38,7 @@ html {
   width: 100%;
   z-index: 100;
   position: fixed;
+  opacity: 80%;
 }
 
 #loader {
@@ -115,7 +116,7 @@ section {
 }
 
 .actives {
-  border-bottom: 3px solid #9eadce;
+  border-bottom: 3px solid #b4daf5;
 }
 
 .reveal {
@@ -134,6 +135,7 @@ section {
   color: #9eadce;
   position: relative;
   display: inline-block;
+  font-weight: bolder;
   letter-spacing: 1px;
 }
 
@@ -151,7 +153,7 @@ section {
 
 header {
   width: 100%;
-  background-color: #67308f;
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -162,6 +164,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 15%;
+  border-bottom: 1px solid #ddd;
 }
 .main-nav .fa-sun {
   cursor: pointer;
@@ -172,7 +175,7 @@ header {
 .logo {
   font-size: 21px;
   font-weight: bolder;
-  color: white;
+  color: #67308f;
   margin: 13px 0;
 }
 
@@ -195,7 +198,7 @@ nav li {
 nav li a {
   text-decoration: none;
   letter-spacing: 1px;
-  color: white;
+  color: #020202;
   padding-bottom: 2px;
   cursor: pointer;
 }
@@ -209,7 +212,7 @@ nav li a {
 .burger div {
   width: 3em;
   height: 0.2em;
-  background-color: white;
+  background-color: #67308f;
   margin: 0.5em 0;
 }
 
@@ -230,7 +233,7 @@ nav li a {
   justify-content: center;
   letter-spacing: 2px;
   height: 90vh;
-  background-color: #fcf4fd;
+  background-color: #67308f;
   background-repeat: no-repeat;
 }
 
@@ -245,7 +248,7 @@ nav li a {
 .name .myName {
   z-index: 1;
   font-size: 60px;
-  color: #67308f;
+  color: white;
 }
 .name .greetings {
   font-size: 0.5em;
@@ -254,7 +257,7 @@ nav li a {
   margin-top: 1em;
 }
 .name .profession {
-  color: #9eadce;
+  color: #ff83cd;
   font-weight: 800;
   font-size: 20px;
   margin-bottom: 10px;
@@ -266,7 +269,7 @@ nav li a {
 .name .email-info, .name .location-info {
   font-size: 16px;
   font-weight: bold;
-  color: #4f3551;
+  color: white;
 }
 
 #fabs, #fabs1 {
@@ -300,10 +303,11 @@ nav li a {
 }
 
 .cv {
-  background-color: #67308f;
-  color: white;
-  padding: 0.5em 1em;
+  background-color: white;
+  color: #67308f;
+  padding: 0px 25px;
   font-size: 14px;
+  font-weight: bold;
   letter-spacing: 1px;
   margin-top: 2em;
   border-radius: 5px;
@@ -586,11 +590,10 @@ footer {
     font-size: 0.7em;
   }
   .nav-links {
+    padding-top: 50px;
     position: absolute;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     text-align: center;
     right: 0px;
     height: 50vh;
@@ -598,12 +601,16 @@ footer {
     width: 100%;
     transform: translateX(100%);
     transition: transform 0.5s ease-in;
-    background-color: #67308f;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
   }
   .nav-links li {
     width: 100%;
     margin: 0;
     padding: 1em;
+  }
+  .nav-links .links {
+    color: #4f3551;
   }
   .info > span {
     font-size: 0.8em;
@@ -668,11 +675,6 @@ footer {
   }
   .nav-links {
     position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     top: 64px;
     right: 0px;
     transform: translateX(100%);
@@ -857,4 +859,76 @@ footer {
 }
 .nav-active {
   transform: translateX(0%);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #fcf4fd;
+}
+
+/* Caption text */
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #9eadce;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  font-weight: bolder;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #9eadce;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* The dots/bullets/indicators */
+.dot1 {
+  height: 5px;
+  width: 5px;
+  margin: 0px;
+  padding: 0px;
+  background-color: #9eadce;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot {
+  background-color: #67308f;
+}
+
+.active-dot1 {
+  background-color: #67308f;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
 }/*# sourceMappingURL=style.css.map */
