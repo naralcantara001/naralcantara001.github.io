@@ -11,10 +11,17 @@ html {
   box-sizing: border-box;
   // font-family: "Inter", sans-serif;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 1px;
 }
 
+
+.hide-this{
+  display: none;
+}
+
+
 // sass
-$white: #ffff;
+$white: #232946;
 $violet: #7f1cdf;
 $darkBlue: #424874;
 $blue: #26abff;
@@ -28,15 +35,15 @@ $dark: #0f103f;
 $black: #020202;
 
 // 
-$first: #fcf4fd;
+$first: #b8c1ec;
 $second:#4f3551;
-$third: #67308f;
+$third: #eebbc3;
 // $third: #662baa;
 
 
 $fourt: #999;
 $six: #b4daf5;
-$seven: #9eadce;
+$seven: #001858;
 
 // scroll bar
 /* width */
@@ -343,7 +350,7 @@ nav {
   }
 
   & .profession {
-    color: #ff83cd;
+    color: $seven;
     font-weight: 800;
     font-size: 20px;
     margin-bottom: 10px;
